@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 3: Introductions - Learn French</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>👋 Lesson 3: Se Présenter (Introductions)</h1>
+        <nav class="lesson-nav">
+          <a href="index.html" class="nav-btn">🏠 Home</a>
+          <a href="lesson2.html" class="nav-btn">← Previous: Numbers & Time</a>
+          <a href="lesson4.html" class="nav-btn">Next: Days & Subjects →</a>
+        </nav>
+      </div>
+    </header>
+    <main class="lesson-page">
+      <div class="lesson-intro">
+        <div class="goals-box">
+          <h3>🎯 Learning Goals</h3>
+          <ul>
+            <li>Introduce yourself in French</li>
+            <li>Introduce others to new people</li>
+            <li>Use subject pronouns (je, tu, il, elle...)</li>
+            <li>Learn basic verbs: s'appeler, avoir, être, and -er verbs</li>
+          </ul>
+        </div>
+      </div>
+      <section class="content-section">
+        <h2>🙋‍♀️ Introducing Yourself (Se Présenter)</h2>
+        <p class="section-intro">
+          Learn the essential phrases to tell people about yourself!
+        </p>
+        <div class="introduction-phrases">
+          <div
+            class="phrase-card main-phrase"
+            onclick="playPhrase('je-mappelle')"
+          >
+            <div class="phrase-icon">
+              <div class="name-tag">
+                <div class="tag-header">HELLO</div>
+                <div class="tag-name">My name is</div>
+                <div class="tag-blank">_______</div>
+              </div>
+            </div>
+            <h3>Je m'appelle...</h3>
+            <p class="translation">My name is... / I am called...</p>
+            <div class="example">
+              <strong>Example:</strong> Je m'appelle Marie. <br /><em
+                >(My name is Marie.)</em
+              >
+            </div>
+          </div>
+          <div class="phrase-card" onclick="playPhrase('jai')">
+            <div class="phrase-icon">
+              <div class="age-visual">
+                <div class="birthday-cake">🎂</div>
+                <div class="candles">🕯️🕯️🕯️</div>
+              </div>
+            </div>
+            <h3>J'ai ... ans</h3>
+            <p class="translation">I am ... years old</p>
+            <div class="example">
+              <strong>Example:</strong> J'ai dix ans. <br /><em
+                >(I am 10 years old.)</em
+              >
+            </div>
+          </div>
+          <div class="phrase-card" onclick="playPhrase('je-suis')">
+            <div class="phrase-icon">
+              <div class="identity-visual">
+                <div class="mirror">🪞</div>
+                <div class="reflection">👤</div>
+              </div>
+            </div>
+            <h3>Je suis...</h3>
+            <p class="translation">I am...</p>
+            <div class="example">
+              <strong>Example:</strong> Je suis étudiant. <br /><em
+                >(I am a student.)</em
+              >
+            </div>
+          </div>
+          <div class="phrase-card" onclick="playPhrase('jhabite')">
+            <div class="phrase-icon">
+              <div class="house-visual">
+                <div class="house">🏠</div>
+                <div class="location-pin">📍</div>
+              </div>
+            </div>
+            <h3>J'habite à...</h3>
+            <p class="translation">I live in...</p>
+            <div class="example">
+              <strong>Example:</strong> J'habite à Paris. <br /><em
+                >(I live in Paris.)</em
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content-section">
+        <h2>👥 Subject Pronouns (Les Pronoms Sujets)</h2>
+        <p class="section-intro">
+          These little words replace names and help us talk about people!
+        </p>
+        <div class="pronouns-grid">
+          <div class="pronoun-card singular" onclick="playPronoun('je')">
+            <div class="pronoun-visual">
+              <div class="person-icon me">🙋‍♀️</div>
+              <div class="speech-bubble">Me!</div>
+            </div>
+            <h3>Je</h3>
+            <p class="translation">I</p>
+            <p class="example">Je mange. (I eat.)</p>
+          </div>
+          <div class="pronoun-card singular" onclick="playPronoun('tu')">
+            <div class="pronoun-visual">
+              <div class="person-icon you">👤</div>
+              <div class="pointing">👉</div>
+            </div>
+            <h3>Tu</h3>
+            <p class="translation">You (informal)</p>
+            <p class="example">Tu chantes. (You sing.)</p>
+          </div>
+          <div class="pronoun-card singular" onclick="playPronoun('il')">
+            <div class="pronoun-visual">
+              <div class="person-icon boy">👦</div>
+              <div class="gender-indicator">♂️</div>
+            </div>
+            <h3>Il</h3>
+            <p class="translation">He</p>
+            <p class="example">Il joue. (He plays.)</p>
+          </div>
+          <div class="pronoun-card singular" onclick="playPronoun('elle')">
+            <div class="pronoun-visual">
+              <div class="person-icon girl">👧</div>
+              <div class="gender-indicator">♀️</div>
+            </div>
+            <h3>Elle</h3>
+            <p class="translation">She</p>
+            <p class="example">Elle danse. (She dances.)</p>
+          </div>
+          <div class="pronoun-card plural" onclick="playPronoun('nous')">
+            <div class="pronoun-visual">
+              <div class="group-icon">👥</div>
+              <div class="inclusion-circle">⭕</div>
+            </div>
+            <h3>Nous</h3>
+            <p class="translation">We</p>
+            <p class="example">Nous étudions. (We study.)</p>
+          </div>
+          <div class="pronoun-card plural" onclick="playPronoun('vous')">
+            <div class="pronoun-visual">
+              <div class="group-icon formal">👨‍👩‍👧‍👦</div>
+              <div class="formality-indicator">🎩</div>
+            </div>
+            <h3>Vous</h3>
+            <p class="translation">You (formal/plural)</p>
+            <p class="example">Vous parlez. (You speak.)</p>
+          </div>
+          <div class="pronoun-card plural" onclick="playPronoun('ils')">
+            <div class="pronoun-visual">
+              <div class="group-icon boys">👦👦</div>
+              <div class="gender-indicator">♂️</div>
+            </div>
+            <h3>Ils</h3>
+            <p class="translation">They (masculine/mixed)</p>
+            <p class="example">Ils courent. (They run.)</p>
+          </div>
+          <div class="pronoun-card plural" onclick="playPronoun('elles')">
+            <div class="pronoun-visual">
+              <div class="group-icon girls">👧👧</div>
+              <div class="gender-indicator">♀️</div>
+            </div>
+            <h3>Elles</h3>
+            <p class="translation">They (feminine)</p>
+            <p class="example">Elles lisent. (They read.)</p>
+          </div>
+        </div>
+        <div class="pronoun-tips">
+          <div class="tip-box">
+            <h4>💡 Memory Tip:</h4>
+            <p>
+              <strong>Ils vs Elles:</strong> Use "ils" if there's even one boy
+              in the group. Use "elles" only when the group is all girls!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="content-section">
+        <h2>🔤 Important Verbs</h2>
+        <div class="verbs-container">
+          <div class="verb-section">
+            <h3>S'appeler (To be called/named)</h3>
+            <div class="conjugation-table">
+              <div
+                class="conjugation-row"
+                onclick="playConjugation('mappelle')"
+              >
+                <span class="pronoun">Je</span>
+                <span class="verb">m'appelle</span>
+              </div>
+              <div
+                class="conjugation-row"
+                onclick="playConjugation('tappelles')"
+              >
+                <span class="pronoun">Tu</span>
+                <span class="verb">t'appelles</span>
+              </div>
+              <div
+                class="conjugation-row"
+                onclick="playConjugation('sappelle')"
+              >
+                <span class="pronoun">Il/Elle</span>
+                <span class="verb">s'appelle</span>
+              </div>
+            </div>
+            <div class="verb-examples">
+              <p><strong>Examples:</strong></p>
+              <ul>
+                <li>Comment tu t'appelles? (What's your name?)</li>
+                <li>Il s'appelle Pierre. (His name is Pierre.)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="verb-section">
+            <h3>Avoir (To have)</h3>
+            <div class="conjugation-table">
+              <div class="conjugation-row" onclick="playConjugation('jai')">
+                <span class="pronoun">Je</span>
+                <span class="verb">ai</span>
+              </div>
+              <div class="conjugation-row" onclick="playConjugation('tuas')">
+                <span class="pronoun">Tu</span>
+                <span class="verb">as</span>
+              </div>
+              <div class="conjugation-row" onclick="playConjugation('ila')">
+                <span class="pronoun">Il/Elle</span>
+                <span class="verb">a</span>
+              </div>
+            </div>
+            <div class="verb-examples">
+              <p><strong>Examples:</strong></p>
+              <ul>
+                <li>J'ai un chien. (I have a dog.)</li>
+                <li>Tu as quel âge? (How old are you?)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="verb-section">
+            <h3>Être (To be)</h3>
+            <div class="conjugation-table">
+              <div class="conjugation-row" onclick="playConjugation('jesuis')">
+                <span class="pronoun">Je</span>
+                <span class="verb">suis</span>
+              </div>
+              <div class="conjugation-row" onclick="playConjugation('tues')">
+                <span class="pronoun">Tu</span>
+                <span class="verb">es</span>
+              </div>
+              <div class="conjugation-row" onclick="playConjugation('ilest')">
+                <span class="pronoun">Il/Elle</span>
+                <span class="verb">est</span>
+              </div>
+            </div>
+            <div class="verb-examples">
+              <p><strong>Examples:</strong></p>
+              <ul>
+                <li>Je suis content. (I am happy.)</li>
+                <li>Elle est intelligente. (She is smart.)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content-section">
+        <h2>📝 Regular -ER Verbs</h2>
+        <p class="section-intro">
+          Most French verbs end in -ER and follow the same pattern!
+        </p>
+        <div class="er-verbs-section">
+          <div class="verb-pattern">
+            <h3>🔄 The -ER Pattern</h3>
+            <div class="pattern-explanation">
+              <p>Remove <strong>-ER</strong> and add these endings:</p>
+              <div class="endings-grid">
+                <div class="ending-card">
+                  <span class="pronoun">Je</span>
+                  <span class="ending">-e</span>
+                </div>
+                <div class="ending-card">
+                  <span class="pronoun">Tu</span>
+                  <span class="ending">-es</span>
+                </div>
+                <div class="ending-card">
+                  <span class="pronoun">Il/Elle</span>
+                  <span class="ending">-e</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="er-verb-examples">
+            <h3>Common -ER</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+  <script src="script.js"></script>`n</body>
+</html>
+
+

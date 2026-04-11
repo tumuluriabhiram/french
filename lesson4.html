@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4: Days and School Subjects - Learn French</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📅 Lesson 4: Les Jours et les Matières (Days and School Subjects)</h1>
+            <nav class="lesson-nav">
+                <a href="index.html" class="nav-btn">🏠 Home</a>
+                <a href="lesson3.html" class="nav-btn">← Previous: Introductions</a>
+                <a href="lesson5.html" class="nav-btn">Next: Months & Seasons →</a>
+            </nav>
+        </div>
+    </header>
+    <main class="lesson-page">
+        <div class="lesson-intro">
+            <div class="goals-box">
+                <h3>🎯 Learning Goals</h3>
+                <ul>
+                    <li>Use the days of the week in sentences</li>
+                    <li>Talk about school subjects</li>
+                    <li>Learn time expressions with days</li>
+                    <li>Create your weekly schedule in French</li>
+                </ul>
+            </div>
+        </div>
+        <section class="content-section">
+            <h2>📅 Les Jours de la Semaine (Days of the Week)</h2>
+            <p class="section-intro">Click each day to hear the pronunciation!</p>
+            <div class="days-calendar">
+                <div class="day-card monday" onclick="playDay('lundi')">
+                    <div class="day-icon">
+                        <div class="calendar-page">
+                            <div class="calendar-header">MON</div>
+                            <div class="calendar-date">1</div>
+                            <div class="day-symbol">📚</div>
+                        </div>
+                    </div>
+                    <h3>Lundi</h3>
+                    <p class="translation">Monday</p>
+                    <p class="memory-tip">Start of school week!</p>
+                </div>
+                <div class="day-card tuesday" onclick="playDay('mardi')">
+                    <div class="day-icon">
+                        <div class="calendar-page">
+                            <div class="calendar-header">TUE</div>
+                            <div class="calendar-date">2</div>
+                            <div class="day-symbol">✏️</div>
+                        </div>
+                    </div>
+                    <h3>Mardi</h3>
+                    <p class="translation">Tuesday</p>
+                    <p class="memory-tip">Like "Mars" the planet!</p>
+                </div>
+                <div class="day-card wednesday" onclick="playDay('mercredi')">
+                    <div class="day-icon">
+                        <div class="calendar-page">
+                            <div class="calendar-header">WED</div>
+                            <div class="calendar-date">3</div>
+                            <div class="day-symbol">⚡</div>
+                        </div>
+                    </div>
+                    <h3>Mercredi</h3>
+                    <p class="translation">Wednesday</p>
+                    <p class="memory-tip">Mercury day - hump day!</p>
+                </div>
+                <div class="day-card thursday" onclick="playDay('jeudi')">
+                    <div class="day-icon">
+                        <div class="calendar-page">
+                            <div class="calendar-header">THU</div>
+                            <div class="calendar-date">4</div>
+                            <div class="day-symbol">🌩️</div>
+                        </div>
+                    </div>
+                    <h3>Jeudi</h3>
+                    <p class="translation">Thursday</p>
+                    <p class="memory-tip">Jupiter's day!</p>
+                </div>
+                <div class="day-card friday" onclick="playDay('vendredi')">
+                    <div class="day-icon">
+                        <div class="calendar-page">
+                            <div class="calendar-header">FRI</div>
+                            <div class="calendar-date">5</div>
+                            <div class="day-symbol">🎉</div>
+                        </div>
+                    </div>
+                    <h3>Vendredi</h3>
+                    <p class="translation">Friday</p>
+                    <p class="memory-tip">Venus day - weekend coming!</p>
+                </div>
+                <div class="day-card saturday weekend" onclick="playDay('samedi')">
+                    <div class="day-icon">
+                        <div class="calendar-page">
+                            <div class="calendar-header">SAT</div>
+                            <div class="calendar-date">6</div>
+                            <div class="day-symbol">🎮</div>
+                        </div>
+                    </div>
+                    <h3>Samedi</h3>
+                    <p class="translation">Saturday</p>
+                    <p class="memory-tip">Fun Saturday!</p>
+                </div>
+                <div class="day-card sunday weekend" onclick="playDay('dimanche')">
+                    <div class="day-icon">
+                        <div class="calendar-page">
+                            <div class="calendar-header">SUN</div>
+                            <div class="calendar-date">7</div>
+                            <div class="day-symbol">☀️</div>
+                        </div>
+                    </div>
+                    <h3>Dimanche</h3>
+                    <p class="translation">Sunday</p>
+                    <p class="memory-tip">Day of rest!</p>
+                </div>
+            </div>
+            <div class="day-expressions">
+                <h3>📝 Useful Day Expressions</h3>
+                <div class="expressions-grid">
+                    <div class="expression-card" onclick="playExpression('aujourdhui')">
+                        <div class="expression-icon">📍</div>
+                        <h4>Aujourd'hui</h4>
+                        <p>Today</p>
+                    </div>
+                    <div class="expression-card" onclick="playExpression('hier')">
+                        <div class="expression-icon">⬅️</div>
+                        <h4>Hier</h4>
+                        <p>Yesterday</p>
+                    </div>
+                    <div class="expression-card" onclick="playExpression('demain')">
+                        <div class="expression-icon">➡️</div>
+                        <h4>Demain</h4>
+                        <p>Tomorrow</p>
+                    </div>
+                    <div class="expression-card" onclick="playExpression('weekend')">
+                        <div class="expression-icon">🏖️</div>
+                        <h4>Le week-end</h4>
+                        <p>Weekend</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section">
+            <h2>📚 Les Matières Scolaires (School Subjects)</h2>
+            <p class="section-intro">What's your favorite subject? Learn them all in French!</p>
+            <div class="subjects-grid">
+                <div class="subject-card math" onclick="playSubject('maths')">
+                    <div class="subject-icon">
+                        <div class="math-symbols">
+                            <span>2+2=4</span>
+                            <span>×÷</span>
+                            <span>📐</span>
+                        </div>
+                    </div>
+                    <h3>Les Mathématiques</h3>
+                    <p class="short-name">(Les Maths)</p>
+                    <p class="translation">Mathematics (Math)</p>
+                </div>
+                <div class="subject-card french" onclick="playSubject('francais')">
+                    <div class="subject-icon">
+                        <div class="language-symbols">
+                            <span>📖</span>
+                            <span>ABC</span>
+                            <span>🇫🇷</span>
+                        </div>
+                    </div>
+                    <h3>Le Français</h3>
+                    <p class="translation">French</p>
+                </div>
+                <div class="subject-card english" onclick="playSubject('anglais')">
+                    <div class="subject-icon">
+                        <div class="language-symbols">
+                            <span>📚</span>
+                            <span>ABC</span>
+                            <span>🇬🇧</span>
+                        </div>
+                    </div>
+                    <h3>L'Anglais</h3>
+                    <p class="translation">English</p>
+                </div>
+                <div class="subject-card science" onclick="playSubject('sciences')">
+                    <div class="subject-icon">
+                        <div class="science-symbols">
+                            <span>🧪</span>
+                            <span>⚗️</span>
+                            <span>🔬</span>
+                        </div>
+                    </div>
+                    <h3>Les Sciences</h3>
+                    <p class="translation">Science</p>
+                </div>
+                <div class="subject-card history" onclick="playSubject('histoire')">
+                    <div class="subject-icon">
+                        <div class="history-symbols">
+                            <span>🏛️</span>
+                            <span>📜</span>
+                            <span>⏳</span>
+                        </div>
+                    </div>
+                    <h3>L'Histoire</h3>
+                    <p class="translation">History</p>
+                </div>
+                <div class="subject-card geography" onclick="playSubject('geographie')">
+                    <div class="subject-icon">
+                        <div class="geo-symbols">
+                            <span>🌍</span>
+                            <span>🗺️</span>
+                            <span>🧭</span>
+                        </div>
+                    </div>
+                    <h3>La Géographie</h3>
+                    <p class="translation">Geography</p>
+                </div>
+                <div class="subject-card pe" onclick="playSubject('sport')">
+                    <div class="subject-icon">
+                        <div class="pe-symbols">
+                            <span>🏃‍♂️</span>
+                            <span>⚽</span>
+                            <span>🏀</span>
+                        </div>
+                    </div>
+                    <h3>Le Sport</h3>
+                    <p class="short-name">(L'EPS)</p>
+                    <p class="translation">PE / Sports</p>
+                </div>
+                <div class="subject-card art" onclick="playSubject('art')">
+                    <div class="subject-icon">
+                        <div class="art-symbols">
+                            <span>🎨</span>
+                            <span>🖌️</span>
+                            <span>✏️</span>
+                        </div>
+                    </div>
+                    <h3>L'Art</h3>
+                    <p class="translation">Art</p>
+                </div>
+                <div class="subject-card music" onclick="playSubject('musique')">
+                    <div class="subject-icon">
+                        <div class="music-symbols">
+                            <span>🎵</span>
+                            <span>🎹</span>
+                            <span>🎤</span>
+                        </div>
+                    </div>
+                    <h3>La Musique</h3>
+                    <p class="translation">Music</p>
+                </div>
+            </div>
+        </section>
+        <section class="content-section">
+            <h2>⏰ Time Expressions with Days</h2>
+            <div class="time-expressions-section">
+                <h3>Talking About Your Schedule</h3>
+                <div class="schedule-expressions">
+                    <div class="expression-example" onclick="playSchedulePhrase('le-lundi')">
+                        <h4>Le lundi, j'ai maths.</h4>
+                        <p><em>On Mondays, I have math.</em></p>
+                        <p class="note">Use "le" + day for "every" that day</p>
+                    </div>
+                    <div class="expression-example" onclick="playSchedulePhrase('lundi')">
+                        <h4>Lundi, j'ai maths.</h4>
+                        <p><em>On Monday (this Monday), I have math.</em></p>
+                        <p class="note">No "le" for a specific day</p>
+                    </div>
+                    <div class="expression-example" onclick="playSchedulePhrase('cours')">
+                        <h4>J'ai cours de français.</h4>
+                        <p><em>I have French class.</em></p>
+                        <p class="note">"Cours de" = class of/in</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="interactive-section">
+            <h2>🎮 Interactive Activities</h2>
+            <div class="activity-container">
+                <div class="activity-card">
+                    <h3>🗓️ Day Sequence Game</h3>
+                    <p>Put the days in the correct order!</p>
+                    <div id="day-sequence-game">
+                        <div class="scrambled-days" id="scrambled-days">
+                            <div class="day-tile" data-day="mercredi" onclick="selectDay(this)">Mercredi</div>
+                            <div class="day-tile" data-day="lundi" onclick="selectDay(this)">Lundi</div>
+                            <div class="day-tile" data-day="vendredi" onclick="selectDay(this)">Vendredi</div>
+                            <div class="day-tile" data-day="dimanche" onclick="selectDay(this)">Dimanche</div>
+                            <div class="
+
+

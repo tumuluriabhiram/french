@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 8: Animals - Learn French</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>🐾 Lesson 8: Les Animaux (Animals)</h1>
+        <nav class="lesson-nav">
+          <a href="index.html" class="nav-btn">🏠 Home</a>
+          <a href="lesson7.html" class="nav-btn">← Previous: Family & Jobs</a>
+          <div class="completion-badge">🎉 Final Lesson!</div>
+        </nav>
+      </div>
+    </header>
+    <main class="lesson-page">
+      <div class="lesson-intro">
+        <div class="goals-box">
+          <h3>🎯 Learning Goals</h3>
+          <ul>
+            <li>Identify and name animals in French</li>
+            <li>Describe animals using adjectives</li>
+            <li>Use "Oui," "Non," and "Si" correctly</li>
+            <li>Ask and answer yes/no questions about animals</li>
+            <li>Talk about what animals do and where they live</li>
+          </ul>
+        </div>
+      </div>
+      <section class="content-section">
+        <h2>🏠 Les Animaux Domestiques (Pet Animals)</h2>
+        <p class="section-intro">
+          Meet our furry friends! Click each animal to hear its name.
+        </p>
+        <div class="animals-grid pets">
+          <div class="animal-card cat" onclick="playAnimal('chat')">
+            <div class="animal-image">
+              <div class="animal-visual">
+                <div class="animal-emoji">🐱</div>
+                <div class="animal-sound">Miaou!</div>
+              </div>
+            </div>
+            <h3>Un Chat</h3>
+            <p class="translation">A Cat</p>
+            <div class="animal-traits">
+              <span class="trait">🥛 Boit du lait</span>
+              <span class="trait">😴 Dort beaucoup</span>
+              <span class="trait">🐭 Chasse les souris</span>
+            </div>
+            <div class="animal-colors">
+              <p><strong>Colors:</strong> noir, blanc, orange, gris</p>
+            </div>
+          </div>
+          <div class="animal-card dog" onclick="playAnimal('chien')">
+            <div class="animal-image">
+              <div class="animal-visual">
+                <div class="animal-emoji">🐶</div>
+                <div class="animal-sound">Ouaf!</div>
+              </div>
+            </div>
+            <h3>Un Chien</h3>
+            <p class="translation">A Dog</p>
+            <div class="animal-traits">
+              <span class="trait">🦴 Aime les os</span>
+              <span class="trait">🏃‍♂️ Court vite</span>
+              <span class="trait">👨‍👩‍👧‍👦 Fidèle ami</span>
+            </div>
+            <div class="animal-colors">
+              <p><strong>Colors:</strong> brun, noir, blanc, doré</p>
+            </div>
+          </div>
+          <div class="animal-card rabbit" onclick="playAnimal('lapin')">
+            <div class="animal-image">
+              <div class="animal-visual">
+                <div class="animal-emoji">🐰</div>
+                <div class="animal-sound">*silence*</div>
+              </div>
+            </div>
+            <h3>Un Lapin</h3>
+            <p class="translation">A Rabbit</p>
+            <div class="animal-traits">
+              <span class="trait">🥕 Mange des carottes</span>
+              <span class="trait">👂 Longues oreilles</span>
+              <span class="trait">🦘 Saute bien</span>
+            </div>
+            <div class="animal-colors">
+              <p><strong>Colors:</strong> blanc, gris, brun</p>
+            </div>
+          </div>
+          <div class="animal-card hamster" onclick="playAnimal('hamster')">
+            <div class="animal-image">
+              <div class="animal-visual">
+                <div class="animal-emoji">🐹</div>
+                <div class="animal-sound">Couic!</div>
+              </div>
+            </div>
+            <h3>Un Hamster</h3>
+            <p class="translation">A Hamster</p>
+            <div class="animal-traits">
+              <span class="trait">🌰 Stocke la nourriture</span>
+              <span class="trait">🏃‍♂️ Court dans sa roue</span>
+              <span class="trait">😴 Dort le jour</span>
+            </div>
+            <div class="animal-colors">
+              <p><strong>Colors:</strong> brun, blanc, doré</p>
+            </div>
+          </div>
+          <div class="animal-card fish" onclick="playAnimal('poisson')">
+            <div class="animal-image">
+              <div class="animal-visual">
+                <div class="animal-emoji">🐠</div>
+                <div class="animal-sound">*blub*</div>
+              </div>
+            </div>
+            <h3>Un Poisson</h3>
+            <p class="translation">A Fish</p>
+            <div class="animal-traits">
+              <span class="trait">🌊 Vit dans l'eau</span>
+              <span class="trait">🫧 Respire sous l'eau</span>
+              <span class="trait">🏊‍♂️ Nage très bien</span>
+            </div>
+            <div class="animal-colors">
+              <p><strong>Colors:</strong> rouge, bleu, jaune, orange</p>
+            </div>
+          </div>
+          <div class="animal-card bird" onclick="playAnimal('oiseau')">
+            <div class="animal-image">
+              <div class="animal-visual">
+                <div class="animal-emoji">🐦</div>
+                <div class="animal-sound">Cui-cui!</div>
+              </div>
+            </div>
+            <h3>Un Oiseau</h3>
+            <p class="translation">A Bird</p>
+            <div class="animal-traits">
+              <span class="trait">🪶 A des plumes</span>
+              <span class="trait">🎵 Chante bien</span>
+              <span class="trait">🪺 Vit dans un nid</span>
+            </div>
+            <div class="animal-colors">
+              <p><strong>Colors:</strong> jaune, vert, rouge, bleu</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content-section">
+        <h2>🚜 Les Animaux de la Ferme (Farm Animals)</h2>
+        <p class="section-intro">
+          Visit the farm and meet these friendly animals!
+        </p>
+        <div class="animals-grid farm">
+          <div class="animal-card cow" onclick="playAnimal('vache')">
+            <div class="animal-image">
+              <div class="animal-visual">
+                <div class="animal-emoji">🐄</div>
+                <div class="animal-sound">Meuh!</div>
+              </div>
+            </div>
+            <h3>Une Vache</h3>
+            <p class="translation">A Cow</p>
+            <div class="animal-traits">
+              <span class="trait">🥛 Donne du lait</span>
+              <span class="trait">🌱 Mange de l'herbe</span>
+              <span class="trait">🔔 Porte une cloche</span>
+            </div>
+            <div class="farm-products">
+              <p><strong>Products:</strong> lait, fromage</p>
+            </div>
+          </div>
+          <div class="animal-card pig" onclick="playAnimal('cochon')">
+            <div class="animal-image">
+              <div class="animal-visual">
+                <div class="animal-emoji">🐷</div>
+                <div class="animal-sound">Groin!</div>
+              </div>
+            </div>
+            <h3>Un Cochon</h3>
+            <p class="translation">A Pig</p>
+            <div class="animal-traits">
+              <span class="trait">🌊 Aime la boue</span>
+              <span class="trait">🍎 Mange de tout</span>
+              <span class="trait">🐽 Groin rose</span>
+            </div>
+            <div class="farm-products">
+              <p><strong>Products:</strong> viande</p>
+            </div>
+          </div>
+          <div class="animal-card chicken" onclick="playAnimal('poule')">
+            <div class="animal-image">
+              <div class="animal-visual">
+                <div class="animal-emoji">🐔</div>
+                <div class="animal-sound">Cot cot!</div>
+              </div>
+            </div>
+            <h3>Une Poule</h3>
+            <p class="translation">A Chicken (hen)</p>
+            <div class="animal-traits">
+              <span class="trait">🥚 Pond des œufs</span>
+              <span class="trait">🌾 Picore les grains</span>
+              <span class="trait">🪶 A des plumes</span>
+            </div>
+            <div class="farm-products">
+              <p><strong>Products:</strong> œufs, viande</p>
+            </div>
+          </div>
+          <div class="animal-card rooster" onclick="playAnimal('coq')">
+            <div class="animal-image">
+              <div class="animal-visual">
+                <div class="animal-emoji">🐓</div>
+                <div class="animal-sound">Cocorico!</div>
+              </div>
+            </div>
+            <h3>Un Coq</h3>
+            <p class="translation">A Rooster</p>
+            <div class="animal-traits">
+              <span class="trait">🌅 Chante le matin</span>
+              <span class="trait">👑 Crête rouge</span>
+              <span class="trait">🦵 Ergots pointus</span>
+            </div>
+            <div class="farm-role">
+              <p><strong>Role:</strong> Protège les poules</p>
+            </div>
+          </div>
+          <div class="animal-card horse" onclick="playAnimal('cheval')">
+            <div class="animal-image">
+              <div class="animal-visual">
+                <div class="animal-emoji">🐴</div>
+                <div class="animal-sound">Hiii!</div>
+              </div>
+            </div>
+            <h3>Un Cheval</h3>
+            <p class="translation">A Horse</p>
+            <div class="animal-traits">
+              <span class="trait">🏃‍♂️ Court très vite</span>
+              <span class="trait">🌾 Mange du foin</span>
+              <span class="trait">🏇 Porte les gens</span>
+            </div>
+            <div class="farm-role">
+              <p><strong>Role:</strong> Transport, travail</p>
+            </div>
+          </div>
+          <div class="animal-card sheep" onclick="playAnimal('mouton')">
+            <div class="animal-image">
+              <div class="animal-visual">
+                <div class="animal-emoji">🐑</div>
+                <div class="animal-sound">Bêê!</div>
+              </div>
+            </div>
+            <h3>Un Mouton</h3>
+            <p class="translation">A Sheep</p>
+            <div class="animal-traits">
+              <span class="trait">🧶 Laine douce</span>
+              <span class="trait">🌱 Mange l'herbe</span>
+              <span class="trait">👥 Vit en troupeau</span>
+            </div>
+            <div class="farm-products">
+              <p><strong>Products:</strong> laine, lait</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content-section">
+        <h2>🌍 Les Animaux Sauvages (Wild Animals)</h2>
+        <p class="section-intro">
+          Discover amazing wild animals from around the world!
+        </p>
+        <div class="animals-grid wild">
+          <div class="animal-card lion" onclick="playAnimal('lion')">
+            <div class="animal-image">
+              <div class="animal-visual">
+                <div class="animal-emoji">🦁</div>
+                <div class="animal-sound">ROAAR!</div>
+              </div>
+            </div>
+            <h3>Un Lion</h3>
+            <p class="translation">A Lion</p>
+            <div class="animal-traits">
+              <span class="trait">👑 Roi des animaux</span>
+              <span class="trait">🦁 Crinière majestueuse</span>
+              <span class="trait">🥩 Mange de la viande</span>
+            </div>
+            <div class="animal-habitat">
+              <p><strong>Habitat:</strong> 🌍 Afrique</p>
+            </div>
+          </div>
+          <div class="animal-card elephant" onclick="playAnimal('elephant')">
+            <div class="animal-image">
+              <div class="animal-visual">
+                <div class="animal-emoji">🐘</div>
+                <div class="animal-sound">Barrr!</div>
+              </div>
+            </div>
+            <h3>Un Éléphant</h3>
+            <p class="translation">An Elephant</p>
+            <div class="animal-traits">
+              <span class="trait">🐘 Très gros</span>
+              <span class="trait">💧 Trompe longue</span>
+              <span class="trait">🧠 Très intelligent</span>
+            </div>
+            <div class="animal-habitat">
+              <p><strong>Habitat:</strong> 🌍 Afrique, Asie</p>
+            </div>
+          </div>
+          <div class="animal-card monkey" onclick="playAnimal('singe')">
+            <div class="animal-image">
+              <div class="animal-visual">
+                <div class="animal-emoji">🐵</div>
+                <div class="animal-sound">Ouh ouh!</div>
+              </div>
+            </div>
+            <h3>Un Singe</h3>
+            <p class="translation">A Monkey</p>
+            <div class="animal-traits">
+              <span class="trait">🌳 Grimpe aux arbres</span>
+              <span class="trait">🍌 Mange des bananes</span>
+              <span class="trait">🤸‍♂️ Très agile</span>
+            </div>
+            <div class="animal-habitat">
+              <p><strong>Habitat:</strong> 🌴 Jungle</p>
+            </div>
+          </div>
+          <div class="animal-card bear" onclick="playAnimal('ours')">
+            <div class="animal-image">
+              <div class="animal-visual">
+                <div class="animal-emoji">🐻</div>
+                <div class="animal-sound">Grrrr!</div>
+              </div>
+            </div>
+            <h3>Un Ours</h3>
+            <p class="translation">A Bear</p>
+            <div class="animal-traits">
+              <span class="trait">💪 Très fort</span>
+              <span class="trait">🍯 Aime le miel</span>
+              <span class="trait">😴 Hiberne l'hiver</span>
+            </div>
+            <div class="animal-habitat">
+              <p><strong>Habitat:</strong> 🌲 Forêt</p>
+            </div>
+          </div>
+          <div class="animal-card tiger" onclick="playAnimal('tigre')">
+            <div class="animal-image">
+              <div class="animal-visual">
+                <div class="animal-emoji">🐅</div>
+                <div class="animal-sound">ROAAR!</div>
+              </div>
+            </div>
+            <h3>Un Tigre</h3>
+            <p class="translation">A Tiger</p>
+            <div class="animal-traits">
+              <span class="trait">🟠 Rayures orange</span>
+              <span class="trait">🏃‍♂️ Court très vite</span>
+              <span class="trait">🥩 Chasseur redoutable</span>
+            </div>
+            <div class="animal-habitat">
+              <p><strong>Habitat:</strong> 🌏 Asie</p>
+            </div>
+          </div>
+          <div class="animal-card giraffe" onclick="playAnimal('girafe')">
+            <div class="animal-image">
+              <div class="animal-visual">
+                <div class="animal-emoji">🦒</div>
+                <div class="animal-sound">*silence*</div>
+              </div>
+            </div>
+            <h3>Une Girafe</h3>
+            <p class="translation">A Giraffe</p>
+            <div class="animal-traits">
+              <span class="trait">📏 Très grande</span>
+              <span class="trait">🦒 Long cou</span>
+              <span class="trait">🌿 Mange les feuilles</span>
+            </div>
+            <div class="animal-habitat">
+              <p><strong>Habitat:</strong> 🌍 Savane africaine</p>
+            </div>
+          </div>
+          <div class="animal-card penguin" onclick="playAnimal('pingouin')">
+            <div class="animal-image">
+              <div class="animal-visual">
+                <div class="animal-emoji">🐧</div>
+                <div class="animal-sound">Kraa!</div>
+              </div>
+            </div>
+            <h3>Un Pingouin</h3>
+            <p class="translation">A Penguin</p>
+            <div class="animal-traits">
+              <span class="trait">🏊‍♂️ Nage très bien</span>
+              <span class="trait">🐟 Mange des poissons</span>
+              <span class="trait">❄️ Aime le froid</span>
+            </div>
+            <div class="animal-habitat">
+              <p><strong>Habitat:</strong> 🧊 Antarctique</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content-section">
+        <h2>📝 Describing Animals (Les Adjectifs)</h2>
+        <p class="section-intro">Learn adjectives to describe animals!</p>
+        <div class="adjectives-section">
+          <h3>Size & Appearance</h3>
+          <div class="adjectives-grid">
+            <div class="adjective-card" onclick="playAdjective('grand')">
+              <div class="adj-visual">🐘</div>
+              <h4>Grand(e)</h4>
+              <p>Big/Large</p>
+              <p class="example">L'éléphant est grand.</p>
+            </div>
+            <div class="adjective-card" onclick="playAdjective('petit')">
+              <div class="adj-visual">🐭</div>
+              <h4>Petit(e)</h4>
+              <p>Small</p>
+              <p class="example">La souris est petite.</p>
+            </div>
+            <div class="adjective-card" onclick="playAdjective('gros')">
+              <div class="adj-visual">🐷</div>
+              <h4>Gros(se)</h4>
+              <p>Fat/Thick</p>
+              <p class="example">Le cochon est gros.</p>
+            </div>
+            <div class="adjective-card" onclick="playAdjective('mince')">
+              <div class="adj-visual">🦒</div>
+              <h4>Mince</h4>
+              <p>Thin</p>
+              <p class="example">La girafe est mince.</p>
+            </div>
+            <div class="adjective-card" onclick="playAdjective('rapide')">
+              <div class="adj-visual">🐆</div>
+              <h4>Rapide</h4>
+              <p>Fast</p>
+              <p class="example">Le guépard est rapide.</p>
+            </div>
+            <div class="adjective-card" onclick="playAdjective('lent')">
+              <div class="adj-visual">🐌</div>
+              <h4>Lent(e)</h4>
+              <p>Slow</p>
+              <p class="example">L'escargot est lent.</p>
+            </div>
+          </div>
+          <h3>Personality & Behavior</h3>
+          <div class="adjectives-grid">
+            <div class="adjective-card" onclick="playAdjective('gentil')">
+              <div class="adj-visual">🐶</div>
+              <h4>Gentil(le)</h4>
+              <p>Nice/Kind</p>
+              <p class="example">Le chien est gentil.</p>
+            </div>
+            <div class="adjective-card" onclick="playAdjective('mechant')">
+              <div class="adj-visual">🐺</div>
+              <h4>Méchant(e)</h4>
+              <p>Mean/Nasty</p>
+              <p class="example">Le loup est méchant.</p>
+            </div>
+            <div class="adjective-card" onclick="playAdjective('intelligent')">
+              <div class="adj-visual">🐵</div>
+              <h4>Intelligent(e)</h4>
+              <p>Smart</p>
+              <p class="example">Le singe est intelligent.</p>
+            </div>
+            <div class="adjective-card" onclick="playAdjective('mignon')">
+              <div class="adj-visual">🐰</div>
+              <h4>Mignon(ne)</h4>
+              <p>Cute</p>
+              <p class="example">Le lapin est mignon.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content-section">
+        <h2>❓ Yes/No Questions: Oui, Non, Si</h2>
+        <p class="section-intro">
+          Learn the three ways to answer questions in French!
+        </p>
+        <div class="yes-no-section">
+          <div class="response-explanation">
+            <div class="response-card oui-card" onclick="playResponse('oui')">
+              <div class="response-icon">✅</div>
+              <h3>OUI</h3>
+              <p class="translation">YES</p>
+              <div class="usage-example">
+                <p>
+                  <strong>Use when:</strong> Agreeing with a positive question
+                </p>
+                <div class="dialogue">
+                  <p><em>Q: Est-ce que tu aimes les chats?</em></p>
+                  <p><strong>A: Oui, j'aime les chats!</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="response-card non-card" onclick="playResponse('non')">
+              <div class="response-icon">❌</div>
+              <h3>NON</h3>
+              <p class="translation">NO</p>
+              <div class="usage-example">
+                <p><strong>Use when:</strong> Disagreeing with any question</p>
+                <div class="dialogue">
+                  <p><em>Q: Est-ce que tu aimes les araignées?</em></p>
+                  <p><strong>A: Non, je n'aime pas les araignées!</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="response-card si-card" onclick="playResponse('si')">
+              <div class="response-icon">🔄</div>
+              <h3>SI</h3>
+              <p class="translation">YES (contradicting)</p>
+              <div class="usage-example">
+                <p>
+                  <strong>Use when:</strong> Contradicting a negative question
+                </p>
+                <div class="dialogue">
+                  <p><em>Q: Tu n'aimes pas les chiens?</em></p>
+                  <p><strong>A: Si! J'aime beaucoup les chiens!</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="response-rules">
+            <h3>📋 Quick Rules</h3>
+            <div class="rules-grid">
+              <div class="rule-box">
+                <h4>Regular Questions</h4>
+                <p>
+                  Est-ce que...? → <strong>OUI</strong> or <strong>NON</strong>
+                </p>
+              </div>
+              <div class="rule-box">
+                <h4>Negative Questions</h4>
+                <p>
+                  Tu ne...pas? → <strong>SI</strong> (yes, I do) or
+                  <strong>NON</strong> (no, I don't)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="interactive-section">
+        <h2>🎮 Interactive Games</h2>
+        <div class="games-container">
+          <div class="game-card animal-sounds">
+            <h3>🔊 Animal Sounds Game</h3>
+            <p>Listen to the sound and guess the animal!</p>
+            <div id="sounds-game">
+              <div class="game-area">
+                <div class="sound-display" id="sound-display">
+                  <div class="sound-icon">🔊</div>
+                  <p id="sound-question">Click to hear an animal sound!</p>
+                  <button onclick="playAnimalSound()" class="play-sound-btn">
+                    🎵 Play Sound
+                  </button>
+                </div>
+                <div class="animal-options">
+                  <button
+                    class="animal-option-btn"
+                    onclick="checkAnimalSound('chat')"
+                    data-animal="chat"
+                  >
+                    <span class="animal-emoji">🐱</span>
+                    <span>Chat</span>
+                  </button>
+                  <button
+                    class="animal-option-btn"
+                    onclick="checkAnimalSound('chien')"
+                    data-animal="chien"
+                  >
+                    <span class="animal-emoji">🐶</span>
+                    <span> </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  <script src="script.js"></script>`n</body>
+</html>
+
+

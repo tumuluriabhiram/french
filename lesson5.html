@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5: Months and Seasons - Learn French</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>🌸 Lesson 5: Les Mois et les Saisons (Months and Seasons)</h1>
+            <nav class="lesson-nav">
+                <a href="index.html" class="nav-btn">🏠 Home</a>
+                <a href="lesson4.html" class="nav-btn">← Previous: Days & Subjects</a>
+                <a href="lesson6.html" class="nav-btn">Next: Colors & Food →</a>
+            </nav>
+        </div>
+    </header>
+    <main class="lesson-page">
+        <div class="lesson-intro">
+            <div class="goals-box">
+                <h3>🎯 Learning Goals</h3>
+                <ul>
+                    <li>Name the months of the year in French</li>
+                    <li>Talk about the four seasons</li>
+                    <li>Say when your birthday is</li>
+                    <li>Use weather expressions</li>
+                    <li>Learn dates and calendar expressions</li>
+                </ul>
+            </div>
+        </div>
+        <section class="content-section">
+            <h2>🌸🌞🍂❄️ Les Quatre Saisons (The Four Seasons)</h2>
+            <p class="section-intro">Click each season to hear the pronunciation and learn about it!</p>
+            <div class="seasons-container">
+                <div class="season-card spring" onclick="playSeason('printemps')">
+                    <div class="season-visual">
+                        <div class="season-scene">
+                            <div class="sun">☀️</div>
+                            <div class="flowers">🌸🌷🌻</div>
+                            <div class="tree">🌳</div>
+                            <div class="grass">🌱</div>
+                        </div>
+                    </div>
+                    <h3>Le Printemps</h3>
+                    <p class="translation">Spring</p>
+                    <div class="season-months">
+                        <p><strong>Months:</strong> Mars, Avril, Mai</p>
+                    </div>
+                    <div class="season-description">
+                        <p>🌸 Flowers bloom</p>
+                        <p>🌱 Plants grow</p>
+                        <p>🐦 Birds sing</p>
+                    </div>
+                </div>
+                <div class="season-card summer" onclick="playSeason('ete')">
+                    <div class="season-visual">
+                        <div class="season-scene">
+                            <div class="bright-sun">☀️</div>
+                            <div class="beach">🏖️</div>
+                            <div class="swimming">🏊‍♀️</div>
+                            <div class="ice-cream">🍦</div>
+                        </div>
+                    </div>
+                    <h3>L'Été</h3>
+                    <p class="translation">Summer</p>
+                    <div class="season-months">
+                        <p><strong>Months:</strong> Juin, Juillet, Août</p>
+                    </div>
+                    <div class="season-description">
+                        <p>☀️ Very hot and sunny</p>
+                        <p>🏖️ Beach time</p>
+                        <p>🏫 Summer vacation</p>
+                    </div>
+                </div>
+                <div class="season-card autumn" onclick="playSeason('automne')">
+                    <div class="season-visual">
+                        <div class="season-scene">
+                            <div class="autumn-sun">🌤️</div>
+                            <div class="falling-leaves">🍂🍁</div>
+                            <div class="harvest">🎃</div>
+                            <div class="school">🎒</div>
+                        </div>
+                    </div>
+                    <h3>L'Automne</h3>
+                    <p class="translation">Fall/Autumn</p>
+                    <div class="season-months">
+                        <p><strong>Months:</strong> Septembre, Octobre, Novembre</p>
+                    </div>
+                    <div class="season-description">
+                        <p>🍂 Leaves fall</p>
+                        <p>🎃 Harvest time</p>
+                        <p>🏫 Back to school</p>
+                    </div>
+                </div>
+                <div class="season-card winter" onclick="playSeason('hiver')">
+                    <div class="season-visual">
+                        <div class="season-scene">
+                            <div class="winter-sky">❄️</div>
+                            <div class="snow">⛄</div>
+                            <div class="skiing">⛷️</div>
+                            <div class="hot-cocoa">☕</div>
+                        </div>
+                    </div>
+                    <h3>L'Hiver</h3>
+                    <p class="translation">Winter</p>
+                    <div class="season-months">
+                        <p><strong>Months:</strong> Décembre, Janvier, Février</p>
+                    </div>
+                    <div class="season-description">
+                        <p>❄️ Cold and snowy</p>
+                        <p>⛄ Build snowmen</p>
+                        <p>🎄 Christmas time</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section">
+            <h2>📅 Les Douze Mois (The Twelve Months)</h2>
+            <p class="section-intro">Learn all twelve months and when they occur!</p>
+            <div class="months-calendar">
+                <div class="calendar-year">
+                    <div class="month-card january" onclick="playMonth('janvier')">
+                        <div class="month-header">
+                            <span class="month-number">1</span>
+                            <span class="season-indicator winter-indicator">❄️</span>
+                        </div>
+                        <h3>Janvier</h3>
+                        <p class="translation">January</p>
+                        <div class="month-features">
+                            <span class="holiday">🎊 New Year</span>
+                            <span class="weather">❄️ Cold</span>
+                        </div>
+                    </div>
+                    <div class="month-card february" onclick="playMonth('fevrier')">
+                        <div class="month-header">
+                            <span class="month-number">2</span>
+                            <span class="season-indicator winter-indicator">❄️</span>
+                        </div>
+                        <h3>Février</h3>
+                        <p class="translation">February</p>
+                        <div class="month-features">
+                            <span class="holiday">💝 Valentine's</span>
+                            <span class="weather">❄️ Still cold</span>
+                        </div>
+                    </div>
+                    <div class="month-card march" onclick="playMonth('mars')">
+                        <div class="month-header">
+                            <span class="month-number">3</span>
+                            <span class="season-indicator spring-indicator">🌸</span>
+                        </div>
+                        <h3>Mars</h3>
+                        <p class="translation">March</p>
+                        <div class="month-features">
+                            <span class="holiday">🍀 Spring starts</span>
+                            <span class="weather">🌤️ Warmer</span>
+                        </div>
+                    </div>
+                    <div class="month-card april" onclick="playMonth('avril')">
+                        <div class="month-header">
+                            <span class="month-number">4</span>
+                            <span class="season-indicator spring-indicator">🌸</span>
+                        </div>
+                        <h3>Avril</h3>
+                        <p class="translation">April</p>
+                        <div class="month-features">
+                            <span class="holiday">🐰 Easter</span>
+                            <span class="weather">🌧️ April showers</span>
+                        </div>
+                    </div>
+                    <div class="month-card may" onclick="playMonth('mai')">
+                        <div class="month-header">
+                            <span class="month-number">5</span>
+                            <span class="season-indicator spring-indicator">🌸</span>
+                        </div>
+                        <h3>Mai</h3>
+                        <p class="translation">May</p>
+                        <div class="month-features">
+                            <span class="holiday">👩 Mother's Day</span>
+                            <span class="weather">🌸 Beautiful</span>
+                        </div>
+                    </div>
+                    <div class="month-card june" onclick="playMonth('juin')">
+                        <div class="month-header">
+                            <span class="month-number">6</span>
+                            <span class="season-indicator summer-indicator">☀️</span>
+                        </div>
+                        <h3>Juin</h3>
+                        <p class="translation">June</p>
+                        <div class="month-features">
+                            <span class="holiday">👨 Father's Day</span>
+                            <span class="weather">☀️ Summer starts</span>
+                        </div>
+                    </div>
+                    <div class="month-card july" onclick="playMonth('juillet')">
+                        <div class="month-header">
+                            <span class="month-number">7</span>
+                            <span class="season-indicator summer-indicator">☀️</span>
+                        </div>
+                        <h3>Juillet</h3>
+                        <p class="translation">July</p>
+                        <div class="month-features">
+                            <span class="holiday">🎆 Fireworks</span>
+                            <span class="weather">🔥 Very hot</span>
+                        </div>
+                    </div>
+                    <div class="month-card august" onclick="playMonth('aout')">
+                        <div class="month-header">
+                            <span class="month-number">8</span>
+                            <span class="season-indicator summer-indicator">☀️</span>
+                        </div>
+                        <h3>Août</h3>
+                        <p class="translation">August</p>
+                        <div class="month-features">
+                            <span class="holiday">🏖️ Vacation</span>
+                            <span class="weather">☀️ Hot</span>
+                        </div>
+                    </div>
+                    <div class="month-card september" onclick="playMonth('septembre')">
+                        <div class="month-header">
+                            <span class="month-number">9</span>
+                            <span class="season-indicator autumn-indicator">🍂</span>
+                        </div>
+                        <h3>Septembre</h3>
+                        <p class="translation">September</p>
+                        <div class="month-features">
+                            <span class="holiday">🏫 Back to school</span>
+                            <span class="weather">🍂 Autumn starts</span>
+                        </div>
+                    </div>
+                    <div class="month-card october" onclick="playMonth('octobre')">
+                        <div class="month-header">
+                            <span class="month-number">10</span>
+                            <span class="season-indicator autumn-indicator">🍂</span>
+                        </div>
+                        <h3>Octobre</h3>
+                        <p class="translation">October</p>
+                        <div class="month-features">
+                            <span class="holiday">🎃 Halloween</span>
+                            <span class="weather">🍁 Colorful leaves</span>
+                        </div>
+                    </div>
+                    <div class="month-card november" onclick="playMonth('novembre')">
+                        <div class="month-header">
+                            <span class="month-number">11</span>
+                            <span class="season-indicator autumn-indicator">🍂</span>
+                        </div>
+                        <h3>Novembre</h3>
+                        <p class="translation">November</p>
+                        <div class="month-features">
+                            <span class="holiday">🦃 Thanksgiving</span>
+                            <span class="weather">🌬️ Getting cold</span>
+                        </div>
+                    </div>
+                    <div class="month-card december" onclick="playMonth('decembre')">
+                        <div class="month-header">
+                            <span class="month-number">12</span>
+                            <span class="season-indicator winter-indicator">❄️</span>
+                        </div>
+                        <h3>Décembre</h3>
+                        <p class="translation">December</p>
+                        <div class="month-features">
+                            <span class="holiday">🎄 Christmas</span>
+                            <span class="weather">❄️ Winter starts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section">
+            <h2>🎂 Talking About Birthdays and Dates</h2>
+            <div class="birthday-section">
+                <h3>Birthday Expressions</h3>
+                <div class="birthday-phrases">
+                    <div class="phrase-card" onclick="playBirthdayPhrase('anniversaire')">
+                        <div class="phrase-icon">🎂</div>
+                        <h4>Mon anniversaire</h4>
+                        <p class="translation">My birthday</p>
+                    </div>
+                    <div class="phrase-card" onclick="playBirthdayPhrase('quand-anniversaire')">
+                        <div class="phrase-icon">❓🎂</div>
+                        <h4>Quand est ton anniversaire?</h4>
+                        <p class="translation">When is your birthday?</p>
+                    </div
+
+
