@@ -15,12 +15,13 @@
         <div class="header-content">
             <h1>🤝 Lesson 1: Les Salutations</h1>
             <p>Greetings & Politeness in French</p>
-            <nav class="lesson-nav">
-                <a href="index.html" class="nav-btn">🏠 Home</a>
-                <a href="lesson2.html" class="nav-btn">Next: Numbers →</a>
-            </nav>
         </div>
     </header>
+
+    <nav class="side-toolbar">
+        <a href="index.html" class="nav-btn" title="Home">🏠 <span>Home</span></a>
+        <a href="lesson2.html" class="nav-btn" title="Next Lesson">➡️ <span>Next</span></a>
+    </nav>
     <main class="lesson-page">
         <section class="lesson-intro">
             <div class="goals-box">
@@ -137,6 +138,48 @@
                     <p class="translation">Pardon? / Excuse me?</p>
                 </div>
             </div>
+
+            <!-- Titles & Examples -->
+            <div class="example-box">
+                <h3>🎩 Titles & Politeness</h3>
+                <div class="vocabulary-grid">
+                    <div class="vocab-card" onclick="speak(this)">
+                        <div class="vocab-image">👨</div>
+                        <h3>Monsieur (M.)</h3>
+                        <p class="translation">Mister / Sir</p>
+                    </div>
+                    <div class="vocab-card" onclick="speak(this)">
+                        <div class="vocab-image">👩</div>
+                        <h3>Madame (Mme)</h3>
+                        <p class="translation">Mrs. / Madam</p>
+                    </div>
+                    <div class="vocab-card" onclick="speak(this)">
+                        <div class="vocab-image">👧</div>
+                        <h3>Mademoiselle (Mlle)</h3>
+                        <p class="translation">Miss</p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 2rem;">💡 Practice Examples</h3>
+                <div class="example-grid">
+                    <div class="example-item" onclick="speak(this)">
+                        <span class="french">Bonjour Monsieur</span>
+                        <span class="english">Hello Sir</span>
+                    </div>
+                    <div class="example-item" onclick="speak(this)">
+                        <span class="french">Au revoir Madame (Mme)</span>
+                        <span class="english">Goodbye Madam</span>
+                    </div>
+                    <div class="example-item" onclick="speak(this)">
+                        <span class="french">Merci Mlle</span>
+                        <span class="english">Thank you Miss</span>
+                    </div>
+                    <div class="example-item" onclick="speak(this)">
+                        <span class="french">Salut Lina (informal)</span>
+                        <span class="english">Hi Lina</span>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="content-section">
             <h2>👥 Tu vs Vous</h2>
@@ -196,11 +239,57 @@
                 <div class="alphabet-card" onclick="speak(this)">Z</div>
             </div>
         </section>
+        <section class="game-section" id="matching-game">
+            <div class="game-header">
+                <div class="game-controls">
+                    <button id="mute-toggle" class="control-btn" onclick="toggleMute()" title="Toggle Sound">
+                        <span id="mute-icon">🔊</span>
+                    </button>
+                </div>
+                <h2>🎮 Match the Greetings!</h2>
+                <p>Click an English word and then its French match to pair them up!</p>
+            </div>
+            <div class="game-container">
+                <div class="game-column" id="english-column">
+                    <!-- English items will be generated here -->
+                </div>
+                <div class="game-column" id="french-column">
+                    <!-- French items will be generated here -->
+                </div>
+            </div>
+            <div class="game-stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="matches-count">0/8</span>
+                    <span class="stat-label">Matches</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="attempts-count">0</span>
+                    <span class="stat-label">Attempts</span>
+                </div>
+            </div>
+            
+            <div id="next-set-container" style="display: none; text-align: center; margin-top: 2rem;">
+                <button class="btn-reset" onclick="loadNextSet()">Next Set ➡️</button>
+            </div>
+        </section>
+
+        <!-- Success Modal -->
+        <div class="modal-overlay" id="success-modal">
+            <div class="success-modal">
+                <span class="trophy">🏆</span>
+                <h2>Magnifique!</h2>
+                <p>You matched all the greetings correctly!</p>
+                <div class="final-stats">
+                    <p>Total Attempts: <span id="final-attempts">0</span></p>
+                </div>
+                <button class="btn-reset" onclick="resetGame()">Play Again 🔄</button>
+            </div>
+        </div>
     </main>
     <footer>
         <p>Lesson 1 complete! You're doing great! 🌟</p>
     </footer>
-<script src="script.js"></script>`n</body>
+    <script src="script.js"></script>
+</body>
 
 </html>
-
