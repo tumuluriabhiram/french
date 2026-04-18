@@ -1,40 +1,12 @@
-function speak(element) {
+function speak(text) {
     // Stop any current speech
     window.speechSynthesis.cancel();
-
-    let text = "";
-    
-    // Find the French word based on the type of card
-    if (element.classList.contains('alphabet-card')) {
-        text = element.textContent.trim();
-    } else if (element.classList.contains('vocab-card')) {
-        const h3 = element.querySelector('h3');
-        const h4 = element.querySelector('h4');
-        // Prefer h3 for greetings, h4 for time expressions/verbs
-        text = h3 ? h3.textContent : (h4 ? h4.textContent : "");
-    } else if (element.classList.contains('number-card')) {
-        const frenchWord = element.querySelector('.french-word');
-        text = frenchWord ? frenchWord.textContent : "";
-    } else if (element.classList.contains('conjugation-row')) {
-        const pronoun = element.querySelector('.pronoun').textContent;
-        const verb = element.querySelector('.verb').textContent;
-        text = pronoun + " " + verb;
-    } else {
-        // Fallback: search for h3/h4/french-word
-        const target = element.querySelector('h3, h4, .french-word, .french');
-        text = target ? target.textContent : element.textContent;
-    }
-
-    text = text.replace(/[\u{1F600}-\u{1F64F}\u{1F300}-\u{1F5FF}\u{1F680}-\u{1F6FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '');
-    
-    // Remove text in parentheses for cleaner speech
-    text = text.replace(/\(.*\)/g, '').trim();
 
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'fr-FR';
     utterance.rate = 0.9; // Slightly slower for better learning
     utterance.pitch = 1.0;
-    
+
     window.speechSynthesis.speak(utterance);
 }
 
@@ -51,16 +23,16 @@ function initAudio() {
 function playSound(type) {
     if (isMuted) return;
     initAudio();
-    
+
     const osc = audioCtx.createOscillator();
     const gain = audioCtx.createGain();
-    
+
     osc.connect(gain);
     gain.connect(audioCtx.destination);
-    
+
     const now = audioCtx.currentTime;
 
-    switch(type) {
+    switch (type) {
         case 'click':
             osc.type = 'sine';
             osc.frequency.setValueAtTime(880, now);
@@ -69,7 +41,7 @@ function playSound(type) {
             osc.start(now);
             osc.stop(now + 0.1);
             break;
-            
+
         case 'correct':
             osc.type = 'triangle';
             osc.frequency.setValueAtTime(523.25, now); // C5
@@ -79,7 +51,7 @@ function playSound(type) {
             osc.start(now);
             osc.stop(now + 0.3);
             break;
-            
+
         case 'incorrect':
             osc.type = 'sawtooth';
             osc.frequency.setValueAtTime(220, now); // A3
@@ -89,7 +61,7 @@ function playSound(type) {
             osc.start(now);
             osc.stop(now + 0.3);
             break;
-            
+
         case 'win':
             // Simple fanfare
             const notes = [523.25, 659.25, 783.99, 1046.50];
@@ -112,7 +84,7 @@ function toggleMute() {
     isMuted = !isMuted;
     const btn = document.getElementById('mute-toggle');
     const icon = document.getElementById('mute-icon');
-    
+
     if (isMuted) {
         btn.classList.add('muted');
         icon.textContent = '🔇';
@@ -205,7 +177,7 @@ function initGame() {
 
 function selectItem(element, side) {
     if (element.classList.contains('matched')) return;
-    
+
     playSound('click');
 
     if (side === 'en') {
@@ -235,7 +207,7 @@ function checkMatch() {
         selectedEn.classList.add('matched');
         selectedFr.classList.add('matched');
         matches++;
-        
+
         selectedEn = null;
         selectedFr = null;
 
@@ -248,7 +220,7 @@ function checkMatch() {
         const frObj = selectedFr;
         enObj.classList.add('incorrect');
         frObj.classList.add('incorrect');
-        
+
         selectedEn = null;
         selectedFr = null;
 
@@ -267,7 +239,7 @@ function handleSetCompletion() {
             playSound('win');
             const nextBtn = document.getElementById('next-set-container');
             if (nextBtn) nextBtn.style.display = 'block';
-            
+
             // Disable further clicks until next set
             document.getElementById('english-column').style.pointerEvents = 'none';
             document.getElementById('french-column').style.pointerEvents = 'none';
@@ -312,14 +284,6 @@ function resetGame() {
 
 // Ensure cards on other pages still work and initialize game if relevant
 document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.vocab-card, .number-card, .alphabet-card, .lesson-card');
-    
-    cards.forEach(card => {
-        if (!card.hasAttribute('onclick')) {
-            card.setAttribute('onclick', 'speak(this)');
-        }
-    });
-
     initGame();
 });
 
