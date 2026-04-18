@@ -29,12 +29,15 @@ body {
     color: var(--text-main);
     line-height: 1.6;
     overflow-x: hidden;
-    background-image: 
+    background-image:
         radial-gradient(at 0% 0%, rgba(42, 82, 190, 0.05) 0px, transparent 50%),
         radial-gradient(at 100% 0%, rgba(224, 62, 82, 0.05) 0px, transparent 50%);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Fredoka', sans-serif;
     font-weight: 600;
 }
@@ -81,8 +84,15 @@ header p {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
 }
 
 /* Home Page - Lessons Grid */
@@ -144,7 +154,7 @@ header p {
 .lesson-icon {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
-    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }
 
 .lesson-card h3 {
@@ -287,7 +297,7 @@ header p {
         border: 2px solid var(--accent-yellow);
         box-shadow: var(--shadow-lg);
     }
-    
+
     .side-toolbar .nav-btn {
         width: 50px;
         height: 50px;
@@ -311,9 +321,17 @@ header p {
 }
 
 @keyframes badgePulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .goals-box {
@@ -344,7 +362,7 @@ header p {
 .goals-box ul {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
     gap: 1rem;
 }
 
@@ -374,14 +392,16 @@ header p {
 }
 
 /* Vocabulary & Numbers Grid */
-.vocabulary-grid, .numbers-grid {
+.vocabulary-grid,
+.numbers-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.vocab-card, .number-card {
+.vocab-card,
+.number-card {
     background: white;
     padding: 2.5rem 1.5rem;
     border-radius: var(--radius-md);
@@ -392,7 +412,8 @@ header p {
     border: 1px solid #f1f5f9;
 }
 
-.vocab-card:hover, .number-card:hover {
+.vocab-card:hover,
+.number-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 25px -5px rgba(42, 82, 190, 0.1);
     border-color: var(--primary-blue);
@@ -474,7 +495,7 @@ header p {
     position: relative;
     margin: 0 auto 1.5rem;
     background: white;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .clock-face {
@@ -495,7 +516,8 @@ header p {
     z-index: 10;
 }
 
-.hour-hand, .minute-hand {
+.hour-hand,
+.minute-hand {
     position: absolute;
     bottom: 50%;
     left: 50%;
@@ -523,10 +545,29 @@ header p {
     font-weight: bold;
 }
 
-.twelve { top: 5px; left: 50%; transform: translateX(-50%); }
-.three { right: 10px; top: 50%; transform: translateY(-50%); }
-.six { bottom: 5px; left: 50%; transform: translateX(-50%); }
-.nine { left: 10px; top: 50%; transform: translateY(-50%); }
+.twelve {
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.three {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.six {
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nine {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /* Comparison container (Tu vs Vous) */
 .comparison-container {
@@ -536,7 +577,8 @@ header p {
     margin-top: 2rem;
 }
 
-.tu-section, .vous-section {
+.tu-section,
+.vous-section {
     background: white;
     padding: 2.5rem;
     border-radius: var(--radius-lg);
@@ -544,8 +586,13 @@ header p {
     border-top: 8px solid;
 }
 
-.tu-section { border-color: var(--accent-green); }
-.vous-section { border-color: var(--primary-blue); }
+.tu-section {
+    border-color: var(--accent-green);
+}
+
+.vous-section {
+    border-color: var(--primary-blue);
+}
 
 .example-phrase {
     margin-top: 2rem;
@@ -608,7 +655,12 @@ header p {
 }
 
 /* PHRASE CARDS & PRONOUNS */
-.phrase-card, .pronoun-card, .vocab-item, .ending-card, .verb-section, .tip-box {
+.phrase-card,
+.pronoun-card,
+.vocab-item,
+.ending-card,
+.verb-section,
+.tip-box {
     background: white;
     padding: 2rem;
     border-radius: var(--radius-md);
@@ -618,19 +670,24 @@ header p {
     margin-bottom: 1.5rem;
 }
 
-.phrase-card:hover, .pronoun-card:hover {
+.phrase-card:hover,
+.pronoun-card:hover {
     transform: translateY(-5px);
     border-color: var(--primary-blue);
 }
 
-.introduction-phrases, .pronouns-grid, .endings-grid, .time-vocab-grid {
+.introduction-phrases,
+.pronouns-grid,
+.endings-grid,
+.time-vocab-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
 }
 
-.pronoun-visual, .phrase-icon {
+.pronoun-visual,
+.phrase-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -660,8 +717,13 @@ header p {
     transition: background 0.2s;
 }
 
-.conjugation-row:last-child { border-bottom: none; }
-.conjugation-row:hover { background: #f8fafc; }
+.conjugation-row:last-child {
+    border-bottom: none;
+}
+
+.conjugation-row:hover {
+    background: #f8fafc;
+}
 
 .conjugation-row .pronoun {
     font-weight: 600;
@@ -691,8 +753,15 @@ header p {
 
 /* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Matching Game Styles */
@@ -808,9 +877,19 @@ header p {
 }
 
 @keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-10px); }
-    75% { transform: translateX(10px); }
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
 }
 
 .game-stats {
@@ -883,9 +962,22 @@ header p {
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-30px);}
-    60% {transform: translateY(-15px);}
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
 }
 
 .btn-reset {
@@ -916,7 +1008,15 @@ footer {
 
 /* Responsive fixes */
 @media (max-width: 768px) {
-    header h1 { font-size: 1.8rem; }
-    .lessons-overview h2 { font-size: 1.8rem; }
-    .comparison-container { grid-template-columns: 1fr; }
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .lessons-overview h2 {
+        font-size: 1.8rem;
+    }
+
+    .comparison-container {
+        grid-template-columns: 1fr;
+    }
 }
