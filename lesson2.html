@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="header-content">
-            <h1>🔢 Lesson 2: Les Nombres</h1>
+            <h1>Lesson 2: Les Nombres</h1>
             <p>Counting & Telling Time in French</p>
         </div>
     </header>
@@ -225,7 +225,10 @@
     <script src="script.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            speak("Lesson 2 Les Nombres")
+            speak("Lesson 2")
+            setTimeout(() => {
+                speak("Les Nombres")
+            }, 1000);
         });
     </script>
 </body>

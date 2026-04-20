@@ -1,11 +1,41 @@
-function speak(text) {
+function speak(text, gender = 'female') {
     // Stop any current speech
     window.speechSynthesis.cancel();
 
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'fr-FR';
-    utterance.rate = 0.9; // Slightly slower for better learning
-    utterance.pitch = 1.0;
+
+    // Try to find a specific French voice based on gender
+    const voices = window.speechSynthesis.getVoices();
+    const frVoices = voices.filter(v => v.lang.startsWith('fr'));
+
+    if (frVoices.length > 0) {
+        let selectedVoice = null;
+        if (gender === 'male') {
+            selectedVoice = frVoices.find(v =>
+                v.name.toLowerCase().includes('male') ||
+                v.name.toLowerCase().includes('paul') ||
+                v.name.toLowerCase().includes('thomas') ||
+                v.name.toLowerCase().includes('daniel') ||
+                v.name.toLowerCase().includes('julien')
+            );
+        } else {
+            selectedVoice = frVoices.find(v =>
+                v.name.toLowerCase().includes('female') ||
+                v.name.toLowerCase().includes('audrey') ||
+                v.name.toLowerCase().includes('julie') ||
+                v.name.toLowerCase().includes('hortense') ||
+                v.name.toLowerCase().includes('celine') ||
+                v.name.toLowerCase().includes('lea')
+            );
+        }
+        // Fallback to first French voice if gender match is not found
+        utterance.voice = selectedVoice || frVoices[0];
+    }
+
+    utterance.rate = 0.9;
+    // Slight pitch adjustment as a backup for gender differentiation
+    utterance.pitch = gender === 'male' ? 0.8 : 1.1;
 
     window.speechSynthesis.speak(utterance);
 }
@@ -108,41 +138,77 @@ let currentSet = 0;
 const allPairs = [
     [
         { en: "Hello", fr: "Bonjour" },
-        { en: "Good night", fr: "Bonne nuit" },
-        { en: "Thank you", fr: "Merci" },
-        { en: "Goodbye", fr: "Au revoir" },
-        { en: "Please", fr: "S'il vous plaît" },
-        { en: "See you soon", fr: "À bientôt" },
-        { en: "Welcome", fr: "Bienvenue" },
-        { en: "Hi / Bye", fr: "Salut" }
-    ],
-    [
         { en: "Good afternoon", fr: "Bon après-midi" },
         { en: "Good evening", fr: "Bonsoir" },
+        { en: "Good night", fr: "Bonne nuit" },
+        { en: "Hi / Bye", fr: "Salut" },
+        { en: "Goodbye", fr: "Au revoir" },
+        { en: "Thank you", fr: "Merci" },
+        { en: "Welcome", fr: "Bienvenue" }
+    ],
+    [
         { en: "You're welcome", fr: "De rien" },
         { en: "Nice to meet you", fr: "Enchanté" },
+        { en: "See you soon", fr: "À bientôt" },
         { en: "See you tomorrow", fr: "À demain" },
         { en: "See you later", fr: "À plus tard" },
         { en: "Until next time", fr: "À la prochaine" },
+        { en: "Please", fr: "S'il vous plaît" },
         { en: "Sorry", fr: "Désolé" }
+    ],
+    [
+        { en: "Have a good day", fr: "Bonne journée" },
+        { en: "Have a good evening", fr: "Bonne soirée" },
+        { en: "Excuse me", fr: "Excusez-moi" },
+        { en: "Pardon?", fr: "Pardon?" },
+        { en: "Sir", fr: "Monsieur" },
+        { en: "Madam", fr: "Madame" },
+        { en: "Miss", fr: "Mademoiselle" },
+        { en: "Hello Sir", fr: "Bonjour Monsieur" }
+    ],
+    [
+        { en: "How are you? (Tu)", fr: "Comment vas-tu?" },
+        { en: "How are you? (Vous)", fr: "Comment allez-vous?" },
+        { en: "How's it going?", fr: "Comment ça va?" },
+        { en: "Are you well? (Tu)", fr: "Tu vas bien?" },
+        { en: "Are you well? (Vous)", fr: "Vous allez bien?" },
+        { en: "I am doing well", fr: "Je vais bien" },
+        { en: "Things are going well", fr: "Ça va bien" },
+        { en: "Things are going badly", fr: "Ça va mal" }
+    ],
+    [
+        { en: "My name is...", fr: "Je m'appelle..." },
+        { en: "I am...", fr: "Je suis..." },
+        { en: "Me, This is...", fr: "Moi, c'est..." },
+        { en: "What is your name? (Tu)", fr: "Comment tu t'appelles?" },
+        { en: "What is your name? (Vous)", fr: "Comment vous appelez-vous?" },
+        { en: "How do you spell it?", fr: "Comment ça s'épelle?" },
+        { en: "So-so", fr: "Comme ci comme ça" },
+        { en: "I'm fine", fr: "Ça va" }
     ]
 ];
 
 function initGame() {
     const enCol = document.getElementById('english-column');
     const frCol = document.getElementById('french-column');
+    const setIndicator = document.getElementById('set-indicator');
     if (!enCol || !frCol) return;
 
     const currentPairs = allPairs[currentSet];
+
+    // Update set indicator
+    if (setIndicator) {
+        setIndicator.textContent = `Set ${currentSet + 1} / ${allPairs.length}`;
+    }
 
     // Reset stats for the current set
     matches = 0;
     attempts = 0;
     updateStats();
 
-    // Hide next button
-    const nextBtn = document.getElementById('next-set-container');
-    if (nextBtn) nextBtn.style.display = 'none';
+    // Hide submit button
+    const submitBtn = document.getElementById('submit-container');
+    if (submitBtn) submitBtn.style.display = 'none';
 
     // Enable interaction
     enCol.style.pointerEvents = 'auto';
@@ -175,10 +241,28 @@ function initGame() {
     });
 }
 
+function loadPreviousSet() {
+    if (currentSet > 0) {
+        currentSet--;
+        initGame();
+    }
+}
+
+function loadNextSetManually() {
+    if (currentSet < allPairs.length - 1) {
+        currentSet++;
+        initGame();
+    }
+}
+
 function selectItem(element, side) {
     if (element.classList.contains('matched')) return;
 
     playSound('click');
+
+    if (side === 'fr') {
+        speak(element.dataset.value);
+    }
 
     if (side === 'en') {
         if (selectedEn) selectedEn.classList.remove('selected');
@@ -233,29 +317,20 @@ function checkMatch() {
 }
 
 function handleSetCompletion() {
-    if (currentSet < allPairs.length - 1) {
-        // Show next button
-        setTimeout(() => {
-            playSound('win');
-            const nextBtn = document.getElementById('next-set-container');
-            if (nextBtn) nextBtn.style.display = 'block';
+    // Show submit button when 8 words are matched
+    setTimeout(() => {
+        playSound('win');
+        const submitBtn = document.getElementById('submit-container');
+        if (submitBtn) submitBtn.style.display = 'block';
 
-            // Disable further clicks until next set
-            document.getElementById('english-column').style.pointerEvents = 'none';
-            document.getElementById('french-column').style.pointerEvents = 'none';
-        }, 500);
-    } else {
-        // Final completion
-        setTimeout(() => {
-            playSound('win');
-            showSuccess();
-        }, 500);
-    }
+        // Disable further clicks
+        document.getElementById('english-column').style.pointerEvents = 'none';
+        document.getElementById('french-column').style.pointerEvents = 'none';
+    }, 500);
 }
 
-function loadNextSet() {
-    currentSet++;
-    initGame();
+function submitSet() {
+    showSuccess();
 }
 
 function updateStats() {
@@ -269,8 +344,30 @@ function updateStats() {
 function showSuccess() {
     const modal = document.getElementById('success-modal');
     const finalAttempts = document.getElementById('final-attempts');
+    const modalTitle = modal.querySelector('h2');
+    const modalText = modal.querySelector('p');
+    const modalBtn = modal.querySelector('.btn-reset');
+
     if (modal && finalAttempts) {
         finalAttempts.textContent = attempts;
+
+        // Appreciation logic
+        if (currentSet < allPairs.length - 1) {
+            modalTitle.textContent = "Fantastique!";
+            modalText.textContent = `You finished Set ${currentSet + 1}! You are doing great!`;
+            modalBtn.textContent = "Next Set ➡️";
+            modalBtn.onclick = () => {
+                modal.style.display = 'none';
+                currentSet++;
+                initGame();
+            };
+        } else {
+            modalTitle.textContent = "Magnifique!";
+            modalText.textContent = "You have completed all sets for Lesson 1!";
+            modalBtn.textContent = "Play Again 🔄";
+            modalBtn.onclick = () => resetGame();
+        }
+
         modal.style.display = 'flex';
     }
 }

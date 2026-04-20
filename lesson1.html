@@ -11,10 +11,9 @@
 </head>
 
 <body>
-
     <header>
         <div class="header-content">
-            <h1>🤝 Lesson 1: Les Salutations</h1>
+            <h1>Lesson 1: Les Salutations</h1>
             <p>Greetings & Politeness in French</p>
         </div>
     </header>
@@ -29,8 +28,9 @@
                 <h3>🎯 Learning Goals</h3>
                 <ul>
                     <li>Greet people in French</li>
+                    <li>Understand Tu vs vous</li>
                     <li>Use simple everyday phrases</li>
-                    <li>Understand Tu vs Vous</li>
+                    <li>Get to know names</li>
                     <li>Learn the French alphabet</li>
                     <li>Culture & Civilisation</li>
                 </ul>
@@ -143,7 +143,7 @@
 
             <!-- Titles & Examples -->
             <div class="example-box">
-                <h3>🎩 Titles & Politeness</h3>
+                <h3>🎩 Titles </h3>
                 <div class="vocabulary-grid">
                     <div class="vocab-card" onclick="speak('Monsieur')">
                         <div class="vocab-image">👨</div>
@@ -182,7 +182,11 @@
                     </div>
                 </div>
             </div>
+
+
         </section>
+
+
         <section class="content-section">
             <h2>👥 Tu vs Vous</h2>
             <div class="comparison-container">
@@ -194,7 +198,7 @@
                     </div>
                     <p>Use for friends, family, and pets!</p>
                     <div class="example-phrase">
-                        <strong>Example:</strong> "Salut! Comment tu vas?"
+                        <strong>Example:</strong> "Salut! Comment vas-tu?"
                     </div>
                 </div>
                 <div class="vous-section">
@@ -206,6 +210,167 @@
                     <p>Use for teachers, adults, and strangers.</p>
                     <div class="example-phrase">
                         <strong>Example:</strong> "Bonjour! Comment allez-vous?"
+                    </div>
+                </div>
+                <div class="example-box" style="margin-top: 2rem;">
+                    <h3>😊 Comment ça va? (How are you?)</h3>
+                    <div class="example-grid">
+                        <div class="example-item" onclick="speak('Comment vas-tu?')">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span class="french">Comment vas-tu?</span>
+                                <span class="badge"
+                                    style="background: var(--accent-green); color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: bold;">INFORMAL</span>
+                            </div>
+                            <span class="english">How are you?</span>
+                        </div>
+                        <div class="example-item" onclick="speak('Tu vas bien?')">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span class="french">Tu vas bien?</span>
+                                <span class="badge"
+                                    style="background: var(--accent-green); color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: bold;">INFORMAL</span>
+                            </div>
+                            <span class="english">Are you doing well?</span>
+                        </div>
+                        <div class="example-item" onclick="speak('Comment ça va?')" style="grid-column: 1 / -1;">
+                            <span class="french">Comment ça va? / Ça va?</span>
+                            <span class="english">How's it going? (Very common)</span>
+                        </div>
+                        <div class="example-item" onclick="speak('Comment allez-vous?')">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span class="french">Comment allez-vous?</span>
+                                <span class="badge"
+                                    style="background: var(--primary-blue); color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: bold;">FORMAL</span>
+                            </div>
+                            <span class="english">How are you?</span>
+                        </div>
+                        <div class="example-item" onclick="speak('Vous allez bien?')">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span class="french">Vous allez bien?</span>
+                                <span class="badge"
+                                    style="background: var(--primary-blue); color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: bold;">FORMAL</span>
+                            </div>
+                            <span class="english">Are you doing well?</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-box" style="margin-top: 2rem;">
+                    <h3>💬 La Réponse (The Response)</h3>
+                    <p>Typical ways to answer "Comment ça va?":</p>
+                    <div class="example-grid">
+                        <div class="example-item" onclick="speak('Je vais bien')">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span class="french">Je vais bien.</span>
+                                <span style="font-size: 1.2rem;">😊</span>
+                            </div>
+                            <span class="english">I am doing well.</span>
+                        </div>
+                        <div class="example-item" onclick="speak('Ça va bien')">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span class="french">Ça va bien.</span>
+                                <span style="font-size: 1.2rem;">✨</span>
+                            </div>
+                            <span class="english">Things are going well.</span>
+                        </div>
+                        <div class="example-item" onclick="speak('Ça va')">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span class="french">Ça va.</span>
+                                <span style="font-size: 1.2rem;">👍</span>
+                            </div>
+                            <span class="english">I'm fine / It's going okay.</span>
+                        </div>
+                        <div class="example-item" onclick="speak('Comme ci comme ça')">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span class="french">Comme ci, comme ça.</span>
+                                <span style="font-size: 1.2rem;">↔️</span>
+                            </div>
+                            <span class="english">So-so / Not too bad.</span>
+                        </div>
+                        <div class="example-item" onclick="speak('Ça va mal')">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span class="french">Ça va mal.</span>
+                                <span style="font-size: 1.2rem;">😔</span>
+                            </div>
+                            <span class="english">Things are going badly.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>👋 Introductions & Names</h2>
+
+            <div class="example-box">
+                <h3>❓ Asking for Names</h3>
+                <div class="example-grid">
+                    <div class="example-item" onclick="speak('Comment tu t\'appelles')">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span class="french">Comment tu t'appelles?</span>
+                            <span class="badge"
+                                style="background: var(--accent-green); color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: bold;">INFORMAL</span>
+                        </div>
+                        <span class="english">What is your name?</span>
+                    </div>
+                    <div class="example-item" onclick="speak('Comment vous appelez-vous')">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span class="french">Comment vous appelez-vous?</span>
+                            <span class="badge"
+                                style="background: var(--primary-blue); color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: bold;">FORMAL</span>
+                        </div>
+                        <span class="english">What is your name?</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side-by-Side Layout -->
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                <div class="example-box" style="margin-top: 0;">
+                    <h3>👤 Saying your name</h3>
+                    <div class="vocabulary-grid" style="grid-template-columns: 1fr; gap: 1rem;">
+                        <div class="vocab-card" onclick="speak('Je m\'appelle')"
+                            style="height: 140px; display: flex; flex-direction: column; justify-content: center;">
+                            <div class="vocab-image">👤</div>
+                            <h3>Je m'appelle...</h3>
+                            <p class="translation">My name is...</p>
+                        </div>
+                        <div class="vocab-card" onclick="speak('Je suis')"
+                            style="height: 140px; display: flex; flex-direction: column; justify-content: center;">
+                            <div class="vocab-image">🪪</div>
+                            <h3>Je suis...</h3>
+                            <p class="translation">I am...</p>
+                        </div>
+                        <div class="vocab-card" onclick="speak('Moi c\'est')"
+                            style="height: 140px; display: flex; flex-direction: column; justify-content: center;">
+                            <div class="vocab-image">🗣️</div>
+                            <h3>Moi, c'est...</h3>
+                            <p class="translation">Me, this is... (Informal)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-box" style="margin-top: 0;">
+                    <h3>💡 Practice Introductions</h3>
+                    <div class="vocabulary-grid" style="grid-template-columns: 1fr; gap: 1rem;">
+                        <div class="vocab-card" onclick="speak('Je m\'appelle Alice')"
+                            style="height: 140px; display: flex; flex-direction: column; justify-content: center;">
+                            <div class="vocab-image">👩‍🏫</div>
+                            <h3>Je m'appelle Alice.</h3>
+                            <p class="translation">My name is Alice.</p>
+                        </div>
+                        <div class="vocab-card" onclick="speak('Je suis Marc')"
+                            style="height: 140px; display: flex; flex-direction: column; justify-content: center;">
+                            <div class="vocab-image">👨‍💼</div>
+                            <h3>Je suis Marc.</h3>
+                            <p class="translation">I am Marc.</p>
+                        </div>
+                        <div class="vocab-card" onclick="speak('Moi c\'est Thomas')"
+                            style="height: 140px; display: flex; flex-direction: column; justify-content: center;">
+                            <div class="vocab-image">👦</div>
+                            <h3>Moi, c'est Thomas.</h3>
+                            <p class="translation">Me, this is Thomas.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -241,6 +406,72 @@
                 <div class="alphabet-card" onclick="speak('Z')">Z</div>
             </div>
         </section>
+
+        <div class="example-box" style="margin-top: 2rem;">
+            <h3>⌨️ Spelling Names</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+                <!-- Key Question -->
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div class="example-item" onclick="speak('Comment ça s\'épelle')" style="margin-top: 0;">
+                        <span class="french">Comment ça s’épelle?</span>
+                        <span class="english">How do you spell it?</span>
+                    </div>
+                    <p style="font-size: 0.9rem; color: #666; margin: 0; padding: 0 0.5rem;">Use this question to ask
+                        someone how to spell their name or any word.</p>
+                </div>
+
+                <!-- Interactive Dialogue -->
+                <div
+                    style="background: rgba(var(--primary-blue-rgb, 74, 144, 226), 0.05); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--primary-blue);">
+                    <h4
+                        style="margin-top: 0; margin-bottom: 1.2rem; color: var(--primary-blue); display: flex; align-items: center; gap: 8px;">
+                        💬 Mini-Conversation
+                    </h4>
+                    <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                        <div onclick="speak('Bonjour ! Comment tu t\'appelles ?')"
+                            style="cursor: pointer; padding: 4px 8px; border-radius: 6px; transition: background 0.2s;"
+                            onmouseover="this.style.background='white'"
+                            onmouseout="this.style.background='transparent'">
+                            <strong>A:</strong> <span style="color: var(--primary-blue);">Bonjour ! Comment tu
+                                t’appelles ?</span>
+                        </div>
+                        <div onclick="speak('Je m’appelle Lucas')"
+                            style="cursor: pointer; padding: 4px 8px; border-radius: 6px; transition: background 0.2s; margin-bottom: 0.5rem;"
+                            onmouseover="this.style.background='white'"
+                            onmouseout="this.style.background='transparent'">
+                            <strong>B:</strong> <span style="color: var(--text-main);">Je m’appelle Lucas.</span>
+                        </div>
+                        <hr style="border: none; border-top: 1px dashed #ccc; margin: 0.5rem 0;">
+                        <div onclick="speak('Comment ça s’épelle ?')"
+                            style="cursor: pointer; padding: 4px 8px; border-radius: 6px; transition: background 0.2s;"
+                            onmouseover="this.style.background='white'"
+                            onmouseout="this.style.background='transparent'">
+                            <strong>A:</strong> <span style="color: var(--primary-blue);">Comment ça s’épelle ?</span>
+                        </div>
+                        <div onclick="speak('El - oo - kah - ah - ess')"
+                            style="cursor: pointer; padding: 4px 8px; border-radius: 6px; transition: background 0.2s; margin-bottom: 0.5rem;"
+                            onmouseover="this.style.background='white'"
+                            onmouseout="this.style.background='transparent'">
+                            <strong>B:</strong> <span style="color: var(--text-main);">L-U-C-A-S.</span>
+                        </div>
+                        <hr style="border: none; border-top: 1px dashed #ccc; margin: 0.5rem 0;">
+                        <div onclick="speak('Merci !')"
+                            style="cursor: pointer; padding: 4px 8px; border-radius: 6px; transition: background 0.2s;"
+                            onmouseover="this.style.background='white'"
+                            onmouseout="this.style.background='transparent'">
+                            <strong>A:</strong> <span style="color: var(--primary-blue);">Merci !</span>
+                        </div>
+                        <div onclick="speak('De rien !')"
+                            style="cursor: pointer; padding: 4px 8px; border-radius: 6px; transition: background 0.2s;"
+                            onmouseover="this.style.background='white'"
+                            onmouseout="this.style.background='transparent'">
+                            <strong>B:</strong> <span style="color: var(--text-main);">De rien !</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section class="game-section" id="matching-game">
             <div class="game-header">
                 <div class="game-controls">
@@ -250,6 +481,17 @@
                 </div>
                 <h2>🎮 Match the Greetings!</h2>
                 <p>Click an English word and then its French match to pair them up!</p>
+
+                <div class="game-nav-controls"
+                    style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-top: 1.5rem;">
+                    <button id="prev-btn" class="nav-btn-sm" onclick="loadPreviousSet()" title="Previous Set"
+                        style="background: white; border: 1px solid #ddd; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s;">⬅️</button>
+                    <span id="set-indicator"
+                        style="font-weight: 600; color: var(--primary-blue); min-width: 80px; text-align: center;">Set 1
+                        / 5</span>
+                    <button id="next-btn" class="nav-btn-sm" onclick="loadNextSetManually()" title="Next Set"
+                        style="background: white; border: 1px solid #ddd; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s;">➡️</button>
+                </div>
             </div>
             <div class="game-container">
                 <div class="game-column" id="english-column">
@@ -270,8 +512,9 @@
                 </div>
             </div>
 
-            <div id="next-set-container" style="display: none; text-align: center; margin-top: 2rem;">
-                <button class="btn-reset" onclick="loadNextSet()">Next Set ➡️</button>
+            <div id="submit-container" style="display: none; text-align: center; margin-top: 2rem;">
+                <button class="btn-reset" style="background: var(--accent-green); border-color: var(--accent-green);"
+                    onclick="submitSet()">Submit Set ✅</button>
             </div>
         </section>
 
@@ -287,6 +530,334 @@
                 <button class="btn-reset" onclick="resetGame()">Play Again 🔄</button>
             </div>
         </div>
+
+        <section class="content-section" id="role-play">
+            <h2 onclick="speak('Jeux de rôle')" style="cursor: pointer;" title="Click to hear pronunciation">🎭 Jeux de rôle - Role play</h2>
+            
+            <div style="display: flex; flex-direction: column; gap: 3rem;">
+                <!-- Informal Dialogue -->
+                <div class="example-box" style="margin-top: 0; border-left: 8px solid var(--accent-green);">
+                    <h3 onclick="speak('Conversation informelle')" style="cursor: pointer; color: var(--accent-green); display: flex; align-items: center; gap: 10px;">
+                        🤝 Conversation informelle 
+                        <span class="badge" style="background: var(--accent-green); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem;">TU</span>
+                    </h3>
+                    <p style="margin-bottom: 1.5rem; color: var(--text-muted);">A casual chat between friends Marie and Alex.</p>
+                    
+                    <div style="background: white; padding: 1.5rem; border-radius: 12px; display: flex; flex-direction: column; gap: 1rem;">
+                        <!-- Marie -->
+                        <div onclick="speak('Salut !', 'female')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(233, 30, 99, 0.05); border: none;">
+                            <div style="background: #e91e63; color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">M</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem;">Marie</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Salut !</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(Hi!)</span>
+                        </div>
+
+                        <!-- Alex -->
+                        <div onclick="speak('Salut ! Comment ça va ?', 'male')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(42, 82, 190, 0.05); border: none;">
+                            <div style="background: var(--primary-blue); color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">A</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem;">Alex</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Salut ! Comment ça va ?</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(Hi! How are you?)</span>
+                        </div>
+
+                        <!-- Marie -->
+                        <div onclick="speak('Ça va bien. Merci. Et toi ?', 'female')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(233, 30, 99, 0.05); border: none;">
+                            <div style="background: #e91e63; color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">M</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem;">Marie</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Ça va bien. Merci. Et toi ?</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(I'm fine. Thank you. And you?)</span>
+                        </div>
+
+                        <!-- Alex -->
+                        <div onclick="speak('Ça va très bien.', 'male')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(42, 82, 190, 0.05); border: none;">
+                            <div style="background: var(--primary-blue); color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">A</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem;">Alex</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Ça va très bien.</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(I’m very good.)</span>
+                        </div>
+
+                        <!-- Marie -->
+                        <div onclick="speak('Comment tu t’appelles ?', 'female')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(233, 30, 99, 0.05); border: none;">
+                            <div style="background: #e91e63; color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">M</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem;">Marie</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Comment tu t’appelles ?</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(What is your name?)</span>
+                        </div>
+
+                        <!-- Alex -->
+                        <div onclick="speak('Je m’appelle Alex. Et toi ?', 'male')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(42, 82, 190, 0.05); border: none;">
+                            <div style="background: var(--primary-blue); color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">A</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem;">Alex</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Je m’appelle Alex. Et toi ?</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(My name is Alex. And you?)</span>
+                        </div>
+
+                        <!-- Marie -->
+                        <div onclick="speak('Je m’appelle Marie.', 'female')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(233, 30, 99, 0.05); border: none;">
+                            <div style="background: #e91e63; color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">M</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem;">Marie</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Je m’appelle Marie.</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(My name is Marie.)</span>
+                        </div>
+
+                        <!-- Alex -->
+                        <div onclick="speak('Enchanté !', 'male')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(42, 82, 190, 0.05); border: none;">
+                            <div style="background: var(--primary-blue); color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">A</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem;">Alex</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Enchanté !</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(Nice to meet you!)</span>
+                        </div>
+
+                        <!-- Marie -->
+                        <div onclick="speak('Enchantée !', 'female')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(233, 30, 99, 0.05); border: none;">
+                            <div style="background: #e91e63; color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">M</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem;">Marie</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Enchantée !</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(Nice to meet you!)</span>
+                        </div>
+
+                        <!-- Alex -->
+                        <div onclick="speak('Bon, je dois partir.', 'male')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(42, 82, 190, 0.05); border: none;">
+                            <div style="background: var(--primary-blue); color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">A</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem;">Alex</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Bon, je dois partir.</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(Well, I have to leave.)</span>
+                        </div>
+
+                        <!-- Marie -->
+                        <div onclick="speak('D’accord, à demain !', 'female')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(233, 30, 99, 0.05); border: none;">
+                            <div style="background: #e91e63; color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">M</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem;">Marie</p>
+                                <p style="margin: 0; font-size: 1.05rem;">D’accord, à demain !</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(OK, see you tomorrow!)</span>
+                        </div>
+
+                        <!-- Alex -->
+                        <div onclick="speak('À demain ! Salut !', 'male')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(42, 82, 190, 0.05); border: none;">
+                            <div style="background: var(--primary-blue); color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">A</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem;">Alex</p>
+                                <p style="margin: 0; font-size: 1.05rem;">À demain ! Salut !</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(See you tomorrow! Bye!)</span>
+                        </div>
+
+                        <!-- Marie -->
+                        <div onclick="speak('Salut !', 'female')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(233, 30, 99, 0.05); border: none;">
+                            <div style="background: #e91e63; color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">M</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem;">Marie</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Salut !</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(Bye!)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formal Dialogue -->
+                <div class="example-box" style="margin-top: 0; border-left: 8px solid var(--primary-blue);">
+                    <h3 onclick="speak('Conversation formelle')" style="cursor: pointer; color: var(--primary-blue); display: flex; align-items: center; gap: 10px;">
+                        🎩 Conversation formelle 
+                        <span class="badge" style="background: var(--primary-blue); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem;">VOUS</span>
+                    </h3>
+                    <p style="margin-bottom: 1.5rem; color: var(--text-muted);">A polite exchange between Paul and Madame Sophie.</p>
+                    
+                    <div style="background: white; padding: 1.5rem; border-radius: 12px; display: flex; flex-direction: column; gap: 1rem;">
+                        <div onclick="speak('Bonjour Madame. Comment allez-vous ?', 'male')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(42, 82, 190, 0.05);">
+                            <div style="background: var(--primary-blue); color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">P</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem;">Paul</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Bonjour Madame. Comment allez-vous ?</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(Good morning Madam. How are you?)</span>
+                        </div>
+
+                        <div onclick="speak('Bonjour Monsieur. Je vais bien, merci. Et vous ?', 'female')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(233, 30, 99, 0.05);">
+                            <div style="background: #e91e63; color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">S</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem;">Sophie</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Bonjour Monsieur. Je vais bien, merci. Et vous ?</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(Good morning Sir. I am doing well, thank you. And you?)</span>
+                        </div>
+
+                        <div onclick="speak('Très bien, merci. Comment vous appelez-vous ?', 'male')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(42, 82, 190, 0.05);">
+                            <div style="background: var(--primary-blue); color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">P</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem;">Paul</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Très bien, merci. Comment vous appelez-vous ?</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(Very well, thank you. What is your name?)</span>
+                        </div>
+
+                        <div onclick="speak('Je m\'appelle Sophie. Et vous ?', 'female')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(233, 30, 99, 0.05);">
+                            <div style="background: #e91e63; color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">S</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem;">Sophie</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Je m'appelle Sophie. Et vous ?</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(My name is Sophie. And you?)</span>
+                        </div>
+
+                        <div onclick="speak('Je m’appelle Paul. Ravi de vous rencontrer, Madame.', 'male')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(42, 82, 190, 0.05);">
+                            <div style="background: var(--primary-blue); color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">P</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem;">Paul</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Je m’appelle Paul. Ravi de vous rencontrer, Madame.</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(My name is Paul. Nice to meet you, Madam.)</span>
+                        </div>
+
+                        <div onclick="speak('Ravie de vous rencontrer aussi, Monsieur.', 'female')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(233, 30, 99, 0.05);">
+                            <div style="background: #e91e63; color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">S</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem;">Sophie</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Ravie de vous rencontrer aussi, Monsieur.</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(Nice to meet you too, Sir.)</span>
+                        </div>
+
+                        <div onclick="speak('Bonne journée, Madame.', 'male')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(42, 82, 190, 0.05);">
+                            <div style="background: var(--primary-blue); color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">P</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem;">Paul</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Bonne journée, Madame.</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(Have a good day, Madam.)</span>
+                        </div>
+
+                        <div onclick="speak('Bonne journée, Monsieur. À bientôt !', 'female')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(233, 30, 99, 0.05);">
+                            <div style="background: #e91e63; color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">S</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem;">Sophie</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Bonne journée, Monsieur. À bientôt !</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(Have a good day, Sir. See you soon!)</span>
+                        </div>
+
+                        <div onclick="speak('Au revoir Madame.', 'male')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(42, 82, 190, 0.05);">
+                            <div style="background: var(--primary-blue); color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">P</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem;">Paul</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Au revoir Madame.</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(Goodbye Madam.)</span>
+                        </div>
+
+                        <div onclick="speak('Au revoir Monsieur.', 'female')" class="example-item" style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(233, 30, 99, 0.05);">
+                            <div style="background: #e91e63; color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">S</div>
+                            <div style="flex-grow: 1;">
+                                <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem;">Sophie</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Au revoir Monsieur.</p>
+                            </div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(Goodbye Sir.)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 onclick="speak('Culture et Civilisation: Les Pays Francophones')" style="cursor: pointer;"
+                title="Click to hear pronunciation">🌍 Culture et Civilisation: Les Pays Francophones(French Speaking
+                Countries)</h2>
+            <div class="tip-box">
+                <p>French is an official language in <strong>29 countries</strong> around the world! These countries are
+                    spread across different regions:</p>
+                <ul style="margin-top: 1rem; list-style-type: none;">
+                    <li>🌍 <strong>Europe</strong> (like France, Belgium, Switzerland)</li>
+                    <li>🌍 <strong>Africa</strong> (largest number of French-speaking countries)</li>
+                    <li>🌍 <strong>North America</strong> (Canada)</li>
+                    <li>🌍 <strong>Caribbean & Pacific islands</strong> (Haiti, French Polynesia)</li>
+                </ul>
+            </div>
+
+            <p style="margin-top: 2rem;">Click on a country to hear its name in French:</p>
+            <div class="vocabulary-grid">
+                <div class="vocab-card" onclick="speak('La France')">
+                    <div class="vocab-image"></div>
+                    <h3>La France</h3>
+                    <p class="translation">France</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Le Canada')">
+                    <div class="vocab-image"></div>
+                    <h3>Le Canada</h3>
+                    <p class="translation">Canada</p>
+                </div>
+                <div class="vocab-card" onclick="speak('La Belgique')">
+                    <div class="vocab-image"></div>
+                    <h3>La Belgique</h3>
+                    <p class="translation">Belgium</p>
+                </div>
+                <div class="vocab-card" onclick="speak('La Suisse')">
+                    <div class="vocab-image"></div>
+                    <h3>La Suisse</h3>
+                    <p class="translation">Switzerland</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Le Sénégal')">
+                    <div class="vocab-image"></div>
+                    <h3>Le Sénégal</h3>
+                    <p class="translation">Senegal</p>
+                </div>
+                <div class="vocab-card" onclick="speak('La Côte d\'Ivoire')">
+                    <div class="vocab-image"></div>
+                    <h3>La Côte d'Ivoire</h3>
+                    <p class="translation">Ivory Coast</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Le Cameroun')">
+                    <div class="vocab-image"></div>
+                    <h3>Le Cameroun</h3>
+                    <p class="translation">Cameroon</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Le Vietnam')">
+                    <div class="vocab-image"></div>
+                    <h3>Le Vietnam</h3>
+                    <p class="translation">Vietnam</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Madagascar')">
+                    <div class="vocab-image"></div>
+                    <h3>Madagascar</h3>
+                    <p class="translation">Madagascar</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Haïti')">
+                    <div class="vocab-image"></div>
+                    <h3>Haïti</h3>
+                    <p class="translation">Haiti</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Le Luxembourg')">
+                    <div class="vocab-image"></div>
+                    <h3>Le Luxembourg</h3>
+                    <p class="translation">Luxembourg</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Monaco')">
+                    <div class="vocab-image"></div>
+                    <h3>Monaco</h3>
+                    <p class="translation">Monaco</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <p>Lesson 1 complete! You're doing great! 🌟</p>
@@ -294,7 +865,10 @@
     <script src="script.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            speak("Lesson 1 Les Salutations")
+            speak("Lesson 1")
+            setTimeout(() => {
+                speak("Les Salutations")
+            }, 1000);
         });
     </script>
 </body>
