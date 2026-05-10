@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="header-content">
-            <h1>Lesson 2: Les Nombres</h1>
+            <h1>Lesson 2: On Compte!</h1>
             <p>Counting & Telling Time in French</p>
         </div>
     </header>
@@ -28,7 +28,7 @@
             <div class="goals-box">
                 <h3>🎯 Learning Goals</h3>
                 <ul>
-                    <li>Count numbers 1-20</li>
+                    <li>Count numbers 0-50</li>
                     <li>Tell time (hours & minutes)</li>
                     <li>Special time expressions</li>
                     <li>Parts of the day</li>
@@ -38,94 +38,387 @@
         </section>
 
         <section class="content-section">
-            <h2>🔢 Numbers 1-20 (Les Nombres)</h2>
-            <div class="numbers-grid">
-                <div class="number-card" onclick="speak('un')">
-                    <h3>1</h3>
-                    <p class="french-word">un</p>
+            <h2 onclick="speak('Les nombres  de  0  à  50')" style="cursor: pointer;"
+                title="Click to hear pronunciation">🔢 Les Nombres de 0 à 50 </h2>
+
+            <div
+                style="max-width: 600px; margin: 0 auto; background: white; padding: 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                <!-- Number 0 centered above columns -->
+                <div class="number-card" onclick="speak('zéro')"
+                    style="padding: 1rem; margin: 0 auto 1.5rem; width: fit-content; min-width: 200px;">
+                    <h3 style="font-size: 1.5rem; margin: 0;">0</h3>
+                    <p class="french-word" style="font-size: 1rem; margin: 0;">zéro</p>
                 </div>
-                <div class="number-card" onclick="speak('deux')">
-                    <h3>2</h3>
-                    <p class="french-word">deux</p>
+
+                <div
+                    style="display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(10, auto); grid-auto-flow: column; gap: 1rem;">
+                    <!-- Column 1: 1-10 -->
+                    <div class="number-card" onclick="speak('un')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">1</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">un</p>
+                    </div>
+                    <div class="number-card" onclick="speak('deux')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">2</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">deux</p>
+                    </div>
+                    <div class="number-card" onclick="speak('trois')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">3</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">trois</p>
+                    </div>
+                    <div class="number-card" onclick="speak('quatre')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">4</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">quatre</p>
+                    </div>
+                    <div class="number-card" onclick="speak('cinq')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">5</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">cinq</p>
+                    </div>
+                    <div class="number-card" onclick="speak('six')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">6</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">six</p>
+                    </div>
+                    <div class="number-card" onclick="speak('sept')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">7</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">sept</p>
+                    </div>
+                    <div class="number-card" onclick="speak('huit')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">8</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">huit</p>
+                    </div>
+                    <div class="number-card" onclick="speak('neuf')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">9</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">neuf</p>
+                    </div>
+                    <div class="number-card" onclick="speak('dix')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">10</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">dix</p>
+                    </div>
+
+                    <!-- Column 2: 11-20 -->
+                    <div class="number-card" onclick="speak('onze')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">11</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">onze</p>
+                    </div>
+                    <div class="number-card" onclick="speak('douze')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">12</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">douze</p>
+                    </div>
+                    <div class="number-card" onclick="speak('treize')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">13</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">treize</p>
+                    </div>
+                    <div class="number-card" onclick="speak('quatorze')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">14</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">quatorze</p>
+                    </div>
+                    <div class="number-card" onclick="speak('quinze')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">15</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">quinze</p>
+                    </div>
+                    <div class="number-card" onclick="speak('seize')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">16</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">seize</p>
+                    </div>
+                    <div class="number-card" onclick="speak('dix-sept')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">17</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">dix-sept</p>
+                    </div>
+                    <div class="number-card" onclick="speak('dix-huit')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">18</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">dix-huit</p>
+                    </div>
+                    <div class="number-card" onclick="speak('dix-neuf')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">19</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">dix-neuf</p>
+                    </div>
+                    <div class="number-card" onclick="speak('vingt')" style="padding: 1rem; margin: 0;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">20</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt</p>
+                    </div>
                 </div>
-                <div class="number-card" onclick="speak('trois')">
-                    <h3>3</h3>
-                    <p class="french-word">trois</p>
+            </div>
+
+            <div style="margin-top: 4rem; display: flex; flex-direction: column; gap: 2rem;">
+                <h3 onclick="speak('Quel âge as-tu?', 'male')"
+                    style="text-align: center; color: var(--primary-blue); cursor: pointer; font-size: 1.8rem;"
+                    title="Click to hear pronunciation">🎂 Asking for Age (L'Âge)</h3>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <!-- Informal -->
+                    <div class="example-box"
+                        style="margin-top: 0; border-left: 8px solid var(--accent-green); background: white; padding: 20px; border-radius: 12px; box-shadow: var(--shadow-sm);">
+                        <h4 onclick="speak('Conversation informelle')"
+                            style="cursor: pointer; color: var(--accent-green); display: flex; align-items: center; gap: 10px; margin-top: 0;">
+                            🤝 Informal <span class="badge"
+                                style="background: var(--accent-green); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem;">TU</span>
+                        </h4>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div class="example-item" onclick="speak('Quel âge as-tu?', 'male')"
+                                style="padding: 10px; border-radius: 8px; background: rgba(34, 197, 94, 0.05); cursor: pointer; transition: 0.3s; border: 1px solid transparent;"
+                                onmouseover="this.style.borderColor='var(--accent-green)'"
+                                onmouseout="this.style.borderColor='transparent'">
+                                <p style="margin: 0; font-size: 1.05rem;"><strong>Quel âge as-tu ?</strong></p>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted); font-style: italic;">
+                                    (How old are you?)</p>
+                            </div>
+                            <div class="example-item" onclick="speak('Tu as quel âge?', 'male')"
+                                style="padding: 10px; border-radius: 8px; background: rgba(34, 197, 94, 0.05); cursor: pointer; transition: 0.3s; border: 1px solid transparent;"
+                                onmouseover="this.style.borderColor='var(--accent-green)'"
+                                onmouseout="this.style.borderColor='transparent'">
+                                <p style="margin: 0; font-size: 1.05rem;"><strong>Tu as quel âge ?</strong></p>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted); font-style: italic;">
+                                    (How old are you?)</p>
+                            </div>
+                            <div class="example-item" onclick="speak('J’ai huit ans', 'female')"
+                                style="padding: 10px; border-radius: 8px; background: rgba(233, 30, 99, 0.05); cursor: pointer; transition: 0.3s; border: 1px solid transparent;"
+                                onmouseover="this.style.borderColor='#e91e63'"
+                                onmouseout="this.style.borderColor='transparent'">
+                                <p style="margin: 0; font-size: 1.05rem;"><strong>J'ai 8 ans.</strong></p>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted); font-style: italic;">
+                                    (I am 8 years old.)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formal -->
+                    <div class="example-box"
+                        style="margin-top: 0; border-left: 8px solid var(--primary-blue); background: white; padding: 20px; border-radius: 12px; box-shadow: var(--shadow-sm);">
+                        <h4 onclick="speak('Conversation formelle')"
+                            style="cursor: pointer; color: var(--primary-blue); display: flex; align-items: center; gap: 10px; margin-top: 0;">
+                            🎩 Formal <span class="badge"
+                                style="background: var(--primary-blue); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem;">VOUS</span>
+                        </h4>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div class="example-item" onclick="speak('Quel âge avez-vous?', 'male')"
+                                style="padding: 10px; border-radius: 8px; background: rgba(42, 82, 190, 0.05); cursor: pointer; transition: 0.3s; border: 1px solid transparent;"
+                                onmouseover="this.style.borderColor='var(--primary-blue)'"
+                                onmouseout="this.style.borderColor='transparent'">
+                                <p style="margin: 0; font-size: 1.05rem;"><strong>Quel âge avez-vous ?</strong></p>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted); font-style: italic;">
+                                    (How old are you?)</p>
+                            </div>
+                            <div class="example-item" onclick="speak('Vous avez quel âge?', 'male')"
+                                style="padding: 10px; border-radius: 8px; background: rgba(42, 82, 190, 0.05); cursor: pointer; transition: 0.3s; border: 1px solid transparent;"
+                                onmouseover="this.style.borderColor='var(--primary-blue)'"
+                                onmouseout="this.style.borderColor='transparent'">
+                                <p style="margin: 0; font-size: 1.05rem;"><strong>Vous avez quel âge ?</strong></p>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted); font-style: italic;">
+                                    (How old are you?)</p>
+                            </div>
+                            <div class="example-item" onclick="speak('J’ai vingt ans', 'female')"
+                                style="padding: 10px; border-radius: 8px; background: rgba(233, 30, 99, 0.05); cursor: pointer; transition: 0.3s; border: 1px solid transparent;"
+                                onmouseover="this.style.borderColor='#e91e63'"
+                                onmouseout="this.style.borderColor='transparent'">
+                                <p style="margin: 0; font-size: 1.05rem;"><strong>J'ai 20 ans.</strong></p>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted); font-style: italic;">
+                                    (I am 20 years old.)</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="number-card" onclick="speak('quatre')">
-                    <h3>4</h3>
-                    <p class="french-word">quatre</p>
-                </div>
-                <div class="number-card" onclick="speak('cinq')">
-                    <h3>5</h3>
-                    <p class="french-word">cinq</p>
-                </div>
-                <div class="number-card" onclick="speak('six')">
-                    <h3>6</h3>
-                    <p class="french-word">six</p>
-                </div>
-                <div class="number-card" onclick="speak('sept')">
-                    <h3>7</h3>
-                    <p class="french-word">sept</p>
-                </div>
-                <div class="number-card" onclick="speak('huit')">
-                    <h3>8</h3>
-                    <p class="french-word">huit</p>
-                </div>
-                <div class="number-card" onclick="speak('neuf')">
-                    <h3>9</h3>
-                    <p class="french-word">neuf</p>
-                </div>
-                <div class="number-card" onclick="speak('dix')">
-                    <h3>10</h3>
-                    <p class="french-word">dix</p>
-                </div>
-                <div class="number-card" onclick="speak('onze')">
-                    <h3>11</h3>
-                    <p class="french-word">onze</p>
-                </div>
-                <div class="number-card" onclick="speak('douze')">
-                    <h3>12</h3>
-                    <p class="french-word">douze</p>
-                </div>
-                <div class="number-card" onclick="speak('treize')">
-                    <h3>13</h3>
-                    <p class="french-word">treize</p>
-                </div>
-                <div class="number-card" onclick="speak('quatorze')">
-                    <h3>14</h3>
-                    <p class="french-word">quatorze</p>
-                </div>
-                <div class="number-card" onclick="speak('quinze')">
-                    <h3>15</h3>
-                    <p class="french-word">quinze</p>
-                </div>
-                <div class="number-card" onclick="speak('seize')">
-                    <h3>16</h3>
-                    <p class="french-word">seize</p>
-                </div>
-                <div class="number-card" onclick="speak('dix-sept')">
-                    <h3>17</h3>
-                    <p class="french-word">dix-sept</p>
-                </div>
-                <div class="number-card" onclick="speak('dix-huit')">
-                    <h3>18</h3>
-                    <p class="french-word">dix-huit</p>
-                </div>
-                <div class="number-card" onclick="speak('dix-neuf')">
-                    <h3>19</h3>
-                    <p class="french-word">dix-neuf</p>
-                </div>
-                <div class="number-card" onclick="speak('vingt')">
-                    <h3>20</h3>
-                    <p class="french-word">vingt</p>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <h3 onclick="speak('Les nombres de 21 à 50')"
+                    style="color: var(--primary-blue); margin-bottom: 2rem; font-size: 1.5rem; text-align: center; cursor: pointer;"
+                    title="Click to hear pronunciation">🔢 Les nombres de 21 à 50</h3>
+
+                <div class="numbers-grid"
+                    style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; align-items: stretch;">
+                    <!-- 21 -->
+                    <div class="number-card" onclick="speak('vingt et un')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">21</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt et un</p>
+                    </div>
+                    <!-- 22 -->
+                    <div class="number-card" onclick="speak('vingt-deux')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">22</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt-deux</p>
+                    </div>
+                    <!-- 23 -->
+                    <div class="number-card" onclick="speak('vingt-trois')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">23</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt-trois</p>
+                    </div>
+                    <!-- 24 -->
+                    <div class="number-card" onclick="speak('vingt-quatre')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">24</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt-quatre</p>
+                    </div>
+                    <!-- 25 -->
+                    <div class="number-card" onclick="speak('vingt-cinq')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">25</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt-cinq</p>
+                    </div>
+                    <!-- 26 -->
+                    <div class="number-card" onclick="speak('vingt-six')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">26</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt-six</p>
+                    </div>
+                    <!-- 27 -->
+                    <div class="number-card" onclick="speak('vingt-sept')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">27</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt-sept</p>
+                    </div>
+                    <!-- 28 -->
+                    <div class="number-card" onclick="speak('vingt-huit')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">28</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt-huit</p>
+                    </div>
+                    <!-- 29 -->
+                    <div class="number-card" onclick="speak('vingt-neuf')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">29</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt-neuf</p>
+                    </div>
+                    <!-- 30 -->
+                    <div class="number-card" onclick="speak('trente')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">30</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente</p>
+                    </div>
+                    <!-- 31 -->
+                    <div class="number-card" onclick="speak('trente et un')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">31</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente et un</p>
+                    </div>
+                    <!-- 32 -->
+                    <div class="number-card" onclick="speak('trente-deux')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">32</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente-deux</p>
+                    </div>
+                    <!-- 33 -->
+                    <div class="number-card" onclick="speak('trente-trois')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">33</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente-trois</p>
+                    </div>
+                    <!-- 34 -->
+                    <div class="number-card" onclick="speak('trente-quatre')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">34</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente-quatre</p>
+                    </div>
+                    <!-- 35 -->
+                    <div class="number-card" onclick="speak('trente-cinq')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">35</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente-cinq</p>
+                    </div>
+                    <!-- 36 -->
+                    <div class="number-card" onclick="speak('trente-six')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">36</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente-six</p>
+                    </div>
+                    <!-- 37 -->
+                    <div class="number-card" onclick="speak('trente-sept')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">37</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente-sept</p>
+                    </div>
+                    <!-- 38 -->
+                    <div class="number-card" onclick="speak('trente-huit')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">38</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente-huit</p>
+                    </div>
+                    <!-- 39 -->
+                    <div class="number-card" onclick="speak('trente-neuf')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">39</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente-neuf</p>
+                    </div>
+                    <!-- 40 -->
+                    <div class="number-card" onclick="speak('quarante')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">40</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante</p>
+                    </div>
+                    <!-- 41 -->
+                    <div class="number-card" onclick="speak('quarante et un')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">41</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante et un</p>
+                    </div>
+                    <!-- 42 -->
+                    <div class="number-card" onclick="speak('quarante-deux')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">42</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante-deux</p>
+                    </div>
+                    <!-- 43 -->
+                    <div class="number-card" onclick="speak('quarante-trois')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">43</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante-trois</p>
+                    </div>
+                    <!-- 44 -->
+                    <div class="number-card" onclick="speak('quarante-quatre')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">44</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante-quatre</p>
+                    </div>
+                    <!-- 45 -->
+                    <div class="number-card" onclick="speak('quarante-cinq')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">45</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante-cinq</p>
+                    </div>
+                    <!-- 46 -->
+                    <div class="number-card" onclick="speak('quarante-six')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">46</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante-six</p>
+                    </div>
+                    <!-- 47 -->
+                    <div class="number-card" onclick="speak('quarante-sept')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">47</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante-sept</p>
+                    </div>
+                    <!-- 48 -->
+                    <div class="number-card" onclick="speak('quarante-huit')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">48</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante-huit</p>
+                    </div>
+                    <!-- 49 -->
+                    <div class="number-card" onclick="speak('quarante-neuf')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">49</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante-neuf</p>
+                    </div>
+                    <!-- 50 -->
+                    <div class="number-card" onclick="speak('cinquante')"
+                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h3 style="font-size: 1.5rem; margin: 0;">50</h3>
+                        <p class="french-word" style="font-size: 1rem; margin: 0;">cinquante</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="content-section">
-            <h2>🕐 Telling Time (L'Heure)</h2>
-            <div class="vocabulary-grid">
+            <h2 onclick="speak('Quelle heure est-il ?')" style="cursor: pointer;" title="Click to hear pronunciation">🕐
+                Quelle heure est-il ?</h2>
+            <p onclick="speak('Il est quelle heure ?')"
+                style="text-align: center; color: var(--text-muted); font-size: 1.2rem; margin-top: -1rem; margin-bottom: 3rem; cursor: pointer;">
+                Il est quelle heure ? <span style="font-style: italic; color: #64748b; font-size: 1rem;">– What time is
+                    it?</span></p>
+
+            <div class="vocabulary-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <!-- 1:00 -->
                 <div class="vocab-card" onclick="speak('Il est une heure')">
                     <div class="analog-clock">
                         <div class="clock-face">
@@ -142,82 +435,612 @@
                     <p class="translation">It's 1:00</p>
                 </div>
 
-                <div class="vocab-card" onclick="speak('Il est trois heures et demie')">
+                <!-- 2:00 -->
+                <div class="vocab-card" onclick="speak('Il est deux heures')">
                     <div class="analog-clock">
                         <div class="clock-face">
                             <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
                                     class="six">6</span><span class="nine">9</span></div>
                             <div class="clock-hands">
-                                <div class="hour-hand" style="transform: rotate(105deg)"></div>
-                                <div class="minute-hand" style="transform: rotate(180deg)"></div>
-                            </div>
-                            <div class="clock-center"></div>
-                        </div>
-                    </div>
-                    <h3>Il est trois heures et demie</h3>
-                    <p class="translation">It's 3:30 (Half past 3)</p>
-                </div>
-                <div class="vocab-card" onclick="speak('Il est six heures et quart')">
-                    <div class="analog-clock">
-                        <div class="clock-face">
-                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
-                                    class="six">6</span><span class="nine">9</span></div>
-                            <div class="clock-hands">
-                                <div class="hour-hand" style="transform: rotate(195deg)"></div>
-                                <div class="minute-hand" style="transform: rotate(90deg)"></div>
-                            </div>
-                            <div class="clock-center"></div>
-                        </div>
-                    </div>
-                    <h3>Il est six heures et quart</h3>
-                    <p class="translation">It's 6:15 (Quarter past 6)</p>
-                </div>
-
-                <div class="vocab-card" onclick="speak('Il est quatre heures')">
-                    <div class="analog-clock">
-                        <div class="clock-face">
-                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
-                                    class="six">6</span><span class="nine">9</span></div>
-                            <div class="clock-hands">
-                                <div class="hour-hand" style="transform: rotate(120deg)"></div>
+                                <div class="hour-hand" style="transform: rotate(60deg)"></div>
                                 <div class="minute-hand" style="transform: rotate(0deg)"></div>
                             </div>
                             <div class="clock-center"></div>
                         </div>
                     </div>
-                    <h3>Il est quatre heures</h3>
-                    <p class="translation">It's 4:00</p>
+                    <h3>Il est deux heures</h3>
+                    <p class="translation">It's 2:00</p>
                 </div>
 
-                <div class="vocab-card" onclick="speak('Il est midi')">
+                <!-- 3:00 -->
+                <div class="vocab-card" onclick="speak('Il est trois heures')">
                     <div class="analog-clock">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(90deg)"></div>
+                                <div class="minute-hand" style="transform: rotate(0deg)"></div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+                    <h3>Il est trois heures</h3>
+                    <p class="translation">It's 3:00</p>
+                </div>
+            </div>
+
+            <div class="vocabulary-grid"
+                style="grid-template-columns: repeat(2, 1fr); margin-top: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <!-- 10:05 AM -->
+                <div class="vocab-card" onclick="speak('il est dix heures cinq du matin')">
+                    <div class="analog-clock">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(302.5deg)"></div>
+                                <div class="minute-hand" style="transform: rotate(30deg)"></div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+                    <h3>Il est dix heures cinq du matin</h3>
+                    <p class="translation">It's 10:05 in the morning (10:05 AM)</p>
+                </div>
+
+                <!-- 5:10 PM -->
+                <div class="vocab-card" onclick="speak('il est cinq heures dix du soir')">
+                    <div class="analog-clock"
+                        style="background: rgba(var(--primary-blue-rgb), 0.05); border-color: var(--primary-blue);">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(155deg)"></div>
+                                <div class="minute-hand" style="transform: rotate(60deg)"></div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+                    <h3>Il est cinq heures dix du soir</h3>
+                    <p class="translation">It's 5:10 in the evening (5:10 PM)</p>
+                </div>
+            </div>
+
+            <div class="vocabulary-grid" style="grid-template-columns: repeat(3, 1fr); margin-top: 3rem;">
+                <!-- Midi -->
+                <div class="vocab-card" onclick="speak('Il est midi')">
+                    <div class="analog-clock" style="background: rgba(255, 215, 0, 0.1); border-color: gold;">
                         <div class="clock-face">
                             <div class="clock-center" style="background: gold;"></div>
                             <div class="clock-hands">
-                                <div class="hour-hand" style="transform: rotate(0deg)"></div>
-                                <div class="minute-hand" style="transform: rotate(0deg)"></div>
+                                <div class="hour-hand" style="transform: rotate(0deg); width: 4px; height: 35%;"></div>
+                                <div class="minute-hand" style="transform: rotate(0deg); width: 2px; height: 45%;">
+                                </div>
                             </div>
                         </div>
                     </div>
                     <h3>Il est midi</h3>
-                    <p class="translation">It's Noon (12:00 PM)</p>
+                    <p class="translation">It's Noon (Mid afternoon)</p>
                 </div>
 
+                <!-- Minuit -->
                 <div class="vocab-card" onclick="speak('Il est minuit')">
                     <div class="analog-clock" style="background: #1e293b; border-color: #64748b;">
                         <div class="clock-face">
-                            <div class="clock-center" style="background: #94a3b8;"></div>
+                            <div class="clock-center" style="background: #64748b;"></div>
                             <div class="clock-hands">
-                                <div class="hour-hand" style="background: white; transform: rotate(0deg)"></div>
-                                <div class="minute-hand" style="background: #cbd5e1; transform: rotate(0deg)"></div>
+                                <div class="hour-hand"
+                                    style="background: white; transform: rotate(0deg); width: 4px; height: 35%;"></div>
+                                <div class="minute-hand"
+                                    style="background: #cbd5e1; transform: rotate(0deg); width: 2px; height: 45%;">
+                                </div>
                             </div>
                         </div>
                     </div>
                     <h3>Il est minuit</h3>
-                    <p class="translation">It's Midnight (12:00 AM)</p>
+                    <p class="translation">It's Midnight</p>
+                </div>
+
+                <!-- Douze heures de l'après midi -->
+                <div class="vocab-card" onclick="speak('Il est douze heures de l\'après-midi')">
+                    <div class="analog-clock">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(0deg); width: 4px; height: 35%;"></div>
+                                <div class="minute-hand" style="transform: rotate(0deg); width: 2px; height: 45%;">
+                                </div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+                    <h3>Il est douze heures de l'après midi</h3>
+                    <p class="translation">It's afternoon 12 (12:00 PM)</p>
                 </div>
             </div>
-        </section>
+
+            <div class="vocabulary-grid"
+                style="grid-template-columns: repeat(2, 1fr); margin-top: 3rem; gap: 2rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <!-- 5:15 consolidated with 3 buttons -->
+                <div class="vocab-card" style="cursor: default; padding: 1.5rem;">
+                    <div class="analog-clock">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(157.5deg); width: 4px; height: 35%;">
+                                </div>
+                                <div class="minute-hand" style="transform: rotate(90deg); width: 2px; height: 45%;">
+                                </div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px; width: 100%;">
+                        <button class="interactive-pill" onclick="speak('Il est cinq heures quinze')"
+                            style="background: rgba(var(--primary-blue-rgb), 0.05); border: 1px solid var(--primary-blue); color: var(--primary-blue); padding: 8px; border-radius: 20px; cursor: pointer; font-weight: 600; transition: 0.3s; width: 100%;">
+                            Il est cinq heures quinze
+                        </button>
+                        <button class="interactive-pill" onclick="speak('Il est cinq heures et quart')"
+                            style="background: rgba(var(--accent-green-rgb), 0.05); border: 1px solid var(--accent-green); color: var(--accent-green); padding: 8px; border-radius: 20px; cursor: pointer; font-weight: 600; transition: 0.3s; width: 100%;">
+                            Il est cinq heures et quart
+                        </button>
+                        <button class="interactive-pill" onclick="speak('quart')"
+                            style="background: #f8fafc; border: 1px dashed #64748b; color: #64748b; padding: 8px; border-radius: 20px; cursor: pointer; font-size: 0.9rem; transition: 0.3s; width: 100%;">
+                            15 = quart (quarter)
+                        </button>
+                    </div>
+                    <p class="translation" style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">(It is 5:15 /
+                        Quarter past five)</p>
+                </div>
+
+                <!-- 5:30 consolidated with 3 buttons -->
+                <div class="vocab-card" style="cursor: default; padding: 1.5rem;">
+                    <div class="analog-clock">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(165deg); width: 4px; height: 35%;">
+                                </div>
+                                <div class="minute-hand" style="transform: rotate(180deg); width: 2px; height: 45%;">
+                                </div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px; width: 100%;">
+                        <button class="interactive-pill" onclick="speak('Il est cinq heures trente')"
+                            style="background: rgba(var(--primary-blue-rgb), 0.05); border: 1px solid var(--primary-blue); color: var(--primary-blue); padding: 8px; border-radius: 20px; cursor: pointer; font-weight: 600; transition: 0.3s; width: 100%;">
+                            Il est cinq heures trente
+                        </button>
+                        <button class="interactive-pill" onclick="speak('Il est cinq heures et demie')"
+                            style="background: rgba(233, 30, 99, 0.05); border: 1px solid #e91e63; color: #e91e63; padding: 8px; border-radius: 20px; cursor: pointer; font-weight: 600; transition: 0.3s; width: 100%;">
+                            Il est cinq heures et demie
+                        </button>
+                        <button class="interactive-pill" onclick="speak('demie')"
+                            style="background: #f8fafc; border: 1px dashed #64748b; color: #64748b; padding: 8px; border-radius: 20px; cursor: pointer; font-size: 0.9rem; transition: 0.3s; width: 100%;">
+                            30 = demie (half)
+                        </button>
+                    </div>
+                    <p class="translation" style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">(It is 5:30 / Half
+                        past five)</p>
+                </div>
+            </div>
+
+            <div class="vocabulary-grid"
+                style="grid-template-columns: 1fr; margin-top: 3rem; max-width: 1000px; margin-left: auto; margin-right: auto;">
+                <!-- 5:45 consolidated Card with 3-Column Layout -->
+                <div class="vocab-card"
+                    style="cursor: default; padding: 2rem; display: flex; flex-direction: row; align-items: center; gap: 2rem; flex-wrap: wrap; justify-content: center;">
+
+                    <!-- Column 1: Clock -->
+                    <div class="analog-clock" style="flex-shrink: 0; width: 130px; height: 130px;">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(172.5deg); width: 4px; height: 32%;">
+                                </div>
+                                <div class="minute-hand" style="transform: rotate(270deg); width: 2px; height: 45%;">
+                                </div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: French Buttons -->
+                    <div
+                        style="display: flex; flex-direction: column; gap: 12px; flex: 1.2; min-width: 280px; padding-right: 20px; border-right: 1px solid rgba(0,0,0,0.05);">
+                        <button class="interactive-pill" onclick="speak('Il est cinq heures quarante-cinq')"
+                            style="background: rgba(var(--primary-blue-rgb), 0.05); border: 1px solid var(--primary-blue); color: var(--primary-blue); padding: 12px; border-radius: 25px; cursor: pointer; font-weight: 600; transition: 0.3s; text-align: left; display: flex; align-items: center; gap: 10px; width: 100%;">
+                            <span style="font-size: 1.2rem;">🔊</span> Il est cinq heures quarante-cinq
+                        </button>
+                        <button class="interactive-pill" onclick="speak('Il est cinq heures trois quarts')"
+                            style="background: rgba(var(--accent-green-rgb), 0.05); border: 1px solid var(--accent-green); color: var(--accent-green); padding: 12px; border-radius: 25px; cursor: pointer; font-weight: 600; transition: 0.3s; text-align: left; display: flex; align-items: center; gap: 10px; width: 100%;">
+                            <span style="font-size: 1.2rem;">🔊</span> Il est cinq heures trois quarts
+                        </button>
+                        <button class="interactive-pill" onclick="speak('Il est six heures moins le quart')"
+                            style="background: rgba(233, 30, 99, 0.05); border: 1px solid #e91e63; color: #e91e63; padding: 12px; border-radius: 25px; cursor: pointer; font-weight: 600; transition: 0.3s; text-align: left; display: flex; align-items: center; gap: 10px; width: 100%;">
+                            <span style="font-size: 1.2rem;">🔊</span> Il est six heures moins le quart
+                        </button>
+                        <button class="interactive-pill" onclick="speak('trois quarts')"
+                            style="background: #f8fafc; border: 1px dashed #64748b; color: #64748b; padding: 10px; border-radius: 20px; cursor: pointer; font-size: 0.9rem; transition: 0.3s; width: 100%; text-align: center;">
+                            💡 45 = trois quarts
+                        </button>
+                    </div>
+
+                    <!-- Column 3: English Translation (Numerical Format) -->
+                    <div
+                        style="flex: 1; min-width: 200px; display: flex; flex-direction: column; gap: 12px; color: #64748b; font-size: 1rem; font-style: italic;">
+                        <div style="min-height: 50px; display: flex; align-items: center;">(It is 5:45)</div>
+                        <div style="min-height: 50px; display: flex; align-items: center;">(It is 5:45 / 3 quarts)</div>
+                        <div style="min-height: 50px; display: flex; align-items: center;">(It is quarter to 6:00)</div>
+                        <div
+                            style="min-height: 40px; display: flex; align-items: center; font-weight: bold; color: var(--text-muted); ">
+                            (45 = 3 quarters)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vocabulary-grid"
+                style="grid-template-columns: repeat(2, 1fr); margin-top: 3rem; gap: 2rem; max-width: 1100px; margin-left: auto; margin-right: auto;">
+                <!-- 5:35 Module -->
+                <div class="vocab-card"
+                    style="cursor: default; padding: 1.5rem; display: flex; flex-direction: row; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+                    <div class="analog-clock" style="width: 100px; height: 100px; flex-shrink: 0;">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(167.5deg); width: 4px; height: 30%;">
+                                </div>
+                                <div class="minute-hand" style="transform: rotate(210deg); width: 2px; height: 45%;">
+                                </div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+                    <div style="flex: 1; min-width: 200px;">
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <button class="interactive-pill" onclick="speak('Il est cinq heures trente-cinq')"
+                                style="background: rgba(var(--primary-blue-rgb), 0.05); border: 1px solid var(--primary-blue); color: var(--primary-blue); padding: 8px; border-radius: 20px; cursor: pointer; font-weight: 600; width: 100%; text-align: left; font-size: 0.9rem;">
+                                🔊 cinq heures trente-cinq
+                            </button>
+                            <button class="interactive-pill" onclick="speak('Il est six heures moins vingt-cinq')"
+                                style="background: rgba(var(--accent-green-rgb), 0.05); border: 1px solid var(--accent-green); color: var(--accent-green); padding: 8px; border-radius: 20px; cursor: pointer; font-weight: 600; width: 100%; text-align: left; font-size: 0.9rem;">
+                                🔊 il est six heures moins vingt-cinq
+                            </button>
+                        </div>
+                        <div
+                            style="margin-top: 10px; font-size: 0.85rem; color: #64748b; font-style: italic; display: flex; flex-direction: column; gap: 2px;">
+                            <span>(It is 5:35)</span>
+                            <span>(It is 25 minutes to 6:00)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6:50 Module -->
+                <div class="vocab-card"
+                    style="cursor: default; padding: 1.5rem; display: flex; flex-direction: row; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+                    <div class="analog-clock" style="width: 100px; height: 100px; flex-shrink: 0;">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(205deg); width: 4px; height: 30%;">
+                                </div>
+                                <div class="minute-hand" style="transform: rotate(300deg); width: 2px; height: 45%;">
+                                </div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+                    <div style="flex: 1; min-width: 200px;">
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <button class="interactive-pill" onclick="speak('il est six heures cinquante')"
+                                style="background: rgba(var(--primary-blue-rgb), 0.05); border: 1px solid var(--primary-blue); color: var(--primary-blue); padding: 10px; border-radius: 20px; cursor: pointer; font-weight: 600; width: 100%; text-align: left; font-size: 0.95rem;">
+                                🔊 il est six heures cinquante
+                            </button>
+                            <button class="interactive-pill" onclick="speak('il est sept heures moins dix')"
+                                style="background: #fff5f5; border: 1px solid #ff6b6b; color: #ff6b6b; padding: 10px; border-radius: 20px; cursor: pointer; font-weight: 600; width: 100%; text-align: left; font-size: 0.95rem;">
+                                🔊 il est sept heures moins dix
+                            </button>
+                        </div>
+                        <div
+                            style="margin-top: 10px; font-size: 0.85rem; color: #64748b; font-style: italic; display: flex; flex-direction: column; gap: 2px;">
+                            <span>(It is 6:50)</span>
+                            <span>(It is 10 minutes to 7:00)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Side-by-Side Games Container -->
+            <section class="content-section"
+                style="margin-top: 5rem; max-width: 1200px; margin-left: auto; margin-right: auto;">
+                <div style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; align-items: stretch;">
+
+                    <!-- Left: Numbers Game -->
+                    <div class="game-section" id="numbers-game-container"
+                        style="flex: 1; min-width: 320px; margin: 0; display: flex; flex-direction: column;">
+                        <div class="game-header">
+                            <h2>🎮 Les Nombres</h2>
+                            <p>Listen and click the digits!</p>
+                        </div>
+                        <div id="game-board"
+                            style="text-align: center; flex: 1; display: flex; flex-direction: column; justify-content: center;">
+                            <!-- Start Screen -->
+                            <div id="game-start-screen">
+                                <div style="font-size: 4rem; margin-bottom: 2rem;">🎲</div>
+                                <button onclick="initGame()" class="nav-btn"
+                                    style="width: auto; height: auto; padding: 1rem 2rem; border-radius: 50px; background: var(--primary-blue); color: white; border: none; font-weight: 800; cursor: pointer; margin: 0 auto;">Commencer
+                                    !</button>
+                            </div>
+                            <!-- Play Screen -->
+                            <div id="game-play-screen" style="display: none;">
+                                <div id="question-indicator"
+                                    style="font-weight: 600; color: var(--text-muted); background: #eee; padding: 5px 15px; border-radius: 20px; display: inline-block; margin-bottom: 1.5rem;">
+                                    Set 1 • 1/5</div>
+                                <div class="vocab-card" id="audio-trigger" onclick="playCurrentNumber()"
+                                    style="width: 120px; height: 120px; margin: 0 auto 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 4px solid var(--primary-blue); box-shadow: var(--shadow-md);">
+                                    <span style="font-size: 2.5rem;">🔊</span>
+                                    <span
+                                        style="font-size: 0.7rem; font-weight: 700; color: var(--primary-blue); margin-top: 5px;">ÉCOUTEZ</span>
+                                </div>
+                                <div id="options-container"
+                                    style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem;"></div>
+                            </div>
+                            <!-- Result Screen -->
+                            <div id="game-end-screen" style="display: none;">
+                                <div id="final-appreciation" style="font-size: 2rem; margin-bottom: 1rem;">🏆</div>
+                                <p id="game-result-text" style="color: var(--text-muted); margin-bottom: 1.5rem;"></p>
+                                <button id="next-btn" onclick="handleNextStep()" class="nav-btn"
+                                    style="width: auto; height: auto; padding: 0.8rem 2rem; border-radius: 50px; background: var(--accent-green); border: none; color: white; font-weight: 700; cursor: pointer;">Next
+                                    Set ➡️</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Time Game -->
+                    <div class="game-section" id="time-game-container"
+                        style="flex: 1; min-width: 320px; margin: 0; display: flex; flex-direction: column; background: linear-gradient(135deg, rgba(42, 82, 190, 0.05), rgba(224, 62, 82, 0.05)); border: 2px solid var(--accent-yellow);">
+                        <div class="game-header">
+                            <h2 style="color: var(--primary-red);">⏰ L'Heure</h2>
+                            <p>Listen and choose the clock!</p>
+                        </div>
+                        <div id="time-game-board"
+                            style="text-align: center; flex: 1; display: flex; flex-direction: column; justify-content: center;">
+                            <!-- Start Screen -->
+                            <div id="time-game-start-screen">
+                                <div style="font-size: 4rem; margin-bottom: 2rem;">🕰️</div>
+                                <button onclick="initTimeGame()" class="nav-btn"
+                                    style="width: auto; height: auto; padding: 1rem 2rem; border-radius: 50px; background: var(--primary-red); color: white; border: none; font-weight: 800; cursor: pointer; margin: 0 auto;">Commencer
+                                    !</button>
+                            </div>
+                            <!-- Play Screen -->
+                            <div id="time-game-play-screen" style="display: none;">
+                                <div id="time-question-indicator"
+                                    style="font-weight: 600; color: var(--text-muted); background: #eee; padding: 5px 15px; border-radius: 20px; display: inline-block; margin-bottom: 1.5rem;">
+                                    Set 1 • 1/5</div>
+                                <div class="vocab-card" id="time-audio-trigger" onclick="playCurrentTime()"
+                                    style="width: 120px; height: 120px; margin: 0 auto 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 4px solid var(--primary-red); box-shadow: var(--shadow-md);">
+                                    <span style="font-size: 2.5rem;">🔊</span>
+                                    <span
+                                        style="font-size: 0.7rem; font-weight: 700; color: var(--primary-red); margin-top: 5px;">ÉCOUTEZ</span>
+                                </div>
+                                <div id="time-options-container"
+                                    style="display: grid; grid-template-columns: repeat(1, 1fr); gap: 0.8rem;"></div>
+                            </div>
+                            <!-- Result Screen -->
+                            <div id="time-game-end-screen" style="display: none;">
+                                <div id="time-final-appreciation" style="font-size: 2rem; margin-bottom: 1rem;">🏆</div>
+                                <p id="time-game-result-text" style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                                </p>
+                                <button id="time-next-btn" onclick="handleTimeNextStep()" class="nav-btn"
+                                    style="width: auto; height: auto; padding: 0.8rem 2rem; border-radius: 50px; background: var(--accent-green); border: none; color: white; font-weight: 700; cursor: pointer;">Next
+                                    Set ➡️</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- Role Play Section -->
+            <section class="content-section" style="margin-top: 5rem; margin-bottom: 5rem;">
+                <h2 class="section-title" onclick="speak('jeu de role : Demander l’heure')" style="cursor: pointer;">
+                    🎭 Jeu de Rôle : Demander l’heure 🔊
+                    <span
+                        style="display: block; font-size: 1rem; color: #64748b; font-weight: 500; margin-top: 8px; font-style: italic;">(Role
+                        Play : Asking
+                        the time)</span>
+                </h2>
+                <div class="vocab-card"
+                    style="padding: 0; overflow: hidden; max-width: 900px; margin: 0 auto; border: 1px solid #e2e8f0; background: #fff; box-shadow: var(--shadow-md);">
+
+                    <!-- Row 1 -->
+                    <div class="roleplay-row" onclick="speak('Bonjour Madame ! Quelle heure est-il, s’il vous plaît ?')"
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; border-bottom: 1px solid #f1f5f9; cursor: pointer; transition: background 0.2s;">
+                        <div style="flex: 1.2;">
+                            <span
+                                style="display: block; font-weight: 800; color: var(--primary-blue); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Personne
+                                A</span>
+                            <span
+                                style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 1.2rem;">🔊</span> Bonjour Madame ! Quelle heure est-il, s’il
+                                vous plaît ?
+                            </span>
+                        </div>
+                        <div
+                            style="flex: 1; text-align: right; color: var(--text-muted); font-style: italic; font-size: 1rem;">
+                            Hello Ma’am! What time is it, please?
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="roleplay-row" onclick="speak('Il est neuf heures trente-cinq.')"
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; border-bottom: 1px solid #f1f5f9; background: #fafafa; cursor: pointer; transition: background 0.2s;">
+                        <div style="flex: 1.2;">
+                            <span
+                                style="display: block; font-weight: 800; color: var(--primary-red); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Personne
+                                B</span>
+                            <span
+                                style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 1.2rem;">🔊</span> Il est neuf heures trente-cinq.
+                            </span>
+                        </div>
+                        <div
+                            style="flex: 1; text-align: right; color: var(--text-muted); font-style: italic; font-size: 1rem;">
+                            It is 9:35.
+                        </div>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="roleplay-row" onclick="speak('Aaah,d\'accord! Merci beaucoup !')"
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; border-bottom: 1px solid #f1f5f9; cursor: pointer; transition: background 0.2s;">
+                        <div style="flex: 1.2;">
+                            <span
+                                style="display: block; font-weight: 800; color: var(--primary-blue); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Personne
+                                A</span>
+                            <span
+                                style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 1.2rem;">🔊</span> Ah, d'accord! Merci beaucoup !
+                            </span>
+                        </div>
+                        <div
+                            style="flex: 1; text-align: right; color: var(--text-muted); font-style: italic; font-size: 1rem;">
+                            Oh, I see! Thank you very much!
+                        </div>
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div class="roleplay-row" onclick="speak('Je vous en prie !')"
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; border-bottom: 1px solid #f1f5f9; background: #fafafa; cursor: pointer; transition: background 0.2s;">
+                        <div style="flex: 1.2;">
+                            <span
+                                style="display: block; font-weight: 800; color: var(--primary-red); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Personne
+                                B</span>
+                            <span
+                                style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 1.2rem;">🔊</span> Je vous en prie !
+                            </span>
+                        </div>
+                        <div
+                            style="flex: 1; text-align: right; color: var(--text-muted); font-style: italic; font-size: 1rem;">
+                            You’re welcome!
+                        </div>
+                    </div>
+
+                    <!-- Row 5 -->
+                    <div class="roleplay-row" onclick="speak('Bonne journée !')"
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; border-bottom: 1px solid #f1f5f9; cursor: pointer; transition: background 0.2s;">
+                        <div style="flex: 1.2;">
+                            <span
+                                style="display: block; font-weight: 800; color: var(--primary-blue); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Personne
+                                A</span>
+                            <span
+                                style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 1.2rem;">🔊</span> Bonne journée !
+                            </span>
+                        </div>
+                        <div
+                            style="flex: 1; text-align: right; color: var(--text-muted); font-style: italic; font-size: 1rem;">
+                            Have a nice day!
+                        </div>
+                    </div>
+
+                    <!-- Row 6 -->
+                    <div class="roleplay-row" onclick="speak('Bonne journée à vous aussi!')"
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; background: #fafafa; cursor: pointer; transition: background 0.2s;">
+                        <div style="flex: 1.2;">
+                            <span
+                                style="display: block; font-weight: 800; color: var(--primary-red); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Personne
+                                B</span>
+                            <span
+                                style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 1.2rem;">🔊</span> Bonne journée à vous aussi !
+                            </span>
+                        </div>
+                        <div
+                            style="flex: 1; text-align: right; color: var(--text-muted); font-style: italic; font-size: 1rem;">
+                            Have a nice day to you too !
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Culture & Civilisation Section -->
+            <section class="content-section">
+                <h2 onclick="speak('Culture et Civilisation: La France et ses Pays Voisins')" style="cursor: pointer;"
+                    title="Click to hear pronunciation">🌍 Culture et Civilisation: La France et ses Pays Voisins
+                    (France
+                    and its neighboring countries)</h2>
+                <div class="tip-box">
+                    <p>France is located in Western Europe and shares its borders with <strong>8 neighboring
+                            countries</strong>! It is also separated from the United Kingdom by <strong>La
+                            Manche</strong> (The English Channel). Let's learn their names in French:</p>
+                </div>
+
+                <!-- France Map -->
+                <div
+                    style="text-align: center; margin: 2rem 0; background: white; padding: 1.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                    <img src="images/france_map.png" alt="Map of France and neighboring countries"
+                        style="max-width: 100%; height: auto; border-radius: var(--radius-md);">
+                    <p style="margin-top: 1rem; color: var(--text-muted); font-style: italic; font-size: 0.9rem;">Map of
+                        France and its neighbors</p>
+                </div>
+
+                <div class="vocabulary-grid" style="margin-top: 2rem;">
+                    <div class="vocab-card" onclick="speak('La Belgique')">
+                        <div class="vocab-image">🇧🇪</div>
+                        <h3>La Belgique</h3>
+                        <p class="translation">Belgium</p>
+                    </div>
+                    <div class="vocab-card" onclick="speak('Le Luxembourg')">
+                        <div class="vocab-image">🇱🇺</div>
+                        <h3>Le Luxembourg</h3>
+                        <p class="translation">Luxembourg</p>
+                    </div>
+                    <div class="vocab-card" onclick="speak('L\'Allemagne')">
+                        <div class="vocab-image">🇩🇪</div>
+                        <h3>L'Allemagne</h3>
+                        <p class="translation">Germany</p>
+                    </div>
+                    <div class="vocab-card" onclick="speak('La Suisse')">
+                        <div class="vocab-image">🇨🇭</div>
+                        <h3>La Suisse</h3>
+                        <p class="translation">Switzerland</p>
+                    </div>
+                    <div class="vocab-card" onclick="speak('L\'Italie')">
+                        <div class="vocab-image">🇮🇹</div>
+                        <h3>L'Italie</h3>
+                        <p class="translation">Italy</p>
+                    </div>
+                    <div class="vocab-card" onclick="speak('L\'Espagne')">
+                        <div class="vocab-image">🇪🇸</div>
+                        <h3>L'Espagne</h3>
+                        <p class="translation">Spain</p>
+                    </div>
+                    <div class="vocab-card" onclick="speak('Monaco')">
+                        <div class="vocab-image">🇲🇨</div>
+                        <h3>Monaco</h3>
+                        <p class="translation">Monaco</p>
+                    </div>
+                    <div class="vocab-card" onclick="speak('Le Royaume-Uni')">
+                        <div class="vocab-image">🇬🇧</div>
+                        <h3>Le Royaume-Uni</h3>
+                        <p class="translation">United Kingdom</p>
+                    </div>
+                </div>
+            </section>
     </main>
     <footer>
         <p>Keep counting! You're brilliant! 🚀</p>
@@ -227,9 +1050,294 @@
         document.addEventListener('DOMContentLoaded', function () {
             speak("Lesson 2")
             setTimeout(() => {
-                speak("Les Nombres")
+                speak("On Compte!")
             }, 1000);
         });
+
+        // --- Shared Utilities ---
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        // --- Numbers Listening Game Logic ---
+        const game = {
+            currentQuestion: 0,
+            currentSet: 1,
+            maxSets: 5,
+            targetNumber: 0,
+            canClick: true,
+            attempts: 0
+        };
+
+        function initGame() {
+            game.currentQuestion = 0;
+            game.currentSet = 1;
+            game.attempts = 0;
+            game.canClick = true;
+            showNumberScreen('game-play-screen');
+            nextQuestion();
+        }
+
+        function handleNextStep() {
+            if (game.currentSet < game.maxSets) {
+                game.currentSet++;
+                game.currentQuestion = 0;
+                game.attempts = 0;
+                showNumberScreen('game-play-screen');
+                nextQuestion();
+            } else {
+                initGame();
+            }
+        }
+
+        function showNumberScreen(id) {
+            ['game-start-screen', 'game-play-screen', 'game-end-screen'].forEach(s => {
+                const el = document.getElementById(s);
+                if (el) el.style.display = (s === id) ? 'block' : 'none';
+            });
+        }
+
+        // Fisher-Yates Shuffle for truly random options
+        function shuffleOptions(array) {
+            return shuffleArray([...array]);
+        }
+
+        function nextQuestion() {
+            game.currentQuestion++;
+            if (game.currentQuestion > 5) {
+                finishGame();
+                return;
+            }
+
+            game.canClick = true;
+            document.getElementById('question-indicator').innerText = `Set ${game.currentSet} • Question ${game.currentQuestion} / 5`;
+
+            game.targetNumber = Math.floor(Math.random() * 50) + 1;
+
+            let options = [game.targetNumber];
+            while (options.length < 3) {
+                let rand = Math.floor(Math.random() * 50) + 1;
+                if (!options.includes(rand)) options.push(rand);
+            }
+
+            options = shuffleOptions(options);
+
+            const container = document.getElementById('options-container');
+            container.innerHTML = "";
+            options.forEach(num => {
+                const btn = document.createElement('button');
+                btn.className = "number-card";
+                btn.style.margin = "0";
+                btn.style.padding = "2rem 1rem";
+                btn.style.fontSize = "2rem";
+                btn.style.fontWeight = "800";
+                btn.innerHTML = num;
+                btn.onclick = () => handleChoice(num, btn);
+                container.appendChild(btn);
+            });
+
+            playCurrentNumber();
+        }
+
+        function playCurrentNumber() {
+            speak(game.targetNumber.toString());
+        }
+
+        function handleChoice(num, btn) {
+            if (!game.canClick || btn.disabled) return;
+            game.attempts++;
+
+            if (num === game.targetNumber) {
+                game.canClick = false;
+                btn.style.background = "#dcfce7";
+                btn.style.borderColor = "var(--accent-green)";
+                btn.style.color = "var(--accent-green)";
+                btn.innerHTML = num + " ✅";
+                setTimeout(() => nextQuestion(), 1200);
+            } else {
+                btn.style.background = "#fee2e2";
+                btn.style.borderColor = "var(--primary-red)";
+                btn.style.color = "var(--primary-red)";
+                btn.innerHTML = num + " ❌";
+                btn.disabled = true;
+                btn.style.cursor = "default";
+            }
+        }
+
+        function finishGame() {
+            showNumberScreen('game-end-screen');
+
+            let apFR = "", apEN = "", emo = "";
+            if (game.attempts === 5) { apFR = "Bravo !"; apEN = "Well done"; emo = "👏👏✨"; }
+            else if (game.attempts <= 8) { apFR = "Bien !"; apEN = "Good"; emo = "😊👍"; }
+            else { apFR = "Essaie encore !"; apEN = "Try again"; emo = "🎯🔥"; }
+
+            document.getElementById('final-appreciation').innerHTML = `
+                <div style="font-size: 4.5rem; margin-bottom: 1rem;">${emo}</div>
+                <div style="color: var(--primary-blue); font-size: 3rem;">${apFR}</div>
+                <div style="font-size: 1.3rem; color: var(--text-muted); font-weight: 600; margin-top: 5px; font-style: italic;">(${apEN})</div>
+            `;
+            document.getElementById('game-result-text').innerHTML = `Attempts: <b>${game.attempts}</b><br>Set ${game.currentSet} Complete!`;
+            setTimeout(() => speak(apFR), 500);
+
+            const btn = document.getElementById('next-btn');
+            if (game.currentSet < game.maxSets) {
+                btn.innerText = "Next Set ➡️";
+                btn.style.background = "var(--accent-green)";
+            } else {
+                btn.innerText = "Restart Game 🔄";
+                btn.style.background = "var(--primary-blue)";
+            }
+        }
+
+        // --- Time Listening Game Logic ---
+        const timeData = [
+            { fr: "Il est une heure", time: "1:00" },
+            { fr: "Il est deux heures et demie", time: "2:30" },
+            { fr: "Il est cinq heures et quart", time: "5:15" },
+            { fr: "Il est midi", time: "12:00" },
+            { fr: "Il est minuit", time: "00:00" },
+            { fr: "Il est six heures moins le quart", time: "5:45" },
+            { fr: "Il est sept heures moins dix", time: "6:50" },
+            { fr: "Il est huit heures vingt", time: "8:20" },
+            { fr: "Il est dix heures dix", time: "10:10" },
+            { fr: "Il est trois heures cinq", time: "3:05" },
+            { fr: "Il est quatre heures quarante-cinq", time: "4:45" },
+            { fr: "Il est neuf heures quinze", time: "9:15" },
+            { fr: "Il est onze heures vingt-cinq", time: "11:25" },
+            { fr: "Il est deux heures moins le quart", time: "1:45" },
+            { fr: "Il est cinq heures trente-cinq", time: "5:35" }
+        ];
+
+        const tGame = {
+            currentQuestion: 0,
+            currentSet: 1,
+            maxSets: 5,
+            target: null,
+            canClick: true,
+            attempts: 0
+        };
+
+        function initTimeGame() {
+            tGame.currentQuestion = 0;
+            tGame.currentSet = 1;
+            tGame.attempts = 0;
+            tGame.canClick = true;
+            showTimeScreen('time-game-play-screen');
+            nextTimeQuestion();
+        }
+
+        function handleTimeNextStep() {
+            if (tGame.currentSet < tGame.maxSets) {
+                tGame.currentSet++;
+                tGame.currentQuestion = 0;
+                tGame.attempts = 0;
+                showTimeScreen('time-game-play-screen');
+                nextTimeQuestion();
+            } else {
+                initTimeGame();
+            }
+        }
+
+        function showTimeScreen(id) {
+            ['time-game-start-screen', 'time-game-play-screen', 'time-game-end-screen'].forEach(s => {
+                const el = document.getElementById(s);
+                if (el) el.style.display = (s === id) ? 'block' : 'none';
+            });
+        }
+
+        function nextTimeQuestion() {
+            tGame.currentQuestion++;
+            if (tGame.currentQuestion > 5) {
+                finishTimeGame();
+                return;
+            }
+
+            tGame.canClick = true;
+            document.getElementById('time-question-indicator').innerText = `Set ${tGame.currentSet} • Question ${tGame.currentQuestion} / 5`;
+
+            const targetIdx = Math.floor(Math.random() * timeData.length);
+            tGame.target = timeData[targetIdx];
+
+            let options = [tGame.target];
+            while (options.length < 3) {
+                let rand = timeData[Math.floor(Math.random() * timeData.length)];
+                if (!options.some(o => o.time === rand.time)) options.push(rand);
+            }
+            options = shuffleArray(options);
+
+            const container = document.getElementById('time-options-container');
+            container.innerHTML = "";
+            options.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = "vocab-card";
+                btn.style.margin = "0";
+                btn.style.padding = "2rem 1rem";
+                btn.style.fontSize = "2rem";
+                btn.style.fontWeight = "800";
+                btn.style.fontFamily = "'Courier New', Courier, monospace";
+                btn.innerHTML = (opt.time === "00:00") ? "00:00" : opt.time;
+                btn.onclick = () => handleTimeChoice(opt, btn);
+                container.appendChild(btn);
+            });
+
+            playCurrentTime();
+        }
+
+        function playCurrentTime() {
+            speak(tGame.target.fr);
+        }
+
+        function handleTimeChoice(opt, btn) {
+            if (!tGame.canClick || btn.disabled) return;
+            tGame.attempts++;
+
+            if (opt.time === tGame.target.time) {
+                tGame.canClick = false;
+                btn.style.background = "#dcfce7";
+                btn.style.borderColor = "var(--accent-green)";
+                btn.style.color = "var(--accent-green)";
+                btn.innerHTML = btn.innerHTML.replace(" ❌", "") + " ✅";
+                setTimeout(() => nextTimeQuestion(), 1200);
+            } else {
+                btn.style.background = "#fee2e2";
+                btn.style.borderColor = "var(--primary-red)";
+                btn.style.color = "var(--primary-red)";
+                if (!btn.innerHTML.includes("❌")) btn.innerHTML += " ❌";
+                btn.disabled = true;
+                btn.style.cursor = "default";
+            }
+        }
+
+        function finishTimeGame() {
+            showTimeScreen('time-game-end-screen');
+
+            let apFR = "", apEN = "", emo = "";
+            if (tGame.attempts === 5) { apFR = "Bravo !"; apEN = "Well done"; emo = "👏👏✨"; }
+            else if (tGame.attempts <= 8) { apFR = "Bien !"; apEN = "Good"; emo = "😊👍"; }
+            else { apFR = "Essaie encore !"; apEN = "Try again"; emo = "🎯🔥"; }
+
+            document.getElementById('time-final-appreciation').innerHTML = `
+                <div style="font-size: 4.5rem; margin-bottom: 1rem;">${emo}</div>
+                <div style="color: var(--primary-red); font-size: 3rem;">${apFR}</div>
+                <div style="font-size: 1.3rem; color: var(--text-muted); font-weight: 600; margin-top: 5px; font-style: italic;">(${apEN})</div>
+            `;
+            document.getElementById('time-game-result-text').innerHTML = `Attempts: <b>${tGame.attempts}</b><br>Set ${tGame.currentSet} Complete!`;
+            setTimeout(() => speak(apFR), 500);
+
+            const btn = document.getElementById('time-next-btn');
+            if (tGame.currentSet < tGame.maxSets) {
+                btn.innerText = "Next Set ➡️";
+                btn.style.background = "var(--accent-green)";
+            } else {
+                btn.innerText = "Restart Game 🔄";
+                btn.style.background = "var(--primary-red)";
+            }
+        }
     </script>
 </body>
 

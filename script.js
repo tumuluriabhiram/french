@@ -21,10 +21,10 @@ function speak(text, gender = 'female') {
             );
         } else {
             selectedVoice = frVoices.find(v =>
+                v.name.toLowerCase().includes('hortense') ||
                 v.name.toLowerCase().includes('female') ||
                 v.name.toLowerCase().includes('audrey') ||
                 v.name.toLowerCase().includes('julie') ||
-                v.name.toLowerCase().includes('hortense') ||
                 v.name.toLowerCase().includes('celine') ||
                 v.name.toLowerCase().includes('lea')
             );
