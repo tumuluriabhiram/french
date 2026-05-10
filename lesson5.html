@@ -217,7 +217,7 @@
         <section class="content-section" style="background: linear-gradient(135deg, #fff5f5 0%, #fff0f6 100%); border: 2px solid #ffdeeb; padding: 2.5rem; border-radius: 20px; margin-bottom: 3rem;">
             <div style="display: flex; align-items: center; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: nowrap; white-space: nowrap;">
                 <h2 style="color: #d6336c; font-size: 2rem; margin: 0; cursor: pointer;" onclick="speak('Joyeux Anniversaire')">Joyeux Anniversaire</h2>
-                <img src="birthday_cake.png" alt="Birthday Cake" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 5px solid white; box-shadow: var(--shadow-md); flex-shrink: 0;">
+                <img src="images/birthday_cake.png" alt="Birthday Cake" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 5px solid white; box-shadow: var(--shadow-md); flex-shrink: 0;">
                 <h2 style="color: #d6336c; font-size: 2rem; margin: 0; cursor: pointer;" onclick="speak('Bon Anniversaire')">Bon Anniversaire</h2>
             </div>
             
@@ -265,12 +265,33 @@
                 </div>
             </div>
 
-            <!-- Play Button & YouTube Embed -->
-            <div style="text-align: center; margin-top: 2rem;">
-                <div style="max-width: 560px; margin: 0 auto; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow-lg); border: 3px solid #ffdeeb;">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/FhNGLVJKsBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <!-- Premium Audio Player Section -->
+            <div style="background: white; border-radius: 20px; padding: 2rem; box-shadow: var(--shadow-md); margin-top: 2rem; border: 2px solid #ffdeeb;">
+                <div style="display: flex; align-items: center; gap: 1.5rem; max-width: 600px; margin: 0 auto;">
+                    <!-- Audio Icon -->
+                    <div style="width: 80px; height: 80px; background: #fff0f6; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; flex-shrink: 0; border: 3px solid #ffdeeb; box-shadow: 0 4px 10px rgba(214, 51, 108, 0.1);">
+                        🎵
+                    </div>
+                    
+                    <!-- Info & Controls -->
+                    <div style="flex-grow: 1;">
+                        <h3 style="color: #d6336c; margin: 0 0 5px 0; font-size: 1.2rem;">Chanson : Joyeux Anniversaire</h3>
+                        <p style="color: var(--text-muted); margin: 0 0 15px 0; font-size: 0.9rem;">Écoutez la chanson traditionnelle</p>
+                        
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <button id="play-pause-btn" onclick="toggleAudio()" style="background: #d6336c; color: white; border: none; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; transition: all 0.2s; box-shadow: 0 4px 8px rgba(214, 51, 108, 0.3);">
+                                <span id="play-icon">▶️</span>
+                            </button>
+                            
+                            <div style="flex-grow: 1; height: 8px; background: #f1f5f9; border-radius: 4px; position: relative; overflow: hidden; cursor: pointer;" onclick="seekAudio(event)">
+                                <div id="audio-progress" style="position: absolute; top: 0; left: 0; height: 100%; width: 0%; background: #d6336c; border-radius: 4px;"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p style="margin-top: 1rem; color: #d6336c; font-weight: bold;">📺 Regardez et écoutez la chanson ! (Watch and listen to the song!)</p>
+                
+                <!-- Hidden YouTube Player Container -->
+                <div id="youtube-audio-player" style="position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none;"></div>
             </div>
         </section>
 
@@ -347,7 +368,7 @@
 
             <!-- Talking Children Illustration -->
             <div style="text-align: center; margin-bottom: 2rem;">
-                <img src="children_talking.png" alt="Boy and Girl Talking" 
+                <img src="images/children_talking.png" alt="Boy and Girl Talking" 
                     style="max-width: 400px; width: 100%; border-radius: 15px; filter: drop-shadow(var(--shadow-md));">
             </div>
 
@@ -356,55 +377,55 @@
             <div style="max-width: 700px; margin: 0 auto; background: white; padding: 2rem; border-radius: 15px; box-shadow: var(--shadow-md);">
                 <div style="display: flex; flex-direction: column; gap: 1.5rem;">
                     <!-- Max 1 -->
-                    <div style="align-self: flex-start; max-width: 80%; cursor: pointer;" onclick="speak('Salut ! Ça va ?')">
+                    <div style="align-self: flex-start; max-width: 80%; cursor: pointer;" onclick="speak('Salut ! Ça va ?', 'male')">
                         <div style="background: #e7f5ff; padding: 12px 18px; border-radius: 15px 15px 15px 0; border-left: 5px solid #1971c2;">
                             <strong style="color: #1971c2;">Max:</strong> Salut ! Ça va ?
                         </div>
                     </div>
                     <!-- Lina 1 -->
-                    <div style="align-self: flex-end; max-width: 80%; cursor: pointer;" onclick="speak('Oui, ça va bien, merci. Et toi ?')">
+                    <div style="align-self: flex-end; max-width: 80%; cursor: pointer;" onclick="speak('Oui, ça va bien, merci. Et toi ?', 'female')">
                         <div style="background: #fff0f6; padding: 12px 18px; border-radius: 15px 15px 0 15px; border-right: 5px solid #d6336c;">
                             <strong style="color: #d6336c;">Lina:</strong> Oui, ça va bien, merci. Et toi ?
                         </div>
                     </div>
                     <!-- Max 2 -->
-                    <div style="align-self: flex-start; max-width: 80%; cursor: pointer;" onclick="speak('Ça va ! Je veux t’inviter à mon anniversaire.')">
+                    <div style="align-self: flex-start; max-width: 80%; cursor: pointer;" onclick="speak('Ça va ! Je veux t’inviter à mon anniversaire.', 'male')">
                         <div style="background: #e7f5ff; padding: 12px 18px; border-radius: 15px 15px 15px 0; border-left: 5px solid #1971c2;">
                             <strong style="color: #1971c2;">Max:</strong> Ça va ! Je veux t’inviter à mon anniversaire.
                         </div>
                     </div>
                     <!-- Lina 2 -->
-                    <div style="align-self: flex-end; max-width: 80%; cursor: pointer;" onclick="speak('Ah bon ! C\'est quand ?')">
+                    <div style="align-self: flex-end; max-width: 80%; cursor: pointer;" onclick="speak('Ah bon ! C\'est quand ?', 'female')">
                         <div style="background: #fff0f6; padding: 12px 18px; border-radius: 15px 15px 0 15px; border-right: 5px solid #d6336c;">
                             <strong style="color: #d6336c;">Lina:</strong> Ah bon ! C'est quand ?
                         </div>
                     </div>
                     <!-- Max 3 -->
-                    <div style="align-self: flex-start; max-width: 80%; cursor: pointer;" onclick="speak('C’est samedi à dix sept heures, chez moi.')">
+                    <div style="align-self: flex-start; max-width: 80%; cursor: pointer;" onclick="speak('C’est samedi à dix sept heures, chez moi.', 'male')">
                         <div style="background: #e7f5ff; padding: 12px 18px; border-radius: 15px 15px 15px 0; border-left: 5px solid #1971c2;">
                             <strong style="color: #1971c2;">Max:</strong> C’est samedi à 17h, chez moi.
                         </div>
                     </div>
                     <!-- Lina 3 -->
-                    <div style="align-self: flex-end; max-width: 80%; cursor: pointer;" onclick="speak('Super ! Je peux venir avec plaisir.')">
+                    <div style="align-self: flex-end; max-width: 80%; cursor: pointer;" onclick="speak('Super ! Je peux venir avec plaisir.', 'female')">
                         <div style="background: #fff0f6; padding: 12px 18px; border-radius: 15px 15px 0 15px; border-right: 5px solid #d6336c;">
                             <strong style="color: #d6336c;">Lina:</strong> Super ! Je peux venir avec plaisir.
                         </div>
                     </div>
                     <!-- Max 4 -->
-                    <div style="align-self: flex-start; max-width: 80%; cursor: pointer;" onclick="speak('Génial ! On joue et on mange du gâteau.')">
+                    <div style="align-self: flex-start; max-width: 80%; cursor: pointer;" onclick="speak('Génial ! On joue et on mange du gâteau.', 'male')">
                         <div style="background: #e7f5ff; padding: 12px 18px; border-radius: 15px 15px 15px 0; border-left: 5px solid #1971c2;">
                             <strong style="color: #1971c2;">Max:</strong> Génial ! On joue et on mange du gâteau.
                         </div>
                     </div>
                     <!-- Lina 4 -->
-                    <div style="align-self: flex-end; max-width: 80%; cursor: pointer;" onclick="speak('Parfait, j’adore ça !')">
+                    <div style="align-self: flex-end; max-width: 80%; cursor: pointer;" onclick="speak('Parfait, j’adore ça !', 'female')">
                         <div style="background: #fff0f6; padding: 12px 18px; border-radius: 15px 15px 0 15px; border-right: 5px solid #d6336c;">
                             <strong style="color: #d6336c;">Lina:</strong> Parfait, j’adore ça !
                         </div>
                     </div>
                     <!-- Max 5 -->
-                    <div style="align-self: flex-start; max-width: 80%; cursor: pointer;" onclick="speak('À samedi alors !')">
+                    <div style="align-self: flex-start; max-width: 80%; cursor: pointer;" onclick="speak('À samedi alors !', 'male')">
                         <div style="background: #e7f5ff; padding: 12px 18px; border-radius: 15px 15px 15px 0; border-left: 5px solid #1971c2;">
                             <strong style="color: #1971c2;">Max:</strong> À samedi alors !
                         </div>
@@ -1064,7 +1085,76 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script>
+        // YouTube Audio Player Logic
+        let player;
+        let animationId;
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('youtube-audio-player', {
+                height: '0',
+                width: '0',
+                videoId: 'FhNGLVJKsBg',
+                playerVars: {
+                    'autoplay': 0,
+                    'controls': 0,
+                    'disablekb': 1,
+                    'fs': 0,
+                    'iv_load_policy': 3,
+                    'modestbranding': 1,
+                    'rel': 0,
+                    'showinfo': 0
+                },
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        function onPlayerStateChange(event) {
+            const playIcon = document.getElementById('play-icon');
+            if (event.data == YT.PlayerState.PLAYING) {
+                playIcon.textContent = '⏸️';
+                updateProgressBar();
+            } else {
+                playIcon.textContent = '▶️';
+                if (animationId) cancelAnimationFrame(animationId);
+            }
+        }
+
+        function toggleAudio() {
+            if (!player) return;
+            const state = player.getPlayerState();
+            if (state == YT.PlayerState.PLAYING) {
+                player.pauseVideo();
+            } else {
+                player.playVideo();
+            }
+        }
+
+        function updateProgressBar() {
+            if (player && player.getPlayerState() == YT.PlayerState.PLAYING) {
+                const duration = player.getDuration();
+                const currentTime = player.getCurrentTime();
+                if (duration > 0) {
+                    const progress = (currentTime / duration) * 100;
+                    document.getElementById('audio-progress').style.width = progress + '%';
+                }
+                animationId = requestAnimationFrame(updateProgressBar);
+            }
+        }
+
+        function seekAudio(event) {
+            if (!player) return;
+            const bar = event.currentTarget;
+            const rect = bar.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const clickedPercentage = x / rect.width;
+            const duration = player.getDuration();
+            player.seekTo(duration * clickedPercentage, true);
+        }
+
         function playBirthdaySong() {
             const lyrics = [
                 "Joyeux anniversaire!",
