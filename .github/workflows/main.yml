@@ -11,6 +11,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.4.0
       with:
+        server-dir: /www/francais.justlearning.net
         server: francais.justlearning.net
         username: radtum5
         password: ${{ secrets.ftp_password }}
