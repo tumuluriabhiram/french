@@ -1,7 +1,6 @@
 function speak(text, gender = 'female') {
     // Stop any current speech
     window.speechSynthesis.cancel();
-
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'fr-FR';
 
