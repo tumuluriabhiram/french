@@ -2,315 +2,353 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lesson 7: Family and Professions - Learn French</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn French family members and professions. Practice possessive adjectives and presenting your family. Lesson 7 for 4th graders." />
+    <title>Lesson 7: Ma Famille - Learn French with Fun!</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <header>
-    <div class="header-content">
-      <h1>Lesson 7: La Famille et les Professions (Family and Professions)</h1>
-    </div>
-  </header>
+    <header>
+        <div class="header-content">
+            <h1>Lesson 7: Ma Famille et les Professions</h1>
+            <p>Meet the Family & Explore Dream Jobs</p>
+        </div>
+    </header>
 
-  <nav class="side-toolbar">
-    <a href="index.html" class="nav-btn" title="Home">🏠 <span>Home</span></a>
-    <a href="lesson6.html" class="nav-btn" title="Previous Lesson">⬅️ <span>Prev</span></a>
-    <a href="lesson8.html" class="nav-btn" title="Next Lesson">➡️ <span>Next</span></a>
-  </nav>
-  <main class="lesson-page">
-    <div class="lesson-intro">
-      <div class="goals-box">
-        <h3>🎯 Learning Goals</h3>
-        <ul>
-          <li>Present family members in French</li>
-          <li>Talk about family members' professions</li>
-          <li>Learn possessive adjectives (my, your, his, her)</li>
-          <li>Use "c'est" vs "il est" correctly</li>
-          <li>Describe family relationships</li>
-          <li>Culture & Civilisation</li>
-        </ul>
-      </div>
-    </div>
-    <section class="content-section">
-      <h2>👨‍👩‍👧‍👦 La Famille (The Family)</h2>
-      <p class="section-intro">
-        Meet the family! Click each member to learn their French name.
-      </p>
-      <div class="family-tree">
-        <div class="generation grandparents">
-          <h3>👴👵 Les Grands-Parents</h3>
-          <div class="family-members">
-            <div class="family-card grandfather" onclick="playFamilyMember('grand-pere')">
-              <div class="family-image">
-                <div class="person-avatar grandpa">
-                  <div class="face">👴</div>
-                  <div class="accessories">👓</div>
+    <nav class="side-toolbar">
+        <a href="index.html" class="nav-btn" title="Home">🏠 <span>Home</span></a>
+        <a href="lesson6.html" class="nav-btn" title="Previous Lesson">⬅️ <span>Prev</span></a>
+        <a href="lesson8.html" class="nav-btn" title="Next Lesson">➡️ <span>Next</span></a>
+    </nav>
+
+    <main class="lesson-page">
+        <section class="lesson-intro">
+            <div class="goals-box">
+                <h3>🎯 Learning Goals</h3>
+                <ul>
+                    <li>Name family members in French</li>
+                    <li>Use possessive adjectives (mon, ma, mes)</li>
+                    <li>Learn common professions</li>
+                    <li>Use 'C'est' vs 'Il est / Elle est'</li>
+                    <li>Present your family members' jobs</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Family Members Section -->
+        <section class="content-section">
+            <h2>👨‍👩‍👧‍👦 La Famille (The Family)</h2>
+            <div class="vocabulary-grid">
+                <div class="vocab-card" onclick="speak('Le père')">
+                    <div class="vocab-image">👨</div>
+                    <h3>Le père</h3>
+                    <p class="translation">The father</p>
                 </div>
-              </div>
-              <h4>Le Grand-père</h4>
-              <p class="translation">Grandfather</p>
-              <div class="nickname">
-                <p><strong>Nickname:</strong> Grand-papa, Papi</p>
-              </div>
-            </div>
-            <div class="family-card grandmother" onclick="playFamilyMember('grand-mere')">
-              <div class="family-image">
-                <div class="person-avatar grandma">
-                  <div class="face">👵</div>
-                  <div class="accessories">👓</div>
+                <div class="vocab-card" onclick="speak('La mère')">
+                    <div class="vocab-image">👩</div>
+                    <h3>La mère</h3>
+                    <p class="translation">The mother</p>
                 </div>
-              </div>
-              <h4>La Grand-mère</h4>
-              <p class="translation">Grandmother</p>
-              <div class="nickname">
-                <p><strong>Nickname:</strong> Grand-maman, Mamie</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="generation parents">
-          <h3>👨‍👩 Les Parents</h3>
-          <div class="family-members">
-            <div class="family-card father" onclick="playFamilyMember('pere')">
-              <div class="family-image">
-                <div class="person-avatar dad">
-                  <div class="face">👨</div>
-                  <div class="accessories">💼</div>
+                <div class="vocab-card" onclick="speak('Le frère')">
+                    <div class="vocab-image">👦</div>
+                    <h3>Le frère</h3>
+                    <p class="translation">The brother</p>
                 </div>
-              </div>
-              <h4>Le Père</h4>
-              <p class="translation">Father</p>
-              <div class="nickname">
-                <p><strong>Nickname:</strong> Papa</p>
-              </div>
-            </div>
-            <div class="family-card mother" onclick="playFamilyMember('mere')">
-              <div class="family-image">
-                <div class="person-avatar mom">
-                  <div class="face">👩</div>
-                  <div class="accessories">💼</div>
+                <div class="vocab-card" onclick="speak('La sœur')">
+                    <div class="vocab-image">👧</div>
+                    <h3>La sœur</h3>
+                    <p class="translation">The sister</p>
                 </div>
-              </div>
-              <h4>La Mère</h4>
-              <p class="translation">Mother</p>
-              <div class="nickname">
-                <p><strong>Nickname:</strong> Maman</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="generation children">
-          <h3>👧👦 Les Enfants</h3>
-          <div class="family-members">
-            <div class="family-card son" onclick="playFamilyMember('fils')">
-              <div class="family-image">
-                <div class="person-avatar boy">
-                  <div class="face">👦</div>
-                  <div class="accessories">🎒</div>
+                <div class="vocab-card" onclick="speak('Le grand-père')">
+                    <div class="vocab-image">👴</div>
+                    <h3>Le grand-père</h3>
+                    <p class="translation">The grandfather</p>
                 </div>
-              </div>
-              <h4>Le Fils</h4>
-              <p class="translation">Son</p>
-              <div class="relationship">
-                <p><strong>Also:</strong> Le frère (brother)</p>
-              </div>
-            </div>
-            <div class="family-card daughter" onclick="playFamilyMember('fille')">
-              <div class="family-image">
-                <div class="person-avatar girl">
-                  <div class="face">👧</div>
-                  <div class="accessories">🎒</div>
+                <div class="vocab-card" onclick="speak('La grand-mère')">
+                    <div class="vocab-image">👵</div>
+                    <h3>La grand-mère</h3>
+                    <p class="translation">The grandmother</p>
                 </div>
-              </div>
-              <h4>La Fille</h4>
-              <p class="translation">Daughter</p>
-              <div class="relationship">
-                <p><strong>Also:</strong> La sœur (sister)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="generation siblings">
-          <h3>👫 Les Frères et Sœurs</h3>
-          <div class="family-members">
-            <div class="family-card brother" onclick="playFamilyMember('frere')">
-              <div class="family-image">
-                <div class="person-avatar brother">
-                  <div class="face">👦</div>
-                  <div class="accessories">⚽</div>
+                <div class="vocab-card" onclick="speak('L\'oncle')">
+                    <div class="vocab-image">🧔‍♂️</div>
+                    <h3>L'oncle</h3>
+                    <p class="translation">The uncle</p>
                 </div>
-              </div>
-              <h4>Le Frère</h4>
-              <p class="translation">Brother</p>
-              <div class="age-variants">
-                <p><strong>Older:</strong> Le grand frère</p>
-                <p><strong>Younger:</strong> Le petit frère</p>
-              </div>
-            </div>
-            <div class="family-card sister" onclick="playFamilyMember('soeur')">
-              <div class="family-image">
-                <div class="person-avatar sister">
-                  <div class="face">👧</div>
-                  <div class="accessories">🎨</div>
+                <div class="vocab-card" onclick="speak('La tante')">
+                    <div class="vocab-image">👩‍🦱</div>
+                    <h3>La tante</h3>
+                    <p class="translation">The aunt</p>
                 </div>
-              </div>
-              <h4>La Sœur</h4>
-              <p class="translation">Sister</p>
-              <div class="age-variants">
-                <p><strong>Older:</strong> La grande sœur</p>
-                <p><strong>Younger:</strong> La petite sœur</p>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="generation extended">
-          <h3>👨‍👩‍👧‍👧 Extended Family</h3>
-          <div class="family-members extended-grid">
-            <div class="family-card uncle" onclick="playFamilyMember('oncle')">
-              <div class="family-image">
-                <div class="person-avatar">👨‍🦲</div>
-              </div>
-              <h4>L'Oncle</h4>
-              <p class="translation">Uncle</p>
+        </section>
+
+        <!-- Grammar: Possessive Adjectives -->
+        <section class="content-section">
+            <h2>✍️ Grammaire : Mon, Ma, Mes</h2>
+            <p class="section-intro">To say "My" in French, you choose the word based on the family member!</p>
+            <div class="comparison-container">
+                <div class="tu-section" style="border-color: var(--primary-blue);">
+                    <h3>♂️ Masculine (Mon)</h3>
+                    <div class="example-phrase" onclick="speak('Mon père')">
+                        <strong>Mon</strong> père (My father)
+                    </div>
+                    <div class="example-phrase" onclick="speak('Mon frère')">
+                        <strong>Mon</strong> frère (My brother)
+                    </div>
+                </div>
+                <div class="vous-section" style="border-color: var(--primary-red);">
+                    <h3>♀️ Feminine (Ma)</h3>
+                    <div class="example-phrase" onclick="speak('Ma mère')">
+                        <strong>Ma</strong> mère (My mother)
+                    </div>
+                    <div class="example-phrase" onclick="speak('Ma sœur')">
+                        <strong>Ma</strong> sœur (My sister)
+                    </div>
+                </div>
+                <div class="tu-section" style="border-color: var(--accent-green); grid-column: 1 / -1;">
+                    <h3>👥 Plural (Mes)</h3>
+                    <div class="example-phrase" onclick="speak('Mes parents')">
+                        <strong>Mes</strong> parents (My parents)
+                    </div>
+                    <div class="example-phrase" onclick="speak('Mes frères et sœurs')">
+                        <strong>Mes</strong> frères et sœurs (My siblings)
+                    </div>
+                </div>
             </div>
-            <div class="family-card aunt" onclick="playFamilyMember('tante')">
-              <div class="family-image">
-                <div class="person-avatar">👩‍🦰</div>
-              </div>
-              <h4>La Tante</h4>
-              <p class="translation">Aunt</p>
+        </section>
+
+        <!-- Professions Section -->
+        <section class="content-section">
+            <h2>💼 Les Professions (Professions)</h2>
+            <div class="vocabulary-grid">
+                <div class="vocab-card" onclick="speak('Un professeur')">
+                    <div class="vocab-image">👨‍🏫</div>
+                    <h3>Un professeur</h3>
+                    <p class="translation">A teacher</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Un médecin')">
+                    <div class="vocab-image">👩‍⚕️</div>
+                    <h3>Un médecin</h3>
+                    <p class="translation">A doctor</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Un ingénieur')">
+                    <div class="vocab-image">👷‍♂️</div>
+                    <h3>Un ingénieur</h3>
+                    <p class="translation">An engineer</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Un infirmier')">
+                    <div class="vocab-image">👨‍⚕️</div>
+                    <h3>Un infirmier</h3>
+                    <p class="translation">A nurse</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Un cuisinier')">
+                    <div class="vocab-image">👨‍🍳</div>
+                    <h3>Un cuisinier</h3>
+                    <p class="translation">A cook / chef</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Un pilote')">
+                    <div class="vocab-image">👨‍✈️</div>
+                    <h3>Un pilote</h3>
+                    <p class="translation">A pilot</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Un policier')">
+                    <div class="vocab-image">👮‍♂️</div>
+                    <h3>Un policier</h3>
+                    <p class="translation">A police officer</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Un artiste')">
+                    <div class="vocab-image">🎨</div>
+                    <h3>Un artiste</h3>
+                    <p class="translation">An artist</p>
+                </div>
             </div>
-            <div class="family-card cousin-male" onclick="playFamilyMember('cousin')">
-              <div class="family-image">
-                <div class="person-avatar">👦</div>
-              </div>
-              <h4>Le Cousin</h4>
-              <p class="translation">Male Cousin</p>
+        </section>
+
+        <!-- C'est vs Il est -->
+        <section class="content-section">
+            <h2>❓ C'est ou Il est ?</h2>
+            <div class="comparison-container">
+                <div class="tu-section" style="border-color: var(--accent-yellow);">
+                    <h3>🆔 C'est... (Who is it?)</h3>
+                    <p>Use this to identify people with <strong>Mon/Ma/Le/La</strong>.</p>
+                    <div class="example-phrase" onclick="speak('C\'est mon père')">
+                        <strong>C'est</strong> mon père.<br>
+                        <small>(This is my father.)</small>
+                    </div>
+                </div>
+                <div class="vous-section" style="border-color: var(--primary-blue);">
+                    <h3>🔨 Il est... (What is their job?)</h3>
+                    <p>Use this for professions. <strong>No article (un/une) is used!</strong></p>
+                    <div class="example-phrase" onclick="speak('Il est médecin')">
+                        <strong>Il est</strong> médecin.<br>
+                        <small>(He is a doctor.)</small>
+                    </div>
+                </div>
             </div>
-            <div class="family-card cousin-female" onclick="playFamilyMember('cousine')">
-              <div class="family-image">
-                <div class="person-avatar">👧</div>
-              </div>
-              <h4>La Cousine</h4>
-              <p class="translation">Female Cousin</p>
+        </section>
+
+        <!-- Practice Presenting -->
+        <section class="content-section">
+            <h2>🗣️ Presenting my family</h2>
+            <div class="example-box">
+                <div class="example-grid">
+                    <div class="example-item" onclick="speak('C\'est ma mère. Elle est professeur.')">
+                        <span class="french">C'est ma mère. Elle est professeur.</span>
+                        <span class="english">This is my mother. She is a teacher.</span>
+                    </div>
+                    <div class="example-item" onclick="speak('C\'est mon oncle. Il est pilote.')">
+                        <span class="french">C'est mon oncle. Il est pilote.</span>
+                        <span class="english">This is my uncle. He is a pilot.</span>
+                    </div>
+                    <div class="example-item" onclick="speak('C\'est ma tante. Elle est médecin.')">
+                        <span class="french">C'est ma tante. Elle est médecin.</span>
+                        <span class="english">This is my aunt. She is a doctor.</span>
+                    </div>
+                    <div class="example-item" onclick="speak('Ce sont mes parents.')">
+                        <span class="french">Ce sont mes parents.</span>
+                        <span class="english">These are my parents.</span>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="content-section">
-      <h2>💼 Les Professions (Professions)</h2>
-      <p class="section-intro">
-        What do your family members do for work? Learn job names in French!
-      </p>
-      <div class="professions-grid">
-        <div class="profession-card doctor" onclick="playProfession('medecin')">
-          <div class="profession-image">
-            <div class="job-scene">
-              <div class="worker">👨‍⚕️</div>
-              <div class="tools">🩺💉</div>
-              <div class="workplace">🏥</div>
+        </section>
+
+        <!-- Role Play Section -->
+        <section class="content-section">
+            <div class="tip-box" style="border-left: 5px solid var(--primary-red); background: #fff5f5;">
+                <h2 style="color: var(--primary-red); text-align: center; margin-bottom: 1.5rem;">🎭 Mini Role-Play</h2>
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div onclick="speak('Qui est-ce ?', 'female')">
+                        <strong>Lina:</strong> Qui est-ce ? <small>(Who is this?)</small>
+                    </div>
+                    <div onclick="speak('C\'est mon frère Léo. Il est étudiant.', 'male')">
+                        <strong>Max:</strong> C'est mon frère Léo. Il est étudiant. <small>(This is my brother Leo. He is a student.)</small>
+                    </div>
+                    <div onclick="speak('Et ton père ? Quelle est sa profession ?', 'female')">
+                        <strong>Lina:</strong> Et ton père ? Quelle est sa profession ? <small>(And your father? What is his profession?)</small>
+                    </div>
+                    <div onclick="speak('Mon père est ingénieur.', 'male')">
+                        <strong>Max:</strong> Mon père est ingénieur. <small>(My father is an engineer.)</small>
+                    </div>
+                </div>
             </div>
-          </div>
-          <h3>Le/La Médecin</h3>
-          <p class="translation">Doctor</p>
-          <div class="job-description">
-            <p>🏥 Works in a hospital</p>
-            <p>👩‍⚕️ Helps sick people</p>
-            <p>🩺 Uses a stethoscope</p>
-          </div>
-        </div>
-        <div class="profession-card teacher" onclick="playProfession('professeur')">
-          <div class="profession-image">
-            <div class="job-scene">
-              <div class="worker">👨‍🏫</div>
-              <div class="tools">📚✏️</div>
-              <div class="workplace">🏫</div>
+        </section>
+
+        <!-- Interactive Game -->
+        <section class="game-section">
+            <div class="game-header">
+                <h2>🎮 Activity: Profession Matcher!</h2>
+                <p>Match the profession name to the correct icon!</p>
             </div>
-          </div>
-          <h3>Le/La Professeur</h3>
-          <p class="translation">Teacher</p>
-          <div class="job-description">
-            <p>🏫 Works at school</p>
-            <p>📚 Teaches students</p>
-            <p>✏️ Uses books and pencils</p>
-          </div>
-        </div>
-        <div class="profession-card firefighter" onclick="playProfession('pompier')">
-          <div class="profession-image">
-            <div class="job-scene">
-              <div class="worker">👨‍🚒</div>
-              <div class="tools">🚒🔥</div>
-              <div class="workplace">🚨</div>
+            <div class="game-container" id="prof-game">
+                <div class="game-column" id="prof-names">
+                    <!-- Names generated here -->
+                </div>
+                <div class="game-column" id="prof-icons">
+                    <!-- Icons generated here -->
+                </div>
             </div>
-          </div>
-          <h3>Le/La Pompier</h3>
-          <p class="translation">Firefighter</p>
-          <div class="job-description">
-            <p>🚒 Drives fire trucks</p>
-            <p>🔥 Fights fires</p>
-            <p>🚨 Helps in emergencies</p>
-          </div>
-        </div>
-        <div class="profession-card chef" onclick="playProfession('cuisinier')">
-          <div class="profession-image">
-            <div class="job-scene">
-              <div class="worker">👨‍🍳</div>
-              <div class="tools">🍳🔪</div>
-              <div class="workplace">🍽️</div>
+            <div id="submit-container" style="display: none; text-align: center; margin-top: 2rem;">
+                <button class="btn-reset" style="background: var(--accent-green);" onclick="location.reload()">Play Again 🔄</button>
             </div>
-          </div>
-          <h3>Le Cuisinier / La Cuisinière</h3>
-          <p class="translation">Chef/Cook</p>
-          <div class="job-description">
-            <p>🍽️ Works in restaurant</p>
-            <p>🍳 Cooks delicious food</p>
-            <p>🔪 Uses kitchen tools</p>
-          </div>
-        </div>
-        <div class="profession-card police" onclick="playProfession('policier')">
-          <div class="profession-image">
-            <div class="job-scene">
-              <div class="worker">👮‍♂️</div>
-              <div class="tools">🚔🚨</div>
-              <div class="workplace">🏛️</div>
-            </div>
-          </div>
-          <h3>Le Policier / La Policière</h3>
-          <p class="translation">Police Officer</p>
-          <div class="job-description">
-            <p>🚔 Drives police car</p>
-            <p>🚨 Keeps people safe</p>
-            <p>🏛️ Works for the city</p>
-          </div>
-        </div>
-        <div class="profession-card nurse" onclick="playProfession('infirmier')">
-          <div class="profession-image">
-            <div class="job-scene">
-              <div class="worker">👩‍⚕️</div>
-              <div class="tools">💊🩹</div>
-              <div class="workplace">🏥</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>Excellent! You know your family and jobs! 👨‍👩‍👧‍👦</p>
-  </footer>
-  <script src="script.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      speak("Lesson 7")
-      setTimeout(() => {
-        speak("La Famille et les Professions")
-      }, 1000);
-    });
-  </script>
+        </section>
+    </main>
+
+    <footer>
+        <p>Lesson 7 complete! Magnifique ! Tu connais ta famille ! 👨‍👩‍👧‍👦💼</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Local Game Logic for Lesson 7
+        const profPairs = [
+            { fr: "Le Médecin", icon: "👩‍⚕️" },
+            { fr: "Le Pilote", icon: "👨‍✈️" },
+            { fr: "L'Artiste", icon: "🎨" },
+            { fr: "Le Cuisinier", icon: "👨‍🍳" },
+            { fr: "Le Policier", icon: "👮‍♂️" },
+            { fr: "Le Professeur", icon: "👨‍🏫" }
+        ];
+
+        let selName = null;
+        let selIcon = null;
+        let profScore = 0;
+
+        function initProfGame() {
+            const nameCol = document.getElementById('prof-names');
+            const iconCol = document.getElementById('prof-icons');
+            
+            const names = [...profPairs].sort(() => Math.random() - 0.5);
+            const icons = [...profPairs].sort(() => Math.random() - 0.5);
+
+            names.forEach(pair => {
+                const div = document.createElement('div');
+                div.className = 'match-item';
+                div.textContent = pair.fr;
+                div.onclick = () => {
+                    if(div.classList.contains('matched')) return;
+                    if(selName) selName.classList.remove('selected');
+                    selName = div;
+                    div.classList.add('selected');
+                    speak(pair.fr);
+                    checkProfMatch();
+                };
+                nameCol.appendChild(div);
+            });
+
+            icons.forEach(pair => {
+                const div = document.createElement('div');
+                div.className = 'match-item';
+                div.textContent = pair.icon;
+                div.style.fontSize = '2.5rem';
+                div.onclick = () => {
+                    if(div.classList.contains('matched')) return;
+                    if(selIcon) selIcon.classList.remove('selected');
+                    selIcon = div;
+                    div.classList.add('selected');
+                    checkProfMatch();
+                };
+                iconCol.appendChild(div);
+            });
+        }
+
+        function checkProfMatch() {
+            if (selName && selIcon) {
+                const match = profPairs.find(p => p.fr === selName.textContent && p.icon === selIcon.textContent);
+                if (match) {
+                    selName.classList.add('matched');
+                    selIcon.classList.add('matched');
+                    selName.classList.remove('selected');
+                    selIcon.classList.remove('selected');
+                    selName = null;
+                    selIcon = null;
+                    profScore++;
+                    if(profScore === profPairs.length) {
+                        document.getElementById('submit-container').style.display = 'block';
+                        speak("Excellent travail !");
+                    }
+                } else {
+                    const n = selName;
+                    const i = selIcon;
+                    n.classList.add('incorrect');
+                    i.classList.add('incorrect');
+                    selName = null;
+                    selIcon = null;
+                    setTimeout(() => {
+                        n.classList.remove('selected', 'incorrect');
+                        i.classList.remove('selected', 'incorrect');
+                    }, 500);
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initProfGame();
+            speak("Lesson 7 : La Famille et les Professions");
+        });
+    </script>
 </body>
 
 </html>

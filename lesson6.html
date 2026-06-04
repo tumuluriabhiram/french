@@ -2,552 +2,327 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lesson 6: Colors and Food - Learn French</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn French colors, fruits, and vegetables. Practice describing food and expressing likes. Lesson 6 for 4th graders." />
+    <title>Lesson 6: Le Miam-Miam - Learn French with Fun!</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <header>
-    <div class="header-content">
-      <h1>Lesson 6: Les Couleurs et la Nourriture (Colors and Food)</h1>
-    </div>
-  </header>
+    <header>
+        <div class="header-content">
+            <h1>Lesson 6: Le Miam-Miam</h1>
+            <p>Colors, Fruits & Vegetables</p>
+        </div>
+    </header>
 
-  <nav class="side-toolbar">
-    <a href="index.html" class="nav-btn" title="Home">🏠 <span>Home</span></a>
-    <a href="lesson5.html" class="nav-btn" title="Previous Lesson">⬅️ <span>Prev</span></a>
-    <a href="lesson7.html" class="nav-btn" title="Next Lesson">➡️ <span>Next</span></a>
-  </nav>
-  <main class="lesson-page">
-    <div class="lesson-intro">
-      <div class="goals-box">
-        <h3>🎯 Learning Goals</h3>
-        <ul>
-          <li>Name colors in French</li>
-          <li>Talk about fruits and vegetables</li>
-          <li>Describe food using colors</li>
-          <li>Express likes and dislikes</li>
-          <li>Use definite and indefinite articles</li>
-          <li>Ask "What is this?" in French</li>
-          <li>Culture & Civilisation</li>
-        </ul>
-      </div>
-    </div>
-    <section class="content-section">
-      <h2>🌈 Les Couleurs (Colors)</h2>
-      <p class="section-intro">
-        Click each color to hear the pronunciation and see examples!
-      </p>
-      <div class="colors-rainbow">
-        <div class="color-card red-card" onclick="playColor('rouge')">
-          <div class="color-circle red"></div>
-          <h3>Rouge</h3>
-          <p class="translation">Red</p>
-          <div class="color-examples">
-            <span class="example-item">🍎 Pomme</span>
-            <span class="example-item">🌹 Rose</span>
-            <span class="example-item">❤️ Cœur</span>
-          </div>
-        </div>
-        <div class="color-card orange-card" onclick="playColor('orange')">
-          <div class="color-circle orange"></div>
-          <h3>Orange</h3>
-          <p class="translation">Orange</p>
-          <div class="color-examples">
-            <span class="example-item">🍊 Orange</span>
-            <span class="example-item">🥕 Carotte</span>
-            <span class="example-item">🎃 Citrouille</span>
-          </div>
-        </div>
-        <div class="color-card yellow-card" onclick="playColor('jaune')">
-          <div class="color-circle yellow"></div>
-          <h3>Jaune</h3>
-          <p class="translation">Yellow</p>
-          <div class="color-examples">
-            <span class="example-item">🍌 Banane</span>
-            <span class="example-item">☀️ Soleil</span>
-            <span class="example-item">🌻 Tournesol</span>
-          </div>
-        </div>
-        <div class="color-card green-card" onclick="playColor('vert')">
-          <div class="color-circle green"></div>
-          <h3>Vert</h3>
-          <p class="translation">Green</p>
-          <div class="color-examples">
-            <span class="example-item">🥬 Salade</span>
-            <span class="example-item">🌳 Arbre</span>
-            <span class="example-item">🐸 Grenouille</span>
-          </div>
-        </div>
-        <div class="color-card blue-card" onclick="playColor('bleu')">
-          <div class="color-circle blue"></div>
-          <h3>Bleu</h3>
-          <p class="translation">Blue</p>
-          <div class="color-examples">
-            <span class="example-item">🌊 Mer</span>
-            <span class="example-item">☁️ Ciel</span>
-            <span class="example-item">🫐 Myrtilles</span>
-          </div>
-        </div>
-        <div class="color-card purple-card" onclick="playColor('violet')">
-          <div class="color-circle purple"></div>
-          <h3>Violet</h3>
-          <p class="translation">Purple</p>
-          <div class="color-examples">
-            <span class="example-item">🍇 Raisins</span>
-            <span class="example-item">🌸 Fleurs</span>
-            <span class="example-item">🍆 Aubergine</span>
-          </div>
-        </div>
-        <div class="color-card pink-card" onclick="playColor('rose')">
-          <div class="color-circle pink"></div>
-          <h3>Rose</h3>
-          <p class="translation">Pink</p>
-          <div class="color-examples">
-            <span class="example-item">🌸 Fleur</span>
-            <span class="example-item">🩷 Cœur</span>
-            <span class="example-item">🦩 Flamant</span>
-          </div>
-        </div>
-        <div class="color-card brown-card" onclick="playColor('brun')">
-          <div class="color-circle brown"></div>
-          <h3>Brun/Marron</h3>
-          <p class="translation">Brown</p>
-          <div class="color-examples">
-            <span class="example-item">🐻 Ours</span>
-            <span class="example-item">🌰 Châtaigne</span>
-            <span class="example-item">🍫 Chocolat</span>
-          </div>
-        </div>
-        <div class="color-card black-card" onclick="playColor('noir')">
-          <div class="color-circle black"></div>
-          <h3>Noir</h3>
-          <p class="translation">Black</p>
-          <div class="color-examples">
-            <span class="example-item">🐱 Chat</span>
-            <span class="example-item">🌙 Nuit</span>
-            <span class="example-item">⚫ Cercle</span>
-          </div>
-        </div>
-        <div class="color-card white-card" onclick="playColor('blanc')">
-          <div class="color-circle white"></div>
-          <h3>Blanc</h3>
-          <p class="translation">White</p>
-          <div class="color-examples">
-            <span class="example-item">❄️ Neige</span>
-            <span class="example-item">☁️ Nuage</span>
-            <span class="example-item">🥛 Lait</span>
-          </div>
-        </div>
-      </div>
-      <div class="color-agreement">
-        <h3>📝 Color Agreement Rules</h3>
-        <div class="grammar-explanation">
-          <div class="rule-box">
-            <h4>🔵 Masculine Singular</h4>
-            <p>Un chat <strong>noir</strong> (a black cat)</p>
-            <p>Le ballon <strong>rouge</strong> (the red ball)</p>
-          </div>
-          <div class="rule-box">
-            <h4>🟡 Feminine Singular</h4>
-            <p>Une pomme <strong>rouge</strong> (a red apple)</p>
-            <p>La voiture <strong>noire</strong> (the black car)</p>
-          </div>
-          <div class="rule-box special">
-            <h4>⚠️ Special Colors</h4>
-            <p>
-              <strong>Orange</strong> and <strong>Marron</strong> never
-              change!
-            </p>
-            <p>Un chat orange, une voiture orange</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="content-section">
-      <h2>🍎 Les Fruits (Fruits)</h2>
-      <p class="section-intro">Discover delicious fruits and their colors!</p>
-      <div class="fruits-garden">
-        <div class="fruit-card apple" onclick="playFruit('pomme')">
-          <div class="fruit-image">
-            <div class="fruit-visual">🍎</div>
-            <div class="fruit-colors">
-              <span class="color-dot red"></span>
-              <span class="color-dot green"></span>
+    <nav class="side-toolbar">
+        <a href="index.html" class="nav-btn" title="Home">🏠 <span>Home</span></a>
+        <a href="lesson5.html" class="nav-btn" title="Previous Lesson">⬅️ <span>Prev</span></a>
+        <a href="lesson7.html" class="nav-btn" title="Next Lesson">➡️ <span>Next</span></a>
+    </nav>
+
+    <main class="lesson-page">
+        <section class="lesson-intro">
+            <div class="goals-box">
+                <h3>🎯 Learning Goals</h3>
+                <ul>
+                    <li>Identify colors in French</li>
+                    <li>Name common fruits and vegetables</li>
+                    <li>Describe food using colors</li>
+                    <li>Use 'un/une' and 'le/la/les'</li>
+                    <li>Ask "Qu'est-ce que c'est ?"</li>
+                    <li>Say what you like to eat</li>
+                </ul>
             </div>
-          </div>
-          <h3>Une Pomme</h3>
-          <p class="translation">An Apple</p>
-          <p class="description">Rouge ou verte</p>
-          <p class="description-en"><em>(Red or green)</em></p>
-        </div>
-        <div class="fruit-card banana" onclick="playFruit('banane')">
-          <div class="fruit-image">
-            <div class="fruit-visual">🍌</div>
-            <div class="fruit-colors">
-              <span class="color-dot yellow"></span>
+        </section>
+
+        <!-- Colors Section -->
+        <section class="content-section">
+            <h2>🌈 Les Couleurs (The Colors)</h2>
+            <div class="vocabulary-grid">
+                <div class="vocab-card" onclick="speak('Rouge')" style="border-bottom: 5px solid #ff4d4d;">
+                    <div class="vocab-image">🔴</div>
+                    <h3>Rouge</h3>
+                    <p class="translation">Red</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Bleu')" style="border-bottom: 5px solid #4d94ff;">
+                    <div class="vocab-image">🔵</div>
+                    <h3>Bleu</h3>
+                    <p class="translation">Blue</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Vert')" style="border-bottom: 5px solid #4dff4d;">
+                    <div class="vocab-image">🟢</div>
+                    <h3>Vert</h3>
+                    <p class="translation">Green</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Jaune')" style="border-bottom: 5px solid #ffff4d;">
+                    <div class="vocab-image">🟡</div>
+                    <h3>Jaune</h3>
+                    <p class="translation">Yellow</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Orange')" style="border-bottom: 5px solid #ff944d;">
+                    <div class="vocab-image">🟠</div>
+                    <h3>Orange</h3>
+                    <p class="translation">Orange</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Violet')" style="border-bottom: 5px solid #944dff;">
+                    <div class="vocab-image">🟣</div>
+                    <h3>Violet</h3>
+                    <p class="translation">Purple</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Rose')" style="border-bottom: 5px solid #ff4db8;">
+                    <div class="vocab-image">🌸</div>
+                    <h3>Rose</h3>
+                    <p class="translation">Pink</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Marron')" style="border-bottom: 5px solid #8B4513;">
+                    <div class="vocab-image">🟤</div>
+                    <h3>Marron</h3>
+                    <p class="translation">Brown</p>
+                </div>
             </div>
-          </div>
-          <h3>Une Banane</h3>
-          <p class="translation">A Banana</p>
-          <p class="description">Jaune</p>
-          <p class="description-en"><em>(Yellow)</em></p>
-        </div>
-        <div class="fruit-card orange" onclick="playFruit('orange')">
-          <div class="fruit-image">
-            <div class="fruit-visual">🍊</div>
-            <div class="fruit-colors">
-              <span class="color-dot orange"></span>
+        </section>
+
+        <!-- Fruits & Vegetables Section -->
+        <section class="content-section">
+            <h2>🍎 Les Fruits et les Légumes</h2>
+            <div class="vocabulary-grid">
+                <!-- Fruits -->
+                <div class="vocab-card" onclick="speak('Une pomme')">
+                    <div class="vocab-image">🍎</div>
+                    <h3>Une pomme</h3>
+                    <p class="translation">An apple</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Une banane')">
+                    <div class="vocab-image">🍌</div>
+                    <h3>Une banane</h3>
+                    <p class="translation">A banana</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Une fraise')">
+                    <div class="vocab-image">🍓</div>
+                    <h3>Une fraise</h3>
+                    <p class="translation">A strawberry</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Une orange')">
+                    <div class="vocab-image">🍊</div>
+                    <h3>Une orange</h3>
+                    <p class="translation">An orange</p>
+                </div>
+                <!-- Vegetables -->
+                <div class="vocab-card" onclick="speak('Une carotte')">
+                    <div class="vocab-image">🥕</div>
+                    <h3>Une carotte</h3>
+                    <p class="translation">A carrot</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Une tomate')">
+                    <div class="vocab-image">🍅</div>
+                    <h3>Une tomate</h3>
+                    <p class="translation">A tomato</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Une pomme de terre')">
+                    <div class="vocab-image">🥔</div>
+                    <h3>Une pomme de terre</h3>
+                    <p class="translation">A potato</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Un brocoli')">
+                    <div class="vocab-image">🥦</div>
+                    <h3>Un brocoli</h3>
+                    <p class="translation">A broccoli</p>
+                </div>
             </div>
-          </div>
-          <h3>Une Orange</h3>
-          <p class="translation">An Orange</p>
-          <p class="description">Orange</p>
-          <p class="description-en"><em>(Orange)</em></p>
-        </div>
-        <div class="fruit-card grapes" onclick="playFruit('raisins')">
-          <div class="fruit-image">
-            <div class="fruit-visual">🍇</div>
-            <div class="fruit-colors">
-              <span class="color-dot purple"></span>
-              <span class="color-dot green"></span>
+        </section>
+
+        <!-- Grammar Section -->
+        <section class="content-section">
+            <h2>✍️ Grammaire : Articles & Questions</h2>
+            <div class="comparison-container">
+                <div class="tu-section" style="border-color: var(--primary-blue);">
+                    <h3>📦 Les Articles</h3>
+                    <p>Use <strong>Un / Une</strong> for "A" and <strong>Le / La / Les</strong> for "The".</p>
+                    <div class="example-phrase">
+                        <strong>Indefinite:</strong> Un citron (A lemon) / Une carotte (A carrot)<br>
+                        <strong>Definite:</strong> Le citron (The lemon) / La carotte (The carrot)
+                    </div>
+                </div>
+                <div class="vous-section" style="border-color: var(--accent-yellow);">
+                    <h3>❓ Qu'est-ce que c'est ?</h3>
+                    <p>Ask "What is this?" and answer with <strong>C'est...</strong> (singular) or <strong>Ce sont...</strong> (plural).</p>
+                    <div class="example-phrase">
+                        "Qu'est-ce que c'est ?"<br>
+                        👉 "C'est une banane." (It is a banana)<br>
+                        👉 "Ce sont des bananes." (These are bananas)
+                    </div>
+                </div>
             </div>
-          </div>
-          <h3>Des Raisins</h3>
-          <p class="translation">Grapes</p>
-          <p class="description">Violets ou verts</p>
-          <p class="description-en"><em>(Purple or green)</em></p>
-        </div>
-        <div class="fruit-card strawberry" onclick="playFruit('fraise')">
-          <div class="fruit-image">
-            <div class="fruit-visual">🍓</div>
-            <div class="fruit-colors">
-              <span class="color-dot red"></span>
+        </section>
+
+        <!-- Descriptions Section -->
+        <section class="content-section">
+            <h2>🎨 Describing with Colors</h2>
+            <p class="section-intro">In French, colors usually come <strong>after</strong> the fruit or vegetable!</p>
+            <div class="example-box">
+                <div class="example-grid">
+                    <div class="example-item" onclick="speak('La pomme est rouge')">
+                        <span class="french">La pomme est rouge.</span>
+                        <span class="english">The apple is red.</span>
+                    </div>
+                    <div class="example-item" onclick="speak('Le brocoli est vert')">
+                        <span class="french">Le brocoli est vert.</span>
+                        <span class="english">The broccoli is green.</span>
+                    </div>
+                    <div class="example-item" onclick="speak('La carotte est orange')">
+                        <span class="french">La carotte est orange.</span>
+                        <span class="english">The carrot is orange.</span>
+                    </div>
+                    <div class="example-item" onclick="speak('Le citron est jaune')">
+                        <span class="french">Le citron est jaune.</span>
+                        <span class="english">The lemon is yellow.</span>
+                    </div>
+                </div>
             </div>
-          </div>
-          <h3>Une Fraise</h3>
-          <p class="translation">A Strawberry</p>
-          <p class="description">Rouge</p>
-          <p class="description-en"><em>(Red)</em></p>
-        </div>
-        <div class="fruit-card cherry" onclick="playFruit('cerise')">
-          <div class="fruit-image">
-            <div class="fruit-visual">🍒</div>
-            <div class="fruit-colors">
-              <span class="color-dot red"></span>
+        </section>
+
+        <!-- Likes and Dislikes -->
+        <section class="content-section">
+            <h2>😋 J'aime ou Je n'aime pas ?</h2>
+            <div class="comparison-container">
+                <div class="tu-section" style="border-color: var(--accent-green);">
+                    <h3>👍 J'aime...</h3>
+                    <div class="example-phrase" onclick="speak('J\'aime les fraises')">
+                        <strong>J'aime</strong> les fraises. (I like strawberries)
+                    </div>
+                    <div class="example-phrase" onclick="speak('J\'adore les pommes')">
+                        <strong>J'adore</strong> les pommes. (I love apples)
+                    </div>
+                </div>
+                <div class="vous-section" style="border-color: var(--primary-red);">
+                    <h3>👎 Je n'aime pas...</h3>
+                    <div class="example-phrase" onclick="speak('Je n\'aime pas le brocoli')">
+                        <strong>Je n'aime pas</strong> le brocoli. (I don't like broccoli)
+                    </div>
+                    <div class="example-phrase" onclick="speak('Je déteste les tomates')">
+                        <strong>Je déteste</strong> les tomates. (I hate tomatoes)
+                    </div>
+                </div>
             </div>
-          </div>
-          <h3>Une Cerise</h3>
-          <p class="translation">A Cherry</p>
-          <p class="description">Rouge</p>
-          <p class="description-en"><em>(Red)</em></p>
-        </div>
-        <div class="fruit-card lemon" onclick="playFruit('citron')">
-          <div class="fruit-image">
-            <div class="fruit-visual">🍋</div>
-            <div class="fruit-colors">
-              <span class="color-dot yellow"></span>
+        </section>
+
+        <!-- Interactive Game -->
+        <section class="game-section">
+            <div class="game-header">
+                <h2>🎮 Activity: Match the Miam-Miam!</h2>
+                <p>Match the French food name to the correct emoji!</p>
             </div>
-          </div>
-          <h3>Un Citron</h3>
-          <p class="translation">A Lemon</p>
-          <p class="description">Jaune</p>
-          <p class="description-en"><em>(Yellow)</em></p>
-        </div>
-        <div class="fruit-card peach" onclick="playFruit('peche')">
-          <div class="fruit-image">
-            <div class="fruit-visual">🍑</div>
-            <div class="fruit-colors">
-              <span class="color-dot pink"></span>
-              <span class="color-dot orange"></span>
+            <div class="game-container" id="miam-game">
+                <div class="game-column" id="food-names">
+                    <!-- Food names will be generated here -->
+                </div>
+                <div class="game-column" id="food-emojis">
+                    <!-- Emojis will be generated here -->
+                </div>
             </div>
-          </div>
-          <h3>Une Pêche</h3>
-          <p class="translation">A Peach</p>
-          <p class="description">Rose et orange</p>
-          <p class="description-en"><em>(Pink and orange)</em></p>
-        </div>
-      </div>
-    </section>
-    <section class="content-section">
-      <h2>🥕 Les Légumes (Vegetables)</h2>
-      <p class="section-intro">Learn about healthy vegetables and their colors!</p>
-      <div class="vegetables-garden">
-        <div class="vegetable-card carrot" onclick="playVegetable('carotte')">
-          <div class="vegetable-image">
-            <div class="vegetable-visual">🥕</div>
-            <div class="vegetable-colors">
-              <span class="color-dot orange"></span>
+            <div id="submit-container" style="display: none; text-align: center; margin-top: 2rem;">
+                <button class="btn-reset" style="background: var(--accent-green);" onclick="location.reload()">Play Again 🔄</button>
             </div>
-          </div>
-          <h3>Une Carotte</h3>
-          <p class="translation">A Carrot</p>
-          <p class="description">Orange</p>
-          <p class="description-en"><em>(Orange)</em></p>
-        </div>
-        <div class="vegetable-card lettuce" onclick="playVegetable('salade')">
-          <div class="vegetable-image">
-            <div class="vegetable-visual">🥬</div>
-            <div class="vegetable-colors">
-              <span class="color-dot green"></span>
-            </div>
-          </div>
-          <h3>Une Salade</h3>
-          <p class="translation">Lettuce/Salad</p>
-          <p class="description">Verte</p>
-          <p class="description-en"><em>(Green)</em></p>
-        </div>
-        <div class="vegetable-card tomato" onclick="playVegetable('tomate')">
-          <div class="vegetable-image">
-            <div class="vegetable-visual">🍅</div>
-            <div class="vegetable-colors">
-              <span class="color-dot red"></span>
-            </div>
-          </div>
-          <h3>Une Tomate</h3>
-          <p class="translation">A Tomato</p>
-          <p class="description">Rouge</p>
-          <p class="description-en"><em>(Red)</em></p>
-        </div>
-        <div class="vegetable-card broccoli" onclick="playVegetable('brocoli')">
-          <div class="vegetable-image">
-            <div class="vegetable-visual">🥦</div>
-            <div class="vegetable-colors">
-              <span class="color-dot green"></span>
-            </div>
-          </div>
-          <h3>Un Brocoli</h3>
-          <p class="translation">Broccoli</p>
-          <p class="description">Vert</p>
-          <p class="description-en"><em>(Green)</em></p>
-        </div>
-        <div class="vegetable-card potato" onclick="playVegetable('pomme-de-terre')">
-          <div class="vegetable-image">
-            <div class="vegetable-visual">🥔</div>
-            <div class="vegetable-colors">
-              <span class="color-dot brown"></span>
-            </div>
-          </div>
-          <h3>Une Pomme de Terre</h3>
-          <p class="translation">A Potato</p>
-          <p class="description">Brune</p>
-          <p class="description-en"><em>(Brown)</em></p>
-        </div>
-        <div class="vegetable-card corn" onclick="playVegetable('mais')">
-          <div class="vegetable-image">
-            <div class="vegetable-visual">🌽</div>
-            <div class="vegetable-colors">
-              <span class="color-dot yellow"></span>
-            </div>
-          </div>
-          <h3>Le Maïs</h3>
-          <p class="translation">Corn</p>
-          <p class="description">Jaune</p>
-          <p class="description-en"><em>(Yellow)</em></p>
-        </div>
-        <div class="vegetable-card eggplant" onclick="playVegetable('aubergine')">
-          <div class="vegetable-image">
-            <div class="vegetable-visual">🍆</div>
-            <div class="vegetable-colors">
-              <span class="color-dot purple"></span>
-            </div>
-          </div>
-          <h3>Une Aubergine</h3>
-          <p class="translation">An Eggplant</p>
-          <p class="description">Violette</p>
-          <p class="description-en"><em>(Purple)</em></p>
-        </div>
-        <div class="vegetable-card onion" onclick="playVegetable('oignon')">
-          <div class="vegetable-image">
-            <div class="vegetable-visual">🧅</div>
-            <div class="vegetable-colors">
-              <span class="color-dot white"></span>
-              <span class="color-dot yellow"></span>
-            </div>
-          </div>
-          <h3>Un Oignon</h3>
-          <p class="translation">An Onion</p>
-          <p class="description">Blanc ou jaune</p>
-          <p class="description-en"><em>(White or yellow)</em></p>
-        </div>
-      </div>
-    </section>
-    <section class="content-section">
-      <h2>📖 Grammar: Articles (Les Articles)</h2>
-      <p class="section-intro">Learn when to use "un/une" and "le/la/les"!</p>
-      <div class="articles-explanation">
-        <div class="article-section indefinite">
-          <h3>🔤 Indefinite Articles (A/An/Some)</h3>
-          <div class="article-grid">
-            <div class="article-card">
-              <h4>UN</h4>
-              <p class="usage">Masculine singular</p>
-              <div class="examples">
-                <p><strong>un</strong> citron (a lemon)</p>
-                <p><strong>un</strong> brocoli (broccoli)</p>
-                <p><strong>un</strong> oignon (an onion)</p>
-              </div>
-            </div>
-            <div class="article-card">
-              <h4>UNE</h4>
-              <p class="usage">Feminine singular</p>
-              <div class="examples">
-                <p><strong>une</strong> pomme (an apple)</p>
-                <p><strong>une</strong> carotte (a carrot)</p>
-                <p><strong>une</strong> tomate (a tomato)</p>
-              </div>
-            </div>
-            <div class="article-card">
-              <h4>DES</h4>
-              <p class="usage">Plural (some)</p>
-              <div class="examples">
-                <p><strong>des</strong> raisins (grapes)</p>
-                <p><strong>des</strong> pommes (apples)</p>
-                <p><strong>des</strong> légumes (vegetables)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="article-section definite">
-          <h3>🎯 Definite Articles (The)</h3>
-          <div class="article-grid">
-            <div class="article-card">
-              <h4>LE</h4>
-              <p class="usage">Masculine singular</p>
-              <div class="examples">
-                <p><strong>le</strong> citron (the lemon)</p>
-                <p><strong>le</strong> maïs (the corn)</p>
-                <p><strong>le</strong> brocoli (the broccoli)</p>
-              </div>
-            </div>
-            <div class="article-card">
-              <h4>LA</h4>
-              <p class="usage">Feminine singular</p>
-              <div class="examples">
-                <p><strong>la</strong> pomme (the apple)</p>
-                <p><strong>la</strong> carotte (the carrot)</p>
-                <p><strong>la</strong> salade (the lettuce)</p>
-              </div>
-            </div>
-            <div class="article-card">
-              <h4>LES</h4>
-              <p class="usage">Plural</p>
-              <div class="examples">
-                <p><strong>les</strong> raisins (the grapes)</p>
-                <p><strong>les</strong> pommes (the apples)</p>
-                <p><strong>les</strong> légumes (the vegetables)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="content-section">
-      <h2>😋 Expressing Likes and Dislikes</h2>
-      <div class="preferences-section">
-        <div class="preference-phrases">
-          <div class="phrase-card love" onclick="playPreference('jaime')">
-            <div class="emotion-icon">😍</div>
-            <h3>J'aime...</h3>
-            <p class="translation">I like/love...</p>
-            <p class="example">J'aime les pommes!</p>
-          </div>
-          <div class="phrase-card like" onclick="playPreference('jaime-bien')">
-            <div class="emotion-icon">😊</div>
-            <h3>J'aime bien...</h3>
-            <p class="translation">I quite like...</p>
-            <p class="example">J'aime bien les carottes.</p>
-          </div>
-          <div class="phrase-card dislike" onclick="playPreference('jaime-pas')">
-            <div class="emotion-icon">😕</div>
-            <h3>Je n'aime pas...</h3>
-            <p class="translation">I don't like...</p>
-            <p class="example">Je n'aime pas les oignons.</p>
-          </div>
-          <div class="phrase-card hate" onclick="playPreference('deteste')">
-            <div class="emotion-icon">🤢</div>
-            <h3>Je déteste...</h3>
-            <p class="translation">I hate...</p>
-            <p class="example">Je déteste les brocolis!</p>
-          </div>
-        </div>
-        <div class="preference-questions">
-          <h3>❓ Asking About Preferences</h3>
-          <div class="question-cards">
-            <div class="question-card" onclick="playQuestion('aimes-tu')">
-              <h4>Est-ce que tu aimes...?</h4>
-              <p class="translation">Do you like...?</p>
-            </div>
-            <div class="question-card" onclick="playQuestion('preferes-tu')">
-              <h4>Qu'est-ce que tu préfères?</h4>
-              <p class="translation">What do you prefer?</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="content-section">
-      <h2>❓ Asking "What is this?"</h2>
-      <div class="identification-section">
-        <div class="question-phrases">
-          <div class="phrase-card question" onclick="playIdentification('quest-ce-que-cest')">
-            <div class="question-icon">❓</div>
-            <h3>Qu'est-ce que c'est?</h3>
-            <p class="translation">What is this/that?</p>
-          </div>
-          <div class="phrase-card answer" onclick="playIdentification('cest')">
-            <div class="answer-icon">💡</div>
-            <h3>C'est...</h3>
-            <p class="translation">It's.../This is...</p>
-            <p class="example">C'est une pomme rouge!</p>
-          </div>
-          <div class="phrase-card plural-answer" onclick="playIdentification('ce-sont')">
-            <div class="answer-icon">💡</div>
-            <h3>Ce sont...</h3>
-            <p class="translation">These are.../They are...</p>
-            <p class="example">Ce sont des raisins violets!</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="interactive-section">
-      <h2>🎮 Interactive Games</h2>
-      <div class="games-container">
-        <div class="game-card color-match">
-          <h3>🌈 Color Matching Game</h3>
-          <p>Match the fruit with its color!</p>
-          <div id="color-matching-game">
-            <div class="game-area">
-              <div class="fruit-display" id="fruit-display">
-                <div class="mystery-fruit">🍎</div>
-                <p id="fruit-question">What color is this apple?</p>
-              </div>
-              <div class="color-options">
-                <button class="color-btn red" onclick="checkColorMatch('rouge')" data-color="rouge">Rouge</button>
-                <button class="color-btn green" onclick="checkColorMatch('vert')" data-color="vert">Vert</button>
-                <button class="color-btn yellow" onclick="checkColorMatch('jaune')" data-color="jaune">Jaune</button>
-                <button class="color-btn orange" onclick="checkColorMatch('orange')" data-color="orange">Orange</button>
-              </div>
-              <div id="color-result" class="game-result"></div>
-              <button onclick="nextColorQuestion()" class="next-btn" style="display:none;">Next Fruit</button>
-            </div>
-          </div>
-        </div>
-  </main>
-  <footer>
-    <p>Yum! You've mastered colors and food! 🍎</p>
-  </footer>
-  <script src="script.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      speak("Lesson 6")
-      setTimeout(() => {
-        speak("Les Couleurs et la Nourriture")
-      }, 1000);
-    });
-  </script>
+        </section>
+    </main>
+
+    <footer>
+        <p>Lesson 6 complete! Miam-miam, c'est délicieux ! 🌈🍎</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Local Game Logic for Lesson 6
+        const miamPairs = [
+            { fr: "La Pomme", emoji: "🍎" },
+            { fr: "La Banane", emoji: "🍌" },
+            { fr: "La Carotte", emoji: "🥕" },
+            { fr: "La Tomate", emoji: "🍅" },
+            { fr: "Le Brocoli", emoji: "🥦" },
+            { fr: "La Fraise", emoji: "🍓" }
+        ];
+
+        let selectedName = null;
+        let selectedEmoji = null;
+        let score = 0;
+
+        function initMiamGame() {
+            const nameCol = document.getElementById('food-names');
+            const emojiCol = document.getElementById('food-emojis');
+            
+            const names = [...miamPairs].sort(() => Math.random() - 0.5);
+            const emojis = [...miamPairs].sort(() => Math.random() - 0.5);
+
+            names.forEach(pair => {
+                const div = document.createElement('div');
+                div.className = 'match-item';
+                div.textContent = pair.fr;
+                div.onclick = () => {
+                    if(div.classList.contains('matched')) return;
+                    if(selectedName) selectedName.classList.remove('selected');
+                    selectedName = div;
+                    div.classList.add('selected');
+                    speak(pair.fr);
+                    checkMiamMatch();
+                };
+                nameCol.appendChild(div);
+            });
+
+            emojis.forEach(pair => {
+                const div = document.createElement('div');
+                div.className = 'match-item';
+                div.textContent = pair.emoji;
+                div.style.fontSize = '2rem';
+                div.onclick = () => {
+                    if(div.classList.contains('matched')) return;
+                    if(selectedEmoji) selectedEmoji.classList.remove('selected');
+                    selectedEmoji = div;
+                    div.classList.add('selected');
+                    checkMiamMatch();
+                };
+                emojiCol.appendChild(div);
+            });
+        }
+
+        function checkMiamMatch() {
+            if (selectedName && selectedEmoji) {
+                const match = miamPairs.find(p => p.fr === selectedName.textContent && p.emoji === selectedEmoji.textContent);
+                if (match) {
+                    selectedName.classList.add('matched');
+                    selectedEmoji.classList.add('matched');
+                    selectedName.classList.remove('selected');
+                    selectedEmoji.classList.remove('selected');
+                    selectedName = null;
+                    selectedEmoji = null;
+                    score++;
+                    if(score === miamPairs.length) {
+                        document.getElementById('submit-container').style.display = 'block';
+                        speak("Magnifique !");
+                    }
+                } else {
+                    const n = selectedName;
+                    const e = selectedEmoji;
+                    n.classList.add('incorrect');
+                    e.classList.add('incorrect');
+                    selectedName = null;
+                    selectedEmoji = null;
+                    setTimeout(() => {
+                        n.classList.remove('selected', 'incorrect');
+                        e.classList.remove('selected', 'incorrect');
+                    }, 500);
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initMiamGame();
+            speak("Lesson 6 : Le Miam-Miam");
+        });
+    </script>
 </body>
 
 </html>
