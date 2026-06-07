@@ -274,10 +274,9 @@
     <section class="content-section">
       <h2>🔤 Important Verbs</h2>
 
-      <!-- Top Row: S'appeler & Dialogue -->
-      <div class="verbs-container"
-        style="grid-template-columns: 1fr 1.5fr; display: grid; gap: 2rem; align-items: start;">
-        <!-- Left: S'appeler Conjugation -->
+      <!-- Verb row: S'appeler, Avoir, Être -->
+      <div class="verbs-container" style="grid-template-columns: repeat(3, minmax(220px, 1fr)); display: grid; gap: 2rem; align-items: start;">
+        <!-- S'appeler section -->
         <div class="verb-section" style="margin-bottom: 0;">
           <h3>S'appeler (To call oneself)</h3>
           <div class="conjugation-table">
@@ -316,55 +315,6 @@
           </div>
         </div>
 
-        <!-- Right: Interactive Dialogue -->
-        <div class="dialogue-section"
-          style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 2px solid var(--accent-yellow);">
-          <h3 style="color: var(--primary-blue); margin-bottom: 1.5rem; text-align: center;">🗣️ Dialogue : Comment tu
-            t'appelles ?</h3>
-          <div style="display: flex; flex-direction: column; gap: 1.2rem;">
-
-            <div class="dialogue-bubble" onclick="speak('Comment tu t\'appelles ? Je m\'appelle Léo !', 'male')"
-              style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 20px; border-left: 5px solid var(--primary-blue); transition: transform 0.2s;">
-              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
-                <span style="font-size: 1.5rem;">👤</span>
-                <strong>Comment tu t'appelles ?</strong>
-              </div>
-              <div style="display: flex; align-items: center; gap: 10px; margin-left: 2rem;">
-                <span style="font-size: 1.5rem;">👦</span>
-                <span style="color: var(--primary-red); font-weight: 700;">Je m'appelle Léo !</span>
-              </div>
-            </div>
-
-            <div class="dialogue-bubble" onclick="speak('Comment il s\'appelle ? Il s\'appelle Paul.', 'male')"
-              style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 20px; border-left: 5px solid var(--accent-green); transition: transform 0.2s;">
-              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
-                <span style="font-size: 1.5rem;">👥</span>
-                <strong>Comment il s'appelle ?</strong>
-              </div>
-              <div style="display: flex; align-items: center; gap: 10px; margin-left: 2rem;">
-                <span style="font-size: 1.5rem;">👨</span>
-                <span style="color: var(--primary-red); font-weight: 700;">Il s'appelle Paul.</span>
-              </div>
-            </div>
-
-            <div class="dialogue-bubble" onclick="speak('Elle s\'appelle comment ? Elle s\'appelle Sophie.', 'female')"
-              style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 20px; border-left: 5px solid var(--primary-red); transition: transform 0.2s;">
-              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
-                <span style="font-size: 1.5rem;">👭</span>
-                <strong>Elle s'appelle comment ?</strong>
-              </div>
-              <div style="display: flex; align-items: center; gap: 10px; margin-left: 2rem;">
-                <span style="font-size: 1.5rem;">👩</span>
-                <span style="color: var(--primary-red); font-weight: 700;">Elle s'appelle Sophie.</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- Bottom Row: Avoir & Être -->
-      <div class="verbs-container" style="grid-template-columns: 1fr 1fr; display: grid; gap: 2rem; margin-top: 3rem;">
         <!-- Avoir Section -->
         <div class="verb-section" style="margin-bottom: 0;">
           <h3>Avoir (To have)</h3>
@@ -405,6 +355,14 @@
               <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(They
                 have)</span>
             </div>
+          </div>
+          <div style="text-align: center; margin-top: 1.5rem;">
+            <div class="video-wrapper" style="position: relative; max-width: 250px; padding-bottom: 250px; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); margin: 0 auto;">
+              <iframe src="https://www.youtube.com/embed/sVfbb5oo_3w" referrerpolicy="strict-origin-when-cross-origin"
+                title="Avoir Verb Practice" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+            </div>
+            <p style="margin-top: 0.75rem; color: var(--text-muted); font-size: 0.9rem; font-style: italic;">Practice conjugating Avoir with this video!</p>
           </div>
         </div>
 
@@ -455,6 +413,90 @@
                 allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
             </div>
             <p style="margin-top: 0.75rem; color: var(--text-muted); font-size: 0.9rem; font-style: italic;">Practice conjugating Être with this video!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="dialogue-section"
+        style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 2px solid var(--accent-yellow);">
+        <h3 style="color: var(--primary-blue); margin-bottom: 1.5rem; text-align: center;">🗣️ Dialogue : Comment tu
+          t'appelles ?</h3>
+        <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+
+          <div class="dialogue-bubble" onclick="speak('Comment tu t\'appelles ? Je m\'appelle Léo !', 'male')"
+            style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 20px; border-left: 5px solid var(--primary-blue); transition: transform 0.2s;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+              <span style="font-size: 1.5rem;">👤</span>
+              <strong>Comment tu t'appelles ?</strong>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; margin-left: 2rem;">
+              <span style="font-size: 1.5rem;">👦</span>
+              <span style="color: var(--primary-red); font-weight: 700;">Je m'appelle Léo !</span>
+            </div>
+          </div>
+
+          <div class="dialogue-bubble" onclick="speak('Comment il s\'appelle ? Il s\'appelle Paul.', 'male')"
+            style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 20px; border-left: 5px solid var(--accent-green); transition: transform 0.2s;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+              <span style="font-size: 1.5rem;">👥</span>
+              <strong>Comment il s'appelle ?</strong>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; margin-left: 2rem;">
+              <span style="font-size: 1.5rem;">👨</span>
+              <span style="color: var(--primary-red); font-weight: 700;">Il s'appelle Paul.</span>
+            </div>
+          </div>
+
+          <div class="dialogue-bubble" onclick="speak('Elle s\'appelle comment ? Elle s\'appelle Sophie.', 'female')"
+            style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 20px; border-left: 5px solid var(--primary-red); transition: transform 0.2s;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+              <span style="font-size: 1.5rem;">👭</span>
+              <strong>Elle s'appelle comment ?</strong>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; margin-left: 2rem;">
+              <span style="font-size: 1.5rem;">👩</span>
+              <span style="color: var(--primary-red); font-weight: 700;">Elle s'appelle Sophie.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="verbs-container" style="grid-template-columns: 1fr; display: grid; gap: 2rem; margin-top: 3rem;">
+        <div class="verb-section" style="margin-bottom: 0;">
+          <h3>Habiter (To live)</h3>
+          <p style="color: black; margin: 0 0 1rem 0; font-size: 0.95rem;">To live</p>
+          <div class="conjugation-table">
+            <div class="conjugation-row" onclick="speak('J\'habite')">
+              <span class="pronoun">Je</span>
+              <span class="verb">habite</span>
+              <span class="trans" style="font-size: 0.8rem; color: black; font-style: italic;">(I live)</span>
+            </div>
+            <div class="conjugation-row" onclick="speak('Tu habites')">
+              <span class="pronoun">Tu</span>
+              <span class="verb">habites</span>
+              <span class="trans" style="font-size: 0.8rem; color: black; font-style: italic;">(You live)</span>
+            </div>
+            <div class="conjugation-row" onclick="speak('Il habite, Elle habite, On habite')">
+              <span class="pronoun">Il/Elle/On</span>
+              <span class="verb">habite</span>
+              <span class="trans" style="font-size: 0.8rem; color: black; font-style: italic;">(He/She/One lives)</span>
+            </div>
+            <div class="conjugation-row" onclick="speak('Nous habitons')">
+              <span class="pronoun">Nous</span>
+              <span class="verb">habitons</span>
+              <span class="trans" style="font-size: 0.8rem; color: black; font-style: italic;">(We live)</span>
+            </div>
+            <div class="conjugation-row" onclick="speak('Vous habitez')">
+              <span class="pronoun">Vous</span>
+              <span class="verb">habitez</span>
+              <span class="trans" style="font-size: 0.8rem; color: black; font-style: italic;">(You live)</span>
+            </div>
+            <div class="conjugation-row" onclick="speak('Ils habitent, Elles habitent')">
+              <span class="pronoun">Ils/Elles</span>
+              <span class="verb">habitent</span>
+              <span class="trans" style="font-size: 0.8rem; color: black; font-style: italic;">(They live)</span>
+            </div>
           </div>
         </div>
       </div>
@@ -811,24 +853,30 @@
                 <div class="conjugation-row" onclick="speak('J\'habite')">
                   <span class="pronoun">J'</span>
                   <span class="verb">habite</span>
+                  <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(I live)</span>
                 </div>
                 <div class="conjugation-row" onclick="speak('Tu habites')">
                   <span class="pronoun">Tu</span>
                   <span class="verb">habites</span>
+                  <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(You live)</span>
                 </div>
                 <div class="conjugation-row" onclick="speak('Il habite, Elle habite, On habite')">
                   <span class="pronoun">Il / Elle / On</span>&nbsp;<span class="verb">habite</span>
+                  <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(He/She/One lives)</span>
                 </div>
                 <div class="conjugation-row" onclick="speak('Nous habitons')">
                   <span class="pronoun">Nous</span>
                   <span class="verb">habitons</span>
+                  <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(We live)</span>
                 </div>
                 <div class="conjugation-row" onclick="speak('Vous habitez')">
                   <span class="pronoun">Vous</span>
                   <span class="verb">habitez</span>
+                  <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(You live)</span>
                 </div>
                 <div class="conjugation-row" onclick="speak('Ils habitent, Elles habitent')" style="margin-bottom: 10px;">
                   <span class="pronoun">Ils / Elles</span>&nbsp;<span class="verb">habitent</span>
+                  <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(They live)</span>
                 </div>
               </div>
             </div>
@@ -840,24 +888,30 @@
                 <div class="conjugation-row" onclick="speak('J\'aime')">
                   <span class="pronoun">J'</span>
                   <span class="verb">aime</span>
+                  <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(I like)</span>
                 </div>
                 <div class="conjugation-row" onclick="speak('Tu aimes')">
                   <span class="pronoun">Tu</span>
                   <span class="verb">aimes</span>
+                  <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(You like)</span>
                 </div>
                 <div class="conjugation-row" onclick="speak('Il aime, Elle aime, On aime')">
                   <span class="pronoun">Il / Elle / On</span>&nbsp;<span class="verb">aime</span>
+                  <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(He/She/One likes)</span>
                 </div>
                 <div class="conjugation-row" onclick="speak('Nous aimons')">
                   <span class="pronoun">Nous</span>
                   <span class="verb">aimons</span>
+                  <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(We like)</span>
                 </div>
                 <div class="conjugation-row" onclick="speak('Vous aimez')">
                   <span class="pronoun">Vous</span>
                   <span class="verb">aimez</span>
+                  <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(You like)</span>
                 </div>
                 <div class="conjugation-row" onclick="speak('Ils aiment, Elles aiment')" style="margin-bottom: 10px;">
                   <span class="pronoun">Ils / Elles</span>&nbsp;<span class="verb">aiment</span>
+                  <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(They like)</span>
                 </div>
               </div>
             </div>

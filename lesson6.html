@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Learn French colors, fruits, and vegetables. Practice describing food and expressing likes. Lesson 6 for 4th graders." />
+        content="Learn French colors, fruits, and vegetables. Master the use of C'est and Ce sont. Lesson 6 for 4th graders." />
     <title>Lesson 6: Le Miam-Miam - Learn French with Fun!</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,7 +14,7 @@
     <header>
         <div class="header-content">
             <h1>Lesson 6: Le Miam-Miam</h1>
-            <p>Colors, Fruits & Vegetables</p>
+            <p>Colors and Delicious Food</p>
         </div>
     </header>
 
@@ -29,19 +29,17 @@
             <div class="goals-box">
                 <h3>🎯 Learning Goals</h3>
                 <ul>
-                    <li>Identify colors in French</li>
+                    <li>Identify colors of the rainbow</li>
                     <li>Name common fruits and vegetables</li>
-                    <li>Describe food using colors</li>
-                    <li>Use 'un/une' and 'le/la/les'</li>
-                    <li>Ask "Qu'est-ce que c'est ?"</li>
-                    <li>Say what you like to eat</li>
+                    <li>Describe food using adjectives</li>
+                    <li>Master <strong>C'est</strong> vs. <strong>Ce sont</strong></li>
                 </ul>
             </div>
         </section>
 
         <!-- Colors Section -->
         <section class="content-section">
-            <h2>🌈 Les Couleurs (The Colors)</h2>
+            <h2>🌈 Les Couleurs (Colors)</h2>
             <div class="vocabulary-grid">
                 <div class="vocab-card" onclick="speak('Rouge')" style="border-bottom: 5px solid #ff4d4d;">
                     <div class="vocab-image">🔴</div>
@@ -53,15 +51,15 @@
                     <h3>Bleu</h3>
                     <p class="translation">Blue</p>
                 </div>
-                <div class="vocab-card" onclick="speak('Vert')" style="border-bottom: 5px solid #4dff4d;">
-                    <div class="vocab-image">🟢</div>
-                    <h3>Vert</h3>
-                    <p class="translation">Green</p>
-                </div>
                 <div class="vocab-card" onclick="speak('Jaune')" style="border-bottom: 5px solid #ffff4d;">
                     <div class="vocab-image">🟡</div>
                     <h3>Jaune</h3>
                     <p class="translation">Yellow</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Vert')" style="border-bottom: 5px solid #4dff4d;">
+                    <div class="vocab-image">🟢</div>
+                    <h3>Vert</h3>
+                    <p class="translation">Green</p>
                 </div>
                 <div class="vocab-card" onclick="speak('Orange')" style="border-bottom: 5px solid #ff944d;">
                     <div class="vocab-image">🟠</div>
@@ -73,155 +71,100 @@
                     <h3>Violet</h3>
                     <p class="translation">Purple</p>
                 </div>
-                <div class="vocab-card" onclick="speak('Rose')" style="border-bottom: 5px solid #ff4db8;">
-                    <div class="vocab-image">🌸</div>
-                    <h3>Rose</h3>
-                    <p class="translation">Pink</p>
-                </div>
-                <div class="vocab-card" onclick="speak('Marron')" style="border-bottom: 5px solid #8B4513;">
-                    <div class="vocab-image">🟤</div>
-                    <h3>Marron</h3>
-                    <p class="translation">Brown</p>
-                </div>
             </div>
         </section>
 
-        <!-- Fruits & Vegetables Section -->
+        <!-- Fruits & Veggies Section -->
         <section class="content-section">
-            <h2>🍎 Les Fruits et les Légumes</h2>
+            <h2>🍎 Le Miam-Miam (Fruits & Veggies)</h2>
             <div class="vocabulary-grid">
-                <!-- Fruits -->
-                <div class="vocab-card" onclick="speak('Une pomme')">
+                <div class="vocab-card" onclick="speak('La pomme')">
                     <div class="vocab-image">🍎</div>
-                    <h3>Une pomme</h3>
-                    <p class="translation">An apple</p>
+                    <h3>La pomme</h3>
+                    <p class="translation">The apple</p>
                 </div>
-                <div class="vocab-card" onclick="speak('Une banane')">
+                <div class="vocab-card" onclick="speak('La banane')">
                     <div class="vocab-image">🍌</div>
-                    <h3>Une banane</h3>
-                    <p class="translation">A banana</p>
+                    <h3>La banane</h3>
+                    <p class="translation">The banana</p>
                 </div>
-                <div class="vocab-card" onclick="speak('Une fraise')">
-                    <div class="vocab-image">🍓</div>
-                    <h3>Une fraise</h3>
-                    <p class="translation">A strawberry</p>
-                </div>
-                <div class="vocab-card" onclick="speak('Une orange')">
-                    <div class="vocab-image">🍊</div>
-                    <h3>Une orange</h3>
-                    <p class="translation">An orange</p>
-                </div>
-                <!-- Vegetables -->
-                <div class="vocab-card" onclick="speak('Une carotte')">
+                <div class="vocab-card" onclick="speak('La carotte')">
                     <div class="vocab-image">🥕</div>
-                    <h3>Une carotte</h3>
-                    <p class="translation">A carrot</p>
+                    <h3>La carotte</h3>
+                    <p class="translation">The carrot</p>
                 </div>
-                <div class="vocab-card" onclick="speak('Une tomate')">
+                <div class="vocab-card" onclick="speak('La tomate')">
                     <div class="vocab-image">🍅</div>
-                    <h3>Une tomate</h3>
-                    <p class="translation">A tomato</p>
+                    <h3>La tomate</h3>
+                    <p class="translation">The tomato</p>
                 </div>
-                <div class="vocab-card" onclick="speak('Une pomme de terre')">
-                    <div class="vocab-image">🥔</div>
-                    <h3>Une pomme de terre</h3>
-                    <p class="translation">A potato</p>
+                <div class="vocab-card" onclick="speak('Le raisin')">
+                    <div class="vocab-image">🍇</div>
+                    <h3>Le raisin</h3>
+                    <p class="translation">The grapes</p>
                 </div>
-                <div class="vocab-card" onclick="speak('Un brocoli')">
-                    <div class="vocab-image">🥦</div>
-                    <h3>Un brocoli</h3>
-                    <p class="translation">A broccoli</p>
+                <div class="vocab-card" onclick="speak('La fraise')">
+                    <div class="vocab-image">🍓</div>
+                    <h3>La fraise</h3>
+                    <p class="translation">The strawberry</p>
                 </div>
             </div>
         </section>
 
-        <!-- Grammar Section -->
+        <!-- Grammar: C'est vs Ce sont -->
         <section class="content-section">
-            <h2>✍️ Grammaire : Articles & Questions</h2>
+            <h2>✍️ Grammaire : C'est ou Ce sont ?</h2>
+
+            <div class="tip-box" style="margin-bottom: 2.5rem; border-left: 5px solid var(--accent-yellow); background: #fffcf0;">
+                <h3 onclick="speak('Qu\'est-ce que c\'est ?')" style="cursor: pointer; color: var(--text-main); margin-bottom: 0.5rem;">❓ The Question: Qu'est-ce que c'est ?</h3>
+                <p>This phrase means <strong>"What is it?"</strong> or <strong>"What are they?"</strong>. It stays the same whether you are asking about one thing or many!</p>
+            </div>
+
+            <p class="section-intro">To answer, we use <strong>C'est</strong> for one and <strong>Ce sont</strong> for many!</p>
             <div class="comparison-container">
                 <div class="tu-section" style="border-color: var(--primary-blue);">
-                    <h3>📦 Les Articles</h3>
-                    <p>Use <strong>Un / Une</strong> for "A" and <strong>Le / La / Les</strong> for "The".</p>
-                    <div class="example-phrase">
-                        <strong>Indefinite:</strong> Un citron (A lemon) / Une carotte (A carrot)<br>
-                        <strong>Definite:</strong> Le citron (The lemon) / La carotte (The carrot)
+                    <h3>☝️ Singular (C'est)</h3>
+                    <p>Use for one person or thing.</p>
+                    <div class="example-phrase" onclick="speak('Qu\'est-ce que c\'est ? C\'est une pomme rouge')">
+                        <em>"Qu'est-ce que c'est ?"</em><br>
+                        <strong>C'est</strong> une pomme rouge.<br>
+                        <small>(It is a red apple.)</small>
                     </div>
-                </div>
-                <div class="vous-section" style="border-color: var(--accent-yellow);">
-                    <h3>❓ Qu'est-ce que c'est ?</h3>
-                    <p>Ask "What is this?" and answer with <strong>C'est...</strong> (singular) or <strong>Ce sont...</strong> (plural).</p>
-                    <div class="example-phrase">
-                        "Qu'est-ce que c'est ?"<br>
-                        👉 "C'est une banane." (It is a banana)<br>
-                        👉 "Ce sont des bananes." (These are bananas)
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Descriptions Section -->
-        <section class="content-section">
-            <h2>🎨 Describing with Colors</h2>
-            <p class="section-intro">In French, colors usually come <strong>after</strong> the fruit or vegetable!</p>
-            <div class="example-box">
-                <div class="example-grid">
-                    <div class="example-item" onclick="speak('La pomme est rouge')">
-                        <span class="french">La pomme est rouge.</span>
-                        <span class="english">The apple is red.</span>
-                    </div>
-                    <div class="example-item" onclick="speak('Le brocoli est vert')">
-                        <span class="french">Le brocoli est vert.</span>
-                        <span class="english">The broccoli is green.</span>
-                    </div>
-                    <div class="example-item" onclick="speak('La carotte est orange')">
-                        <span class="french">La carotte est orange.</span>
-                        <span class="english">The carrot is orange.</span>
-                    </div>
-                    <div class="example-item" onclick="speak('Le citron est jaune')">
-                        <span class="french">Le citron est jaune.</span>
-                        <span class="english">The lemon is yellow.</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Likes and Dislikes -->
-        <section class="content-section">
-            <h2>😋 J'aime ou Je n'aime pas ?</h2>
-            <div class="comparison-container">
-                <div class="tu-section" style="border-color: var(--accent-green);">
-                    <h3>👍 J'aime...</h3>
-                    <div class="example-phrase" onclick="speak('J\'aime les fraises')">
-                        <strong>J'aime</strong> les fraises. (I like strawberries)
-                    </div>
-                    <div class="example-phrase" onclick="speak('J\'adore les pommes')">
-                        <strong>J'adore</strong> les pommes. (I love apples)
+                    <div class="example-phrase" onclick="speak('Qu\'est-ce que c\'est ? C\'est une banane jaune')">
+                        <em>"Qu'est-ce que c'est ?"</em><br>
+                        <strong>C'est</strong> une banane jaune.<br>
+                        <small>(It is a yellow banana.)</small>
                     </div>
                 </div>
                 <div class="vous-section" style="border-color: var(--primary-red);">
-                    <h3>👎 Je n'aime pas...</h3>
-                    <div class="example-phrase" onclick="speak('Je n\'aime pas le brocoli')">
-                        <strong>Je n'aime pas</strong> le brocoli. (I don't like broccoli)
+                    <h3>🙌 Plural (Ce sont)</h3>
+                    <p>Use for more than one person or thing.</p>
+                    <div class="example-phrase" onclick="speak('Qu\'est-ce que c\'est ? Ce sont des raisins violets')">
+                        <em>"Qu'est-ce que c'est ?"</em><br>
+                        <strong>Ce sont</strong> des raisins violets.<br>
+                        <small>(They are purple grapes.)</small>
                     </div>
-                    <div class="example-phrase" onclick="speak('Je déteste les tomates')">
-                        <strong>Je déteste</strong> les tomates. (I hate tomatoes)
+                    <div class="example-phrase" onclick="speak('Qu\'est-ce que c\'est ? Ce sont des légumes verts')">
+                        <em>"Qu'est-ce que c'est ?"</em><br>
+                        <strong>Ce sont</strong> des légumes verts.<br>
+                        <small>(They are green vegetables.)</small>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Interactive Game -->
+        <!-- Interactive Activity -->
         <section class="game-section">
             <div class="game-header">
-                <h2>🎮 Activity: Match the Miam-Miam!</h2>
+                <h2>🎮 Activity: Miam-Miam Matcher!</h2>
                 <p>Match the French food name to the correct emoji!</p>
             </div>
-            <div class="game-container" id="miam-game">
+            <div class="game-container" id="food-game">
                 <div class="game-column" id="food-names">
-                    <!-- Food names will be generated here -->
+                    <!-- Names generated here -->
                 </div>
-                <div class="game-column" id="food-emojis">
-                    <!-- Emojis will be generated here -->
+                <div class="game-column" id="food-icons">
+                    <!-- Icons generated here -->
                 </div>
             </div>
             <div id="submit-container" style="display: none; text-align: center; margin-top: 2rem;">
@@ -231,31 +174,30 @@
     </main>
 
     <footer>
-        <p>Lesson 6 complete! Miam-miam, c'est délicieux ! 🌈🍎</p>
+        <p>Lesson 6 complete! Miam-miam, c'est délicieux ! 🍎🌈🍕</p>
     </footer>
 
     <script src="script.js"></script>
     <script>
-        // Local Game Logic for Lesson 6
-        const miamPairs = [
-            { fr: "La Pomme", emoji: "🍎" },
-            { fr: "La Banane", emoji: "🍌" },
-            { fr: "La Carotte", emoji: "🥕" },
-            { fr: "La Tomate", emoji: "🍅" },
-            { fr: "Le Brocoli", emoji: "🥦" },
-            { fr: "La Fraise", emoji: "🍓" }
+        const foodPairs = [
+            { fr: "La Pomme", icon: "🍎" },
+            { fr: "La Banane", icon: "🍌" },
+            { fr: "La Carotte", icon: "🥕" },
+            { fr: "Le Raisin", icon: "🍇" },
+            { fr: "La Tomate", icon: "🍅" },
+            { fr: "La Fraise", icon: "🍓" }
         ];
 
-        let selectedName = null;
-        let selectedEmoji = null;
-        let score = 0;
+        let selName = null;
+        let selIcon = null;
+        let foodScore = 0;
 
-        function initMiamGame() {
+        function initFoodGame() {
             const nameCol = document.getElementById('food-names');
-            const emojiCol = document.getElementById('food-emojis');
+            const iconCol = document.getElementById('food-icons');
             
-            const names = [...miamPairs].sort(() => Math.random() - 0.5);
-            const emojis = [...miamPairs].sort(() => Math.random() - 0.5);
+            const names = [...foodPairs].sort(() => Math.random() - 0.5);
+            const icons = [...foodPairs].sort(() => Math.random() - 0.5);
 
             names.forEach(pair => {
                 const div = document.createElement('div');
@@ -263,66 +205,61 @@
                 div.textContent = pair.fr;
                 div.onclick = () => {
                     if(div.classList.contains('matched')) return;
-                    if(selectedName) selectedName.classList.remove('selected');
-                    selectedName = div;
+                    if(selName) selName.classList.remove('selected');
+                    selName = div;
                     div.classList.add('selected');
                     speak(pair.fr);
-                    checkMiamMatch();
+                    checkMatch();
                 };
                 nameCol.appendChild(div);
             });
 
-            emojis.forEach(pair => {
+            icons.forEach(pair => {
                 const div = document.createElement('div');
                 div.className = 'match-item';
-                div.textContent = pair.emoji;
-                div.style.fontSize = '2rem';
+                div.textContent = pair.icon;
+                div.style.fontSize = '2.5rem';
                 div.onclick = () => {
                     if(div.classList.contains('matched')) return;
-                    if(selectedEmoji) selectedEmoji.classList.remove('selected');
-                    selectedEmoji = div;
+                    if(selIcon) selIcon.classList.remove('selected');
+                    selIcon = div;
                     div.classList.add('selected');
-                    checkMiamMatch();
+                    checkMatch();
                 };
-                emojiCol.appendChild(div);
+                iconCol.appendChild(div);
             });
         }
 
-        function checkMiamMatch() {
-            if (selectedName && selectedEmoji) {
-                const match = miamPairs.find(p => p.fr === selectedName.textContent && p.emoji === selectedEmoji.textContent);
+        function checkMatch() {
+            if (selName && selIcon) {
+                const match = foodPairs.find(p => p.fr === selName.textContent && p.icon === selIcon.textContent);
                 if (match) {
-                    selectedName.classList.add('matched');
-                    selectedEmoji.classList.add('matched');
-                    selectedName.classList.remove('selected');
-                    selectedEmoji.classList.remove('selected');
-                    selectedName = null;
-                    selectedEmoji = null;
-                    score++;
-                    if(score === miamPairs.length) {
+                    selName.classList.add('matched');
+                    selIcon.classList.add('matched');
+                    selName.classList.remove('selected');
+                    selIcon.classList.remove('selected');
+                    selName = null; selIcon = null;
+                    foodScore++;
+                    if(foodScore === foodPairs.length) {
                         document.getElementById('submit-container').style.display = 'block';
-                        speak("Magnifique !");
+                        speak("Excellent ! Miam-miam !");
                     }
                 } else {
-                    const n = selectedName;
-                    const e = selectedEmoji;
-                    n.classList.add('incorrect');
-                    e.classList.add('incorrect');
-                    selectedName = null;
-                    selectedEmoji = null;
+                    const n = selName; const i = selIcon;
+                    n.classList.add('incorrect'); i.classList.add('incorrect');
+                    selName = null; selIcon = null;
                     setTimeout(() => {
                         n.classList.remove('selected', 'incorrect');
-                        e.classList.remove('selected', 'incorrect');
+                        i.classList.remove('selected', 'incorrect');
                     }, 500);
                 }
             }
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            initMiamGame();
+            initFoodGame();
             speak("Lesson 6 : Le Miam-Miam");
         });
     </script>
 </body>
-
 </html>
