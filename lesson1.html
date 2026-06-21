@@ -304,6 +304,13 @@
                             </div>
                             <span class="english">Things are going badly.</span>
                         </div>
+                        <div class="example-item" onclick="speak('Pas mal')">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span class="french">Pas mal.</span>
+                                <span style="font-size: 1.2rem;">🙂</span>
+                            </div>
+                            <span class="english">Not bad.</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -461,6 +468,14 @@
                 <div class="alphabet-card" onclick="speak('Y')">Y</div>
                 <div class="alphabet-card" onclick="speak('Z')">Z</div>
             </div>
+        </section>
+
+        <section style="padding: 1.5rem; background: rgba(var(--primary-blue-rgb, 74, 144, 226), 0.05); border-radius: 16px; margin-bottom: 2rem;">
+            <h3 style="margin-top: 0; color: var(--primary-blue);">Prénom et nom</h3>
+            <p style="margin: 0.5rem 0 0; color: #333;">
+                <strong>Prénom</strong> = first name, and <strong>nom</strong> = nom de famille (last name / surname).
+                Use this to ask someone for their full name: <strong>Quel est votre prénom et nom de famille ?</strong>
+            </p>
         </section>
 
         <section class="content-section">
@@ -889,7 +904,7 @@
                                 Sophie. And you?)</span>
                         </div>
 
-                        <div onclick="speak('Je m’appelle Paul. Ravi de vous rencontrer, Madame.', 'male')"
+                        <div onclick="speak('Je m’appelle Paul. Ravi de faire votre connaissance, Madame.', 'male')"
                             class="example-item"
                             style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(42, 82, 190, 0.05);">
                             <div
@@ -898,21 +913,21 @@
                             <div style="flex-grow: 1;">
                                 <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem;">
                                     Paul</p>
-                                <p style="margin: 0; font-size: 1.05rem;">Je m’appelle Paul. Ravi de vous rencontrer,
+                                <p style="margin: 0; font-size: 1.05rem;">Je m’appelle Paul. Ravi de faire votre connaissance,
                                     Madame.</p>
                             </div>
                             <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(My name is
                                 Paul. Nice to meet you, Madam.)</span>
                         </div>
 
-                        <div onclick="speak('Ravie de vous rencontrer aussi, Monsieur.', 'female')" class="example-item"
+                        <div onclick="speak('Ravie de faire votre connaissance aussi, Monsieur.', 'female')" class="example-item"
                             style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(233, 30, 99, 0.05);">
                             <div
                                 style="background: #e91e63; color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
                                 S</div>
                             <div style="flex-grow: 1;">
                                 <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem;">Sophie</p>
-                                <p style="margin: 0; font-size: 1.05rem;">Ravie de vous rencontrer aussi, Monsieur.</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Ravie de faire votre connaissance aussi, Monsieur.</p>
                             </div>
                             <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(Nice to meet
                                 you too, Sir.)</span>
@@ -1101,7 +1116,7 @@
     <footer>
         <p>Lesson 1 complete! You're doing great! 🌟</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script>
         let player;

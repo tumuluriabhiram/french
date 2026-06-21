@@ -3,79 +3,101 @@ import re
 from pathlib import Path
 from gtts import gTTS
 
-# Define paths
-src_folder = Path("./src")
-public_folder = Path("./public")
-voices_folder = public_folder / "voices"
+# Configuration
+src_folder = Path("./")
+public_folder = Path("./")
+voices_folder = Path("./voices")
 
-# Create output directories if they don't exist
+# Create audio output directory if it doesn't exist
 voices_folder.mkdir(parents=True, exist_ok=True)
 
-# Regex pattern to capture the text inside onclick="speak('text')"
-# Group 1 captures the actual text, Group 0 is the full match string
-pattern = r"speak\(['\"]([^'\"]*)['\"]\)"
+# Regex to handle extra parameters gracefully
+pattern = r"speak\((['\"])(.*?)(?<!\\)\1[^)]*\)"
 
 
 def get_text_hash(text: str) -> str:
-    """Generates a unique MD5 hex hash for a given string."""
+    """Creates a unique hash for the text string."""
     return hashlib.md5(text.encode("utf-8")).hexdigest()
 
 
-# Loop through all .html files in the src folder
+# Track all hashes that are actually found in the HTML files
+active_hashes = set()
+
+# --- STEP 1: Scan HTML files and generate missing audio ---
 for file_path in src_folder.glob("*.html"):
-    print(f"Processing: {file_path.name}")
+    print(f"Scanning: {file_path.name}")
 
     try:
         content = file_path.read_text(encoding="utf-8")
+        matches = re.finditer(pattern, content)
 
-        # Find all matching speak('text') patterns
-        matches = re.findall(pattern, content)
+        for match in matches:
+            text = match.group(2)
 
-        if not matches:
-            # If no matches, copy the file as-is to the public folder
-            (public_folder / file_path.name).write_text(
-                content, encoding="utf-8"
+            # Clean up escape slashes so gTTS reads it naturally
+            text_to_speak = (
+                text.replace(r"\'", "'").replace(r'\"', '"').strip()
             )
-            continue
-
-        # We will track modifications for this specific file
-        modified_content = content
-
-        for text in matches:
-            # 1. Clean/strip the text just in case, or use exactly what's inside
-            text_to_speak = text.strip()
             if not text_to_speak:
                 continue
 
-            # 2. Generate hash
             text_hash = get_text_hash(text_to_speak)
-            audio_filename = f"{text_hash}.mp3"
-            audio_file_path = voices_folder / audio_filename
+            active_hashes.add(text_hash)
 
-            # 3. Generate voice file if it doesn't already exist
-            if not audio_file_path.exists():
-                print(f"  -> Generating audio for: '{text_to_speak[:20]}...'")
+            audio_filename = f"{text_hash}.mp3"
+            audio_path = voices_folder / audio_filename
+
+            # Generate if missing
+            if not audio_path.exists():
+                print(
+                    f"  -> [New] Generating French audio for: '{text_to_speak[:30]}'"
+                )
                 try:
                     tts = gTTS(text=text_to_speak, lang="fr")
-                    tts.save(str(audio_file_path))
-                except Exception as tts_err:
-                    print(f"     Error generating TTS for '{text}': {tts_err}")
-                    continue
+                    tts.save(str(audio_path))
+                except Exception as e:
+                    print(f"     [Error] TTS failed for '{text_to_speak}': {e}")
             else:
-                print(f"  -> [Skipped] Audio already exists for hash: {text_hash}")
-
-            # 4. Replace onclick="speak('text')" with the hash version: speak('hash')
-            # Target exactly the match corresponding to this specific text snippet
-            old_string = f"onclick=\"speak('{text}')\""
-            new_string = f"onclick=\"speak('{text_hash}')\""
-            modified_content = modified_content.replace(old_string, new_string)
-
-        # 5. Save the modified file into the public folder
-        output_file_path = public_folder / file_path.name
-        output_file_path.write_text(modified_content, encoding="utf-8")
-        print(f"  Saved modified file to: {output_file_path}\n")
+                print(f"  -> [Cache Hit] Audio exists: {text_hash}")
 
     except Exception as e:
-        print(f"Error processing {file_path.name}: {e}\n")
+        print(f"  [Error] Could not read {file_path.name}: {e}")
 
-print("All files processed successfully!")
+print("\n--- Scan Complete ---")
+
+# --- STEP 2: Identify and handle orphaned files ---
+# Find all .mp3 files currently sitting in the folder
+existing_mp3_files = list(voices_folder.glob("*.mp3"))
+
+# Determine which files are on disk but NOT in our active_hashes set
+orphaned_files = [
+    f for f in existing_mp3_files if f.stem not in active_hashes
+]
+
+if orphaned_files:
+    print(f"\nFound {len(orphaned_files)} unused audio files:")
+    for file in orphaned_files:
+        print(f" - {file.name}")
+
+    # Interactive prompt for the user
+    choice = (
+        input(
+            "\nWould you like to delete these unused files? (y/N): "
+        )
+        .strip()
+        .lower()
+    )
+
+    if choice in ("y", "yes"):
+        print("\nDeleting files...")
+        for file in orphaned_files:
+            try:
+                file.unlink()
+                print(f" x Deleted: {file.name}")
+            except Exception as e:
+                print(f" [Error] Could not delete {file.name}: {e}")
+        print("Cleanup complete.")
+    else:
+        print("\nDeletion skipped. Unused files were left untouched.")
+else:
+    print("\nNo unused audio files found. Everything is perfectly in sync!")

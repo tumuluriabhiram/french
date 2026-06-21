@@ -1,43 +1,19 @@
-function speak(text, gender = 'female') {
-    // Stop any current speech
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'fr-FR';
+import { md5 } from 'https://cdn.jsdelivr.net/npm/js-md5@0.8.3/+esm'
+function speak(word) {
+    let fileHash = md5(word);
+    // 1. Construct the path to the voice file
+    // Assumes 'public' is the root directory of your web server
+    const audioPath = `/voices/${fileHash}.mp3`;
 
-    // Try to find a specific French voice based on gender
-    const voices = window.speechSynthesis.getVoices();
-    const frVoices = voices.filter(v => v.lang.startsWith('fr'));
-
-    if (frVoices.length > 0) {
-        let selectedVoice = null;
-        if (gender === 'male') {
-            selectedVoice = frVoices.find(v =>
-                v.name.toLowerCase().includes('male') ||
-                v.name.toLowerCase().includes('paul') ||
-                v.name.toLowerCase().includes('thomas') ||
-                v.name.toLowerCase().includes('daniel') ||
-                v.name.toLowerCase().includes('julien')
-            );
-        } else {
-            selectedVoice = frVoices.find(v =>
-                v.name.toLowerCase().includes('hortense') ||
-                v.name.toLowerCase().includes('female') ||
-                v.name.toLowerCase().includes('audrey') ||
-                v.name.toLowerCase().includes('julie') ||
-                v.name.toLowerCase().includes('celine') ||
-                v.name.toLowerCase().includes('lea')
-            );
-        }
-        // Fallback to first French voice if gender match is not found
-        utterance.voice = selectedVoice || frVoices[0];
-    }
-
-    utterance.rate = 0.9;
-    // Slight pitch adjustment as a backup for gender differentiation
-    utterance.pitch = gender === 'male' ? 0.8 : 1.1;
-
-    window.speechSynthesis.speak(utterance);
+    // 2. Create a new Audio object and play it
+    const audio = new Audio(audioPath);
+    
+    audio.play().catch(error => {
+        console.error(`Failed to play audio for hash [${fileHash}]:`, error);
+    });
 }
+window.speak = speak;
+
 
 // --- Sound Logic ---
 let isMuted = false;
