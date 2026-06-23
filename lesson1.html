@@ -472,8 +472,25 @@
 
         <section style="padding: 1.5rem; background: rgba(var(--primary-blue-rgb, 74, 144, 226), 0.05); border-radius: 16px; margin-bottom: 2rem;">
             <h3 style="margin-top: 0; color: var(--primary-blue);">Prénom et nom</h3>
+            <p style="margin: 0.5rem 0 0.5rem; color: #333;">
+                <strong>Prénom</strong> = first name<br>
+                <strong>pray-noh</strong> <span style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Prénom')">🔊</span>
+            </p>
+            <p style="margin: 0.5rem 0 0.5rem; color: #333;">
+                <strong>Nom</strong> = last name / surname<br>
+                <strong>noh</strong> <span style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Nom')">🔊</span>
+            </p>
             <p style="margin: 0.5rem 0 0; color: #333;">
-                <strong>Prénom</strong> = first name, and <strong>nom</strong> = nom de famille (last name / surname).
+                <strong>Exemple:</strong> <em>Marie Curie</em><br>
+                Prénom: <strong>Marie</strong> &nbsp;&nbsp; Nom: <strong>Curie</strong>
+                <span style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Marie Curie')">🔊</span>
+            </p>
+            <p style="margin: 0.5rem 0 0; color: #333;">
+                <strong>Example:</strong> <em>Jean Reno</em><br>
+                Prénom: <strong>Jean</strong> &nbsp;&nbsp; Nom: <strong>Reno</strong>
+                <span style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Jean Reno')">🔊</span>
+            </p>
+            <p style="margin: 0.5rem 0 0; color: #333;">
                 Use this to ask someone for their full name: <strong>Quel est votre prénom et nom de famille ?</strong>
             </p>
         </section>

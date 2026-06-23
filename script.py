@@ -1,5 +1,6 @@
 import hashlib
 import re
+import sys
 from pathlib import Path
 from gtts import gTTS
 
@@ -79,16 +80,22 @@ if orphaned_files:
     for file in orphaned_files:
         print(f" - {file.name}")
 
-    # Interactive prompt for the user
-    choice = (
-        input(
-            "\nWould you like to delete these unused files? (y/N): "
-        )
-        .strip()
-        .lower()
-    )
+    # Auto-delete if --yes flag is passed (for CI/CD)
+    auto_delete = "--yes" in sys.argv
 
-    if choice in ("y", "yes"):
+    if auto_delete:
+        print("\nAuto-delete enabled (--yes flag detected).")
+    else:
+        choice = (
+            input(
+                "\nWould you like to delete these unused files? (y/N): "
+            )
+            .strip()
+            .lower()
+        )
+        auto_delete = choice in ("y", "yes")
+
+    if auto_delete:
         print("\nDeleting files...")
         for file in orphaned_files:
             try:
