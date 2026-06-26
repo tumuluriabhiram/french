@@ -105,6 +105,6 @@ if orphaned_files:
                 print(f" [Error] Could not delete {file.name}: {e}")
         print("Cleanup complete.")
     else:
-        print("\nDeletion skipped. Unused files were left untouched.")
+        print("\nDeletion skipped.")
 else:
-    print("\nNo unused audio files found. Everything is perfectly in sync!")
+    print("\nNo unused audio files found.")

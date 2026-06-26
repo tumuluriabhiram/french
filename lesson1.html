@@ -488,30 +488,67 @@
 
         <section
             style="padding: 1.5rem; background: rgba(var(--primary-blue-rgb, 74, 144, 226), 0.05); border-radius: 16px; margin-bottom: 2rem;">
-            <h3 style="margin-top: 0; color: var(--primary-blue);">Prénom et nom</h3>
-            <p style="margin: 0.5rem 0 0.5rem; color: #333;">
-                <strong>Prénom</strong> = first name<br>
-                <strong>pray-noh</strong> <span style="color: var(--primary-blue); cursor: pointer;"
-                    onclick="speak('Prénom')">🔊</span>
+            <h3 style="margin-top: 0; color: var(--primary-blue); margin-bottom: 1rem;">Prénom et nom</h3>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
+                <div class="vocab-card" onclick="speak('Prénom')"
+                    style="padding: 1.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📝</div>
+                    <h3 style="font-size: 1.4rem; color: var(--primary-blue); margin-bottom: 0.25rem;">Prénom</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; font-style: italic; margin-bottom: 0.25rem;">
+                    </p>
+                    <p class="translation"
+                        style="font-size: 1.05rem; font-weight: 600; color: var(--primary-red); margin: 0;">First name
+                    </p>
+                </div>
+                <div class="vocab-card" onclick="speak('Nom de famille')"
+                    style="padding: 1.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏷️</div>
+                    <h3 style="font-size: 1.4rem; color: var(--primary-blue); margin-bottom: 0.25rem;">Nom de
+                        famille</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; font-style: italic; margin-bottom: 0.25rem;">
+                    </p>
+                    <p class="translation"
+                        style="font-size: 1.05rem; font-weight: 600; color: var(--primary-red); margin: 0;">Last name /
+                        Surname</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Quel est ton prénom ?')"
+                    style="padding: 1.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">❓</div>
+                    <h3 style="font-size: 1.4rem; color: var(--primary-blue); margin-bottom: 0.25rem;">Quel est ton
+                        prénom ?
+                    </h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; font-style: italic; margin-bottom: 0.25rem;">
+                    </p>
+                    <p class="translation"
+                        style="font-size: 1.05rem; font-weight: 600; color: var(--primary-red); margin: 0;">What is your
+                        first name? (informal)
+                    </p>
+                </div>
+                <div class="vocab-card" onclick="speak('Quel est votre nom de famille ?')"
+                    style="padding: 1.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">❓</div>
+                    <h3 style="font-size: 1.4rem; color: var(--primary-blue); margin-bottom: 0.25rem;">Quel est votre
+                        nom de
+                        famille ?</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; font-style: italic; margin-bottom: 0.25rem;">
+                    </p>
+                    <p class="translation"
+                        style="font-size: 1.05rem; font-weight: 600; color: var(--primary-red); margin: 0;">What is your
+                        last name? (formal)
+                    </p>
+                </div>
+            </div>
+
+            <p style="margin: 1rem 0 0.5rem; color: #333;">
+                <strong>Exemple:</strong> <em>Marie Curie</em>
+                <span style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Marie Curie')"> 🔊</span><br>
+                <span>Mon prénom c'est Marie et mon nom c'est Curie</span>
+                <span style="color: var(--primary-blue); cursor: pointer;"
+                    onclick="speak('Mon prénom c\'est Marie et mon nom c\'est Curie')"> 🔊</span>
             </p>
-            <p style="margin: 0.5rem 0 0.5rem; color: #333;">
-                <strong>Nom</strong> = last name / surname<br>
-                <strong>noh</strong> <span style="color: var(--primary-blue); cursor: pointer;"
-                    onclick="speak('Nom')">🔊</span>
-            </p>
-            <p style="margin: 0.5rem 0 0; color: #333;">
-                <strong>Exemple:</strong> <em>Marie Curie</em><br>
-                Prénom: <strong>Marie</strong> &nbsp;&nbsp; Nom: <strong>Curie</strong>
-                <span style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Marie Curie')">🔊</span>
-            </p>
-            <p style="margin: 0.5rem 0 0; color: #333;">
-                <strong>Example:</strong> <em>Jean Reno</em><br>
-                Prénom: <strong>Jean</strong> &nbsp;&nbsp; Nom: <strong>Reno</strong>
-                <span style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Jean Reno')">🔊</span>
-            </p>
-            <p style="margin: 0.5rem 0 0; color: #333;">
-                Use this to ask someone for their full name: <strong>Quel est votre prénom et nom de famille ?</strong>
-            </p>
+
         </section>
 
         <section class="content-section">
@@ -968,15 +1005,14 @@
                                 Paul. Nice to meet you, Madam.)</span>
                         </div>
 
-                        <div onclick="speak('Ravie de faire votre connaissance aussi, Monsieur.', 'female')"
-                            class="example-item"
+                        <div onclick="speak('Moi de même, Monsieur.', 'female')" class="example-item"
                             style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(233, 30, 99, 0.05);">
                             <div
                                 style="background: #e91e63; color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
                                 S</div>
                             <div style="flex-grow: 1;">
                                 <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem;">Sophie</p>
-                                <p style="margin: 0; font-size: 1.05rem;">Ravie de faire votre connaissance aussi,
+                                <p style="margin: 0; font-size: 1.05rem;">Moi de même,
                                     Monsieur.</p>
                             </div>
                             <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(Nice to meet
